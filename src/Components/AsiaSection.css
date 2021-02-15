@@ -1,0 +1,23 @@
+.asia-container{
+
+/* background: url('Images/Asia.png') center center/cover no-repeat; */
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    background-color: rgba(15, 15, 15, 0.945);
+    color: rgba(255, 255, 255, 0.746);
+    font-size: 1.7em;
+}
+
+#AsiaImg{
+
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px; */
+    object-fit: contain;
+}
