@@ -1,13 +1,14 @@
 .asia-container{
 
 /* background: url('Images/Asia.png') center center/cover no-repeat; */
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     object-fit: contain;
     background-color: rgba(15, 15, 15, 0.945);
     color: rgba(255, 255, 255, 0.746);
     font-size: 1.7em;
+    
 }
 
 #AsiaImg{
@@ -21,3 +22,48 @@ display: flex;
     /* box-shadow: inset 0 0 0 1000px; */
     object-fit: contain;
 }
+
+/* .asia-btns{
+
+    margin-top: 12px;
+
+
+} */
+
+.asia-btns .btn {
+
+margin-left: 200px;
+margin-right: 200px;
+
+}
+
+.asia-btns .btns{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    margin-left: 330px;
+    margin-right: 170px;
+
+
+}
+
+.to-region{
+
+    color: #fff;
+    display: inline-flexbox;
+    align-items: center;
+    /* text-decoration: none; */
+    padding: 0.5rem 1rem;
+    height: 100%;
+    margin-left: 160px;
+    margin-right: 175px;
+}
+
+.to-region:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+    color: green;
+  }

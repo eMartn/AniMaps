@@ -6,28 +6,19 @@ import './NavBar.css';
 
 // inports React from React using extension es7
 // Download extension clicking last logo in the bar
-   //Link is a replacement to A tag with React Router
+//Link is a replacement to A tag with React Router
 //if btn outline is not there then it would default to primary style 
 
 function NavBar() {
 
-    // This is essentiallt false -> true -> false -> true
-    // Essentially reversin state
+    // useState for click
+    // Update the state and change it when clicked 
     const [click, setClick] = useState(false);
+    // Sets the click and sets the value to the opposite of useState
+     // This is essentiallt false -> true -> false -> true
+    // Essentially reversing state
+    //Reversing the state of useState
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false); 
-    const [button,setButton] = useState(true); 
-
-    const showButton = () => {
-
-            if(window.innerWidth <= 960){
-                   setButton(false);
-            }else{
-                setButton(true);
-            }
-    };
-
-    window.addEventListener('resize', showButton);
 
     return (
         <>
@@ -37,9 +28,12 @@ function NavBar() {
             <Link to ="/" className= "navbar-logo"> 
             ANIMAPS <i class="fas fa-frog"></i>
             </Link> 
+            {/* Mobile icon & links */}
+            {/* calls handleClick function to reverse the state */}
             <div className = 'menu-icon' onClick = {handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
             </div>
+            {/* Click stuff is mainly for mobile function which we will probably not get to into? */}
             <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
 
                 {/* Nav item for the Home
@@ -55,7 +49,8 @@ function NavBar() {
                 Will take you to organizations and charities you can donate to
                 */}
                 <li className = 'nav-item'>
-                <Link to='/' className= 'nav-links'  >
+                    {/* Sets the link to learnmore which does not exist currently */}
+                <Link to='/learnmore' className= 'nav-links'  >
                 Learn More
                  </Link>
                 </li>
@@ -65,7 +60,7 @@ function NavBar() {
                 */}
                 <li className = 'nav-item'>
                     {/* onClick={closeMobileMenu} */}
-                <Link to='/next' className= 'nav-links' >
+                <Link to='/previous' className= 'nav-links' >
                 <i class="fas fa-arrow-left"></i>
 
                  </Link>
@@ -75,7 +70,7 @@ function NavBar() {
                 Will take you the next region
                 */}
                 <li className = 'nav-item'>
-                <Link to='/previous' className= 'nav-links'>
+                <Link to='/next' className= 'nav-links'>
                     {/* This is just the icon for eight arrow taken from Font awesome */}
                 <i class="fas fa-arrow-right"></i>
 
