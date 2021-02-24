@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import AsiaSection from '../AsiaSection';
+import Austrlia from '../Australia';
 
 function Home()
  {
@@ -8,6 +9,7 @@ function Home()
     return (
         <>
         <AsiaSection />
+       
         </>
     )
 

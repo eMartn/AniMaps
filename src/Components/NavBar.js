@@ -39,43 +39,56 @@ function NavBar() {
                 {/* Nav item for the Home
                 Will take you Home if you click it
                 */}
-                <li className = 'nav-item'>
-                <Link to='/' className= 'nav-links' >
+
+
+                {/* <li className = 'nav-item'>
+                <Link to='/Home' className= 'nav-links' >
                 Home
                  </Link>
-                </li>
+                </li> */}
 
                 {/* Nav item for the Learn More buttom
                 Will take you to organizations and charities you can donate to
                 */}
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/learnmore' className= 'nav-links'  >
-                Learn More
+                <Link to='/charities' className= 'nav-links'  >
+                Charities 
                  </Link>
                 </li>
 
                 {/* Nav item for the left arrow
                 Will take you the next region
                 */}
-                <li className = 'nav-item'>
+                
+                {/* <li className = 'nav-item'> */}
                     {/* onClick={closeMobileMenu} */}
-                <Link to='/previous' className= 'nav-links' >
+                {/* <Link to='/previous' className= 'nav-links' >
                 <i class="fas fa-arrow-left"></i>
 
                  </Link>
-                </li>
+                </li> */}
 
                 {/* Nav item for the right arrow
                 Will take you the next region
                 */}
-                <li className = 'nav-item'>
-                <Link to='/next' className= 'nav-links'>
+                {/* <li className = 'nav-item'>
+                <Link to='/next' className= 'nav-links'> */}
                     {/* This is just the icon for eight arrow taken from Font awesome */}
-                <i class="fas fa-arrow-right"></i>
+                {/* <i class="fas fa-arrow-right"></i>
 
                  </Link>
+                </li> */}
+
+                <li className = 'nav-item'>
+                    {/* Sets the link to learnmore which does not exist currently */}
+                <Link to='/animal-list' className= 'nav-links'  >
+                Animals 
+                 </Link>
                 </li>
+
+
+
              </ul>
 
             {/* {button && <Button buttonStyle= 'btn--outline'> NEXT</Button>} */}
