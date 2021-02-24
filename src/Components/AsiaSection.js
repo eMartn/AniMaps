@@ -4,10 +4,17 @@ import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
 import './Australia.js';
-
+import {motion} from 'framer-motion';
+import {animationOne} from '../Animations';
 
 function AsiaSection() {
     return (
+        <motion.div
+            initial = "out"
+            animate = "in"
+            exit = "out"
+            variants = {animationOne}
+       >
         <div class = "asia-container">
             <h1> Asia</h1>
 
@@ -17,11 +24,13 @@ function AsiaSection() {
              <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
                 */}
             
-
+            {/* Will take you to the region of Afria */}
                 <Link to='/africa' className= 'to-region' >   
                 <i class="fas fa-arrow-left"></i>
 
                  </Link>
+
+            {/* Will take you to the region of Australia */}
 
                  <Link to='/Australia' className= 'to-region'>
                 <i class="fas fa-arrow-right"></i>
@@ -34,7 +43,7 @@ function AsiaSection() {
             
 
         </div>
-        
+        </motion.div>
     )
 }
 

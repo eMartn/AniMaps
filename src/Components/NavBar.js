@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { Button } from './Button';
 import './NavBar.css';
+ import styled from 'styled-components';
 
 
 // inports React from React using extension es7

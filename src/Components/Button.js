@@ -1,6 +1,9 @@
 import React from 'react';
 import './Button.css';
 import {Link} from 'react-router-dom';
+import AsiaSection from './AsiaSection';
+import {motion} from 'framer-motion';
+import { animationOne,transition } from '../Animations';
 
 // An array of CSS classes 
 // Styling done for buttons depending one is primary & one is outline
@@ -21,17 +24,21 @@ const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
 const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-
-        <Link to = '/next' className = 'btn-next'>
+        <motion.div
+        initial = 'out'
+        animate = 'in'
+        exit='out'
+        variants= {animationOne}
+        transition = {transition}
+        >
+        <Link to = '/Asia' className = 'btn-next'>
             <button>
             {children}
 
             </button>
-
-
         </Link>
 
-      
+        </motion.div>
     )
 
 

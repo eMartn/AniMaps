@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 function Australia() {
     return (
         <div class = "asia-container">
-            <h1> Austrlia</h1>
+            <h1> Australia</h1>
 
             <div className = "asia-btns">
                 {/* Grabbing button stuff from Button class without it it wll not function  */}
