@@ -1,8 +1,19 @@
+/*
+These animations use Framer-motion a motion library for React 
+By manipulating the x y values you can create some animations 
+& wrap it around the things you want animated.
+The methods below do just that and are named accordingly
+If you want to learn more about how these animations work
+or how to tweak them you can find documentation here
+https://www.framer.com/motion/
+
+*/
+
 // Animations
-export const animationOne = {
+export const flashAnimation = {
 
     in:{
-opacity: 1
+    opacity: 1
 
     },
     out:{
@@ -35,3 +46,51 @@ export const animationTwo = {
 
 
 }
+
+export const fromLeftAnimation ={
+
+        in:{
+            opacity: 0.8,
+            x: 300
+        },
+        out:{
+            opacity: 0.9,
+            x: -300
+        },
+        end:{
+            x: 0,
+            opacity: 1
+        }
+};
+
+export const fromRightAnimation ={
+
+    in:{
+        opacity: 0.8,
+        x: -300
+    },
+    out:{
+        opacity: 0.9,
+        x: 300
+    },
+    end:{
+        x: 0,
+        opacity: 1
+    }
+};
+
+export const upAnimation ={
+
+    in:{
+        opacity: 0.8,
+        y: -300
+    },
+    out:{
+        opacity: 0.7,
+        y: 300
+    },
+    end:{
+        y: 0,
+        opacity: 1
+    }
+};

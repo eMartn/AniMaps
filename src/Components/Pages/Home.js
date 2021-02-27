@@ -3,7 +3,7 @@ import '../../App.css';
 import AsiaSection from '../AsiaSection';
 import Australia from '../Australia';
 import {motion} from 'framer-motion';
-import { animationOne,transition } from '../../Animations';
+import { flashAnimation,transition } from '../../Animations';
 
 
 function Home()
@@ -15,7 +15,7 @@ function Home()
         initial = 'out'
         animate = 'in'
         exit='out'
-        variants= {animationOne}
+        variants= {flashAnimation}
         transition = {transition}
         >
         <AsiaSection />

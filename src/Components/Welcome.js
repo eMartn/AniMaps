@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
-import Image from './snowBear.gif';
+import Image from './elephant.gif';
 import {Link} from 'react-router-dom';
 import AsiaSection from './AsiaSection';
 import {motion} from 'framer-motion';
-import {animationOne} from '../Animations';
+import {flashAnimation} from '../Animations';
 import { Button } from './Button';
 
 // CSS for GIF
 // creates a const for section which is used below
-
 const Section = styled.section`
-background: url(${Image}) center;
+
+ background: url(${Image}) center;
 height: 100%;
 height: 100vh;
 background-size: cover;
@@ -50,13 +50,14 @@ button {
  border:none;
  cursor: pointer;
  outline: none;
+ box-shadow: 8px 8px 11px #1e1e1e;
 }
 
 // CSS for paragraph
 p{
 font-size: clamp(1rem, 6vw, 1.2rem);
 color: black;
-
+margin-top: 5px;
 }
 
 
@@ -75,7 +76,7 @@ color: black;
             initial = "out"
             animate = "in"
             exit = "out"
-            variants = {animationOne}
+            variants = {flashAnimation}
        >
         <Section>
             <Container>

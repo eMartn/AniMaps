@@ -3,7 +3,7 @@ import './Button.css';
 import {Link} from 'react-router-dom';
 import AsiaSection from './AsiaSection';
 import {motion} from 'framer-motion';
-import { animationOne,transition } from '../Animations';
+import { flashAnimation,transition } from '../Animations';
 
 // An array of CSS classes 
 // Styling done for buttons depending one is primary & one is outline
@@ -28,7 +28,7 @@ const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
         initial = 'out'
         animate = 'in'
         exit='out'
-        variants= {animationOne}
+        variants= {flashAnimation}
         transition = {transition}
         >
         <Link to = '/Asia' className = 'btn-next'>

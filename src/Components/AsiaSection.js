@@ -5,15 +5,15 @@ import './AsiaSection.css';
 import {Link} from 'react-router-dom';
 import './Australia.js';
 import {motion} from 'framer-motion';
-import {animationOne} from '../Animations';
+import {upAnimation} from '../Animations';
 
 function AsiaSection() {
     return (
         <motion.div
             initial = "out"
-            animate = "in"
+            animate = "end"
             exit = "out"
-            variants = {animationOne}
+            variants = {upAnimation}
        >
         <div class = "asia-container">
             <h1> Asia</h1>
@@ -25,7 +25,7 @@ function AsiaSection() {
                 */}
             
             {/* Will take you to the region of Afria */}
-                <Link to='/africa' className= 'to-region' >   
+                <Link to='/Africa' className= 'to-region' >   
                 <i class="fas fa-arrow-left"></i>
 
                  </Link>
