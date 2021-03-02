@@ -1,5 +1,4 @@
 import React from 'react'
- import { Button } from './Button'
 import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
@@ -9,28 +8,34 @@ import {upAnimation} from '../Animations';
 
 function AsiaSection() {
     return (
+         /*
+        Wrapped in motion framer animation and uses the
+        upAnimation
+        To see that go to index.js in Animations folder
+      */
         <motion.div
             initial = "out"
             animate = "end"
             exit = "out"
             variants = {upAnimation}
        >
+           {/* Creates a class for a container for styling in AsiaSection.css */}
         <div class = "asia-container">
+            {/* Asia header */}
             <h1> Asia</h1>
-
-            <div className = "asia-btns">
-                {/* Grabbing button stuff from Button class without it it wll not function  */}
-            {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
-             <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
-                */}
-            
-            {/* Will take you to the region of Afria */}
+             {/* Creates a class for buttons for styling in AsiaSection.css */}
+            <div className = "asia-btns">      
+            {/* 
+            Will take you to the region of Africa 
+            Link is a replacement to A tag with React Router
+            */}
                 <Link to='/Africa' className= 'to-region' >   
                 <i class="fas fa-arrow-left"></i>
-
                  </Link>
 
-            {/* Will take you to the region of Australia */}
+            {/* Will take you to the region of Australia 
+            Link is a replacement to A tag with React Router
+            */}
 
                  <Link to='/Australia' className= 'to-region'>
                 <i class="fas fa-arrow-right"></i>
@@ -38,10 +43,7 @@ function AsiaSection() {
 
            </div>
             {/*  Image for the Asia continent    */}
-            <img id = 'AsiaImg' src = "Images/Asia.png" />
-            
-            
-
+            <img id = 'AsiaImg' src = "Images/Asia.png" alt = "The continent of Asia" />
         </div>
         </motion.div>
     )

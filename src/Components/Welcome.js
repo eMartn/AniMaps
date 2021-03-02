@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
-import Image from './elephant.gif';
-import {Link} from 'react-router-dom';
-import AsiaSection from './AsiaSection';
+import Image from './legs.gif';
 import {motion} from 'framer-motion';
 import {flashAnimation} from '../Animations';
 import { Button } from './Button';
+import {transition } from '../Animations';
+import {Link} from 'react-router-dom';
+
 
 // CSS for GIF
 // creates a const for section which is used below
 const Section = styled.section`
-
  background: url(${Image}) center;
 height: 100%;
 height: 100vh;
@@ -50,7 +50,8 @@ button {
  border:none;
  cursor: pointer;
  outline: none;
- box-shadow: 8px 8px 11px #1e1e1e;
+//  box-shadow: 2px 2px 2px 5px
+ box-shadow: 1px 1px 2px 2px #1e1e1e;
 }
 
 // CSS for paragraph
@@ -59,11 +60,25 @@ font-size: clamp(1rem, 6vw, 1.2rem);
 color: black;
 margin-top: 5px;
 }
-
-
 `;
 
-
+const WelcomeButton = ({children}) => {
+    return (
+        <motion.div
+        initial = 'out'
+        animate = 'in'
+        exit='out'
+        variants= {flashAnimation}
+        transition = {transition}
+        >
+        <Link to = '/Asia' className = 'btn-next'>
+            <button>
+            {children}
+            </button>
+        </Link>
+        </motion.div>
+    )
+};
 
 // const that uses a callback function to return the section & container
  const Welcome = () => {
@@ -80,25 +95,13 @@ margin-top: 5px;
        >
         <Section>
             <Container>
-
-             {/* <button>DISCOVER MORE
-
-            <Link to='/Asia'  >   
-                <i class="fas fa-arrow-alt-circle-down"></i>
-
-                </Link>
-            </button>   */}
-
             {/* Button responsbile for leading you to asia section  */}
-            <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'> DISCOVER MORE</Button>
+            {/* <Button> DISCOVER MORE</Button> */}
+            <WelcomeButton>DISCOVER MORE</WelcomeButton>
 
             {/* Fact that id displayed for now */}
             <p>Cows poo up to 15 times a day, which can be as much as 115 pounds of manure per day, or approximately 21 tons per year.</p>
-          
-       
             </Container>
-
-          
         </Section>
 
         </motion.div>

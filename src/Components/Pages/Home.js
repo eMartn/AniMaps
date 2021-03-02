@@ -1,11 +1,10 @@
 import React from 'react';
 import '../../App.css';
 import AsiaSection from '../AsiaSection';
-import Australia from '../Australia';
 import {motion} from 'framer-motion';
 import { flashAnimation,transition } from '../../Animations';
 
-
+// THIS PAGE IS NEVER USED I KPET IT JUST INCASE BUT IT DOES NOT AFFECT THE SITE IN ANYWAY NOR IS IT BEING USED ANYWHERE
 function Home()
  {
 

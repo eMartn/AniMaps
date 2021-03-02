@@ -1,35 +1,49 @@
 import React from 'react'
-//  import { Button } from './Button'
 import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
-import { Button, Header, Image, Modal, Table } from 'semantic-ui-react';
 import {motion} from 'framer-motion';
 import {fromLeftAnimation} from '../Animations';
 
 function AustraliaContent() {
     return (
+         /*
+      For now this uses the asia container css
+      but will change in the future to have its own
+      */
         <div class = "asia-container">
+            {/* Australia header */}
             <h1> Australia</h1>
 
+           {/*
+             assigns a class name for the buttons
+            again this uses asia section and will be changed in the future
+            */}
             <div className = "asia-btns">
-                {/* Grabbing button stuff from Button class without it it wll not function  */}
-            {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
-             <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
+               {/* Experimenting; Pls ignore this */}
+                 {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
+                 <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
                 */}
 
+                {/* Allows us to go to Asia from Australia 
+                Link is a replacement to A tag with React Router
+                */}
                 <Link to='/Asia' className= 'to-region' >   
+                {/* Uses a icon from font awesome */}
                 <i class="fas fa-arrow-left"></i>
-
                  </Link>
-
-                 <Link to='/australia' className= 'to-region'>
+                 
+                {/* Allows us to go to Australia to America 
+                Link is a replacement to A tag with React Router
+                */}
+                 <Link to='/America' className= 'to-region'>
+                     {/* Uses a icon from font awesome */}
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
            </div>
-            {/*  Image for the Asia continent    */}
-            <img id = 'AsiaImg' src = "Images/Australia.jpg" />
+            {/*  Image for the Asia continent */}
+            <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = "The continent of Australia"/>
             
             
 
@@ -37,58 +51,23 @@ function AustraliaContent() {
     )
 }
 
-function ModalExampleModal() {
-    const [open, setOpen] = React.useState(false)
-  
-    return (
-      <Modal
-        onClose={() => setOpen(false)}
-        onOpen={() => setOpen(true)}
-        open={open}
-        trigger={<Button>Show Modal</Button>}
-      >
-        <Modal.Header>Select a Photo</Modal.Header>
-        <Modal.Content image>
-          <Image size='medium' src='/Images/redPanda.png' wrapped />
-          <Modal.Description>
-            <Header>Default Profile Image</Header>
-            <p>
-              We've found the following gravatar image associated with your e-mail
-              address.
-            </p>
-            <p>Is it okay to use this photo?</p>
-          </Modal.Description>
-        </Modal.Content>
-        <Modal.Actions>
-          <Button color='black' onClick={() => setOpen(false)}>
-            Nope
-          </Button>
-          <Button
-            content="Yep, that's me"
-            labelPosition='right'
-            icon='checkmark'
-            onClick={() => setOpen(false)}
-            positive
-          />
-        </Modal.Actions>
-      </Modal>
-    )
-  }
-
-  
-
+// function that is exporting Australia contents 
 function Australia() {
    
     return (
+         /*
+        Wrapped in motion framer animation and uses the
+        fromLeftAnimation
+        To see that go to index.js in Animations folder
+      */
         <motion.div
         initial = 'out'
         animate = 'end'
         exit = 'out'
         variants = {fromLeftAnimation}
         > 
+          {/* Renders the Australia content function */}
         <AustraliaContent />
-        {/* <ModalExampleModal/> */}
- 
         </motion.div>
         
     );

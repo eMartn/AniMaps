@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
- import { Button } from './Button'
 import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
@@ -9,19 +8,8 @@ import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 
-
-const Container = styled.div`
-
-display: flex; 
-justify-content: center;
-align-items: center;
-height; 100vh;
-
-
-`
-
+// styling for the image sprites 
 const AltButton = styled.button`
-
 min-width: 100px;
 padding: 60px 32px;
 border-radius: 4px;
@@ -37,52 +25,90 @@ position: absolute;
   left: 800px;
 `
 
+// displays content 
 function AmericaContent() {
-    const [showModal, setShowModal] = useState(false);
-  const openModal = () =>{
+ /* 
+  use state for the modal to manage the value
+It returns a pair of values: the current state and a function that updates it. 
+  This is why we write const [show, setShow] = useState(false)
+  It is false by default becuase nothing is shown initially   
+  but when it is set to true it will show the modal
+  Look at line 143
+ For more info: https://reactjs.org/docs/hooks-state.html
+*/
+  const [show,setShow] = useState(false);
 
-    setShowModal(prev => !prev)
-
-  }
     return (
+      /*
+      For now this uses the asia container css
+      but will change in the future to have its own
+      */
         <div class = "asia-container">
+             {/* Header for America */}
             <h1> America</h1>
-
+            {/*
+             assigns a class name for the buttons
+            again this uses asia section and will be changed in the future
+            */}
             <div className = "asia-btns">
-               
+               {/* Allows us to go to Austrlia from America
+               Link is a replacement to A tag with React Router
+                */}
                 <Link to='/Australia' className= 'to-region' >   
+                {/* Font awesome icon */}
                 <i class="fas fa-arrow-left"></i>
-
                  </Link>
 
+                {/* Allows us to go to Austrlia from Africa 
+                Link is a replacement to A tag with React Router
+                */}
                  <Link to='/Africa' className= 'to-region'>
+                   {/* Font awesome icon */}
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
            </div>
             {/*  Image for the Africa continent    */}
-            <img id = 'AfricaImg' src = "Images/America.jpg" />
-            <Container>
-
-            <AltButton onClick = {openModal}>  </AltButton>
-            <Modal showModal = {showModal} setShowModal = {setShowModal} /> 
-            </Container>
+            <img id = 'AmericaImg' src = "Images/America.jpg" alt = "The continent of America" />
+         
+              {/*
+             This is to display the red panda you see in Africa
+            The onClick handles the button to update show value
+            to true which will then display the modal
+            */}
+            <AltButton onClick = {() => setShow(true)}>  </AltButton>
+            {/*
+             Uses the modal component we created in the Modal.js file
+            We set the title & text 
+            onClose handles the closing of the modal
+            Whenever it is called the show value will be false and close the modal
+            */}
+            <Modal title = "Second Animal" onClose = {() => setShow(false)} show = {show} >
+             <p>I AM THE SECOND ANIMAL TEXT</p>
+             </Modal>
             
 
         </div>
     )
 }
 
-
+// this returns the methods above & has the animation warpped around it 
+// This is rendered and is how everything in America is displayed
 function America() {
 
     return (
+      /*
+        Wrapped in motion framer animation and uses the
+        fromRightAnimation
+        To see that go to index.js in Animations folder
+      */
         <motion.div
         initial = 'out'
         animate = 'end'
         exit = 'out'
         variants = {fromRightAnimation}
         > 
+        {/* Renders the America content function */}
         <AmericaContent />
         </motion.div>
     );

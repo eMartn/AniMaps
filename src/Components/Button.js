@@ -1,28 +1,15 @@
 import React from 'react';
-import './Button.css';
+// import './Button.css';
 import {Link} from 'react-router-dom';
-import AsiaSection from './AsiaSection';
 import {motion} from 'framer-motion';
 import { flashAnimation,transition } from '../Animations';
 
-// An array of CSS classes 
-// Styling done for buttons depending one is primary & one is outline
-// Will just style depending on the name
-const STYLES = ['btn--primary', 'btn--outline'];
 
-// Will determine the button size depending on class name given 
-const SIZES = ['btn--medium', 'btn--large'];
+// THIS IS NOT BEING USED BUT I WANTED TO KEEP IT JUST INCASE
 
 // Pass in properties, 
-export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
-    // If the component has a button style then it will be the button style that is created for it
-    // If not true then it will set the value to the first style in the styles array const STYLES ( 'btn--primary' line 8 in Button.js)
-const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
-
-// Same logic applies to button size 
-// If no size is defined then it will default to the first value in the array (btn--medium)
-const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
-
+export const Button = ({children}) => {
+    
     return (
         <motion.div
         initial = 'out'
