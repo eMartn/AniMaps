@@ -1,30 +1,59 @@
 import React, {useState} from 'react'
 import '../App.css';
-import './AsiaSection.css';
+import './America.css';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Image from './redPanda.png';
+import Image from '../Sprites/elephantSprite.png';
 import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
+import AniNav from '../Components/AniNav';
 
 // styling for the image sprites 
 const AltButton = styled.button`
-min-width: 100px;
+width: 160px;
+height: 145px;
 padding: 60px 32px;
-border-radius: 4px;
 border: none;
 background: black;
 color: white;
-font-size: 24px;
 cursor: pointer;
 background: url(${Image}) center;
 background-repeat: no-repeat;
 position: absolute;
-  top: 800px;
-  left: 800px;
+display: flex;
+top: 50vh;
+left: 52vw;
+animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
+ // methods for the sprite animation 
+  @keyframes spawn {
+    // Animation for popping up 
+    0% {
+      transform: scale(0); /* scaling to 0 */
+    }
+    50% {
+      transform: scale(1.1); /* increasing the size */
+    }
+  }
+
+  // Animation that makes it possible for image to "shake"
+@keyframes shake{
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 `
 
+// TODO Connect animals via links in modal
 // displays content 
 function AmericaContent() {
  /* 
@@ -45,7 +74,7 @@ It returns a pair of values: the current state and a function that updates it.
       */
         <div class = "asia-container">
              {/* Header for America */}
-            <h1> America</h1>
+            <h1>North America</h1>
             {/*
              assigns a class name for the buttons
             again this uses asia section and will be changed in the future
@@ -69,7 +98,7 @@ It returns a pair of values: the current state and a function that updates it.
 
            </div>
             {/*  Image for the Africa continent    */}
-            <img id = 'AmericaImg' src = "Images/America.jpg" alt = "The continent of America" />
+            <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />
          
               {/*
              This is to display the red panda you see in Africa
@@ -83,8 +112,8 @@ It returns a pair of values: the current state and a function that updates it.
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
             */}
-            <Modal title = "Second Animal" onClose = {() => setShow(false)} show = {show} >
-             <p>I AM THE SECOND ANIMAL TEXT</p>
+            <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
+             <p>I am a panda</p>
              </Modal>
             
 
@@ -108,6 +137,7 @@ function America() {
         exit = 'out'
         variants = {fromRightAnimation}
         > 
+        <AniNav />
         {/* Renders the America content function */}
         <AmericaContent />
         </motion.div>

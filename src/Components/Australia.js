@@ -4,6 +4,7 @@ import './AsiaSection.css';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {fromLeftAnimation} from '../Animations';
+import AniNav from '../Components/AniNav';
 
 function AustraliaContent() {
     return (
@@ -43,7 +44,7 @@ function AustraliaContent() {
 
            </div>
             {/*  Image for the Asia continent */}
-            <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = "The continent of Australia"/>
+            <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = " "/>
             
             
 
@@ -66,6 +67,7 @@ function Australia() {
         exit = 'out'
         variants = {fromLeftAnimation}
         > 
+        <AniNav />
           {/* Renders the Australia content function */}
         <AustraliaContent />
         </motion.div>
