@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import './Australia.js';
 import {motion} from 'framer-motion';
 import {upAnimation} from '../Animations';
+import AniNav from '../Components/AniNav';
 
 function AsiaSection() {
     return (
@@ -19,6 +20,7 @@ function AsiaSection() {
             exit = "out"
             variants = {upAnimation}
        >
+           <AniNav />
            {/* Creates a class for a container for styling in AsiaSection.css */}
         <div class = "asia-container">
             {/* Asia header */}
@@ -43,7 +45,7 @@ function AsiaSection() {
 
            </div>
             {/*  Image for the Asia continent    */}
-            <img id = 'AsiaImg' src = "Images/Asia.png" alt = "The continent of Asia" />
+            <img id = 'AsiaImg' src = "Images/Asia.png" alt = " " />
         </div>
         </motion.div>
     )

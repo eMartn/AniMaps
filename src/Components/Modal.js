@@ -14,7 +14,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 animation-name: zoom;
-animation-duration: 0.6s;
+animation-duration: 0.5s;
 @keyframes zoom {
   from {transform: scale(0.1)} 
   to {transform: scale(1)}
@@ -49,6 +49,7 @@ cursor: pointer;
 position: absolute;
 top: 100px;
 right: 60px;
+color: white;
 `
 
 // exporting this to see the actual modal when called

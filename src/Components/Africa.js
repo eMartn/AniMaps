@@ -3,23 +3,27 @@ import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Image from './tiger.png';
-import Image2 from './redPanda.png';
+import Image from '../Sprites/tigerNew.png';
+import Image2 from '../Sprites/camel.png';
 import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
+import AniNav from '../Components/AniNav';
 
 // styling for the image sprites 
 const AltButton = styled.button`
-width: 230px;
-padding: 90px 32px;
+ width: 140px;
+padding: 80px 12px;
  border: none;
 cursor: pointer;
 background: url(${Image}) center;
 background-repeat: no-repeat;
+display: flex;
 position: absolute;
-  top: 600px;
-  left: 800px;
+  //top: 600px;
+  //left: 1000px;
+  top: 50vh;
+  left: 52vw;
  animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
  // methods for the sprite animation 
   @keyframes spawn {
@@ -50,15 +54,22 @@ position: absolute;
 `
 // Styling for red panda sprite, works the same as one above 
 const RedPanda = styled.button`
-width: 200px;
+
+
+display: flex;
+width: 160px;
+height: 145px;
+
 padding: 90px 32px;
  border: none;
 cursor: pointer;
 background: url(${Image2}) center;
 background-repeat: no-repeat;
 position: absolute;
-  top: 400px;
-  left: 350px;
+  // top: 400px;
+  // left: 650px;
+  top: 30vh;
+  left: 30vw;
  animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
  // methods for the sprite animation 
   @keyframes spawn {
@@ -87,10 +98,55 @@ position: absolute;
 }
 `
 
+const Imaging = styled.div`
+display: flex;
+justify-content: center;
+`
+
+function Fox(){
+
+  const [show,setShow] = useState(false);
+      return (
+     
+      <div>
+      <AltButton onClick = {() => setShow(true)}>  </AltButton>
+                   
+                   <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+                   <p>Sample animal text Sample animal text</p>
+                   </Modal>
+      </div>
+   
+)
+
+}
+
+function TheRedPanda(){
+
+  const [show,setShow] = useState(false);
+      return (
+     
+      <div>
+      <RedPanda onClick = {() => setShow(true) } >  </RedPanda>            
+            {/*
+             Uses the modal component we created in the Modal.js file
+            We set the title & text 
+            onClose handles the closing of the modal
+            Whenever it is called the show value will be false and close the modal
+            */}
+             <Modal title = "Raccoon" onClose = {() => setShow(false)} show = {show} >
+             <p>I AM PANDA ANIMAL</p>
+             </Modal>
+      </div>
+   
+)
+
+}
 
 
 // displays the image content 
-function AfricaContents() {
+//TODO Figure out some conditional rendering so that when we click on redPanda the fox component does not render 
+//TODO https://reactjs.org/docs/conditional-rendering.html
+function AfricaContents(props) {
 
   /* 
   use state for the modal to manage the value
@@ -100,8 +156,16 @@ It returns a pair of values: the current state and a function that updates it.
   but when it is set to true it will show the modal
   Look at line 143
  For more info: https://reactjs.org/docs/hooks-state.html
+
+ https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a
 */
   const [show,setShow] = useState(false);
+
+
+  // if(!setShow){
+  //   return <Fox isShown = {false}/>;
+
+  // }
 
     return (
       /*
@@ -133,23 +197,24 @@ It returns a pair of values: the current state and a function that updates it.
            </div>
 
             {/*  Image for the Africa continent    */}
-            <img id = 'AfricaImg' src = "Images/Africa.jpg" alt = "The continent of Africa" />
-           
+            {/* <Imaging> */}
+            <img id = 'AsiaImg' src = "Images/Africa.jpg" alt = " " />
+            {/* </Imaging> */}
             {/*
              This is to display the red panda you see in Africa
             The onClick handles the button to update show value
             to true which will then display the modal
             */}
-            <RedPanda onClick = {() => setShow(true)}>  </RedPanda>            
+            {/* <RedPanda onClick = {() => setShow(true) } >  </RedPanda>             */}
             {/*
              Uses the modal component we created in the Modal.js file
             We set the title & text 
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
             */}
-             <Modal title = "Second Animal" onClose = {() => setShow(false)} show = {show} >
+             {/* <Modal title = "Second Animal" onClose = {() => setShow(false)} show = {show} >
              <p>I AM THE SECOND ANIMAL TEXT</p>
-             </Modal>
+             </Modal> */}
               
             {/* AKA the FOX animal sprite */}
             {/*
@@ -158,42 +223,40 @@ It returns a pair of values: the current state and a function that updates it.
               Need to fiure out how to get it to show each individual case & not by last one called
 
              */}
-           <AltButton onClick = {() => setShow(true)}>  </AltButton>
+           {/* <AltButton onClick = {() => setShow(true)}>  </AltButton>
                      
            <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>Sample animal text Sample animal text</p>
            </Modal>
-          
+           */}
+
+            <Fox/>
+           <TheRedPanda/>
         </div>
     )
 }
 
-// styling the hides the overflow or the "X-axis" on your browser
-const HideOverFlow = styled.section`
-overflow: hidden;
-`
 // this returns the methods above & has the animation warpped around it 
 // This is rendered and is how everything in Afria is displayed
 function Africa() {
 
     return (
-      // Wrapped in overflow style
-      <HideOverFlow>
-        {/*
-         Wrapped in motion framer animation and uses the
+      /*
+      Wrapped in motion framer animation and uses the
         fromRightAnimation
         To see that go to index.js in Animations folder
-        */}
+      */
         <motion.div
         initial = 'out'
         animate = 'end'
         exit = 'out'
         variants = {fromRightAnimation}
         > 
-        {/* renders the AfricaContents method */}
+        <AniNav />
+       {/* Renders africa contents */}
         <AfricaContents />
         </motion.div>
-        </HideOverFlow>
+      
     );
 }
 
