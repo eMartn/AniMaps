@@ -24,16 +24,33 @@ function AsiaSection() {
            {/* Creates a class for a container for styling in AsiaSection.css */}
         <div class = "asia-container">
             {/* Asia header */}
-            <h1> Asia</h1>
+            
+            <motion.h1 initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}> Asia</motion.h1>
              {/* Creates a class for buttons for styling in AsiaSection.css */}
-            <div className = "asia-btns">      
+            <motion.div className = "asia-btns" initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}>      
             {/* 
             Will take you to the region of Africa 
             Link is a replacement to A tag with React Router
             */}
-                <Link to='/Africa' className= 'to-region' >   
+                <Link to='/Africa' className= 'to-region' >  
+                {/* <div className = "text">hi</div>  */}
                 <i class="fas fa-arrow-left"></i>
+                {/* <span class="tooltiptext">Africa</span> */}
                  </Link>
+                
+            
 
             {/* Will take you to the region of Australia 
             Link is a replacement to A tag with React Router
@@ -43,10 +60,11 @@ function AsiaSection() {
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
-           </div>
+           </motion.div>
             {/*  Image for the Asia continent    */}
             <img id = 'AsiaImg' src = "Images/Asia.png" alt = " " />
         </div>
+
         </motion.div>
     )
 }

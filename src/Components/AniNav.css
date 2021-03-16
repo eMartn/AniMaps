@@ -1,6 +1,8 @@
 
+  
+  
   .navbarClass {
-    background: linear-gradient(90deg, rgb(33, 131, 77) 0%, rgb(17, 131, 93) 100%); 
+    background: linear-gradient(90deg, rgb(33, 126, 75) 0%, rgb(40, 126, 97) 100%); 
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,11 +32,11 @@
     align-items: center;
   }
   
-  .fa-typo3 {
+  /* .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
    
-  }
+  } */
   
   .nav-menu {
     display: grid;
@@ -58,6 +60,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    
   }
   
   .nav-links:hover {
@@ -68,6 +71,11 @@
   .fa-bars {
     color: #fff;
   }
+
+.fa-paw, .fa-seedling{
+  margin-right: 5px;
+}
+  
   
   .nav-links-mobile {
     display: none;

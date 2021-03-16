@@ -44,20 +44,39 @@ margin-right: 200px;
 
 }
 
-.to-region{
-
+.to-region {
     color: #fff;
     display: inline-flexbox;
     align-items: center;
-   
     padding: 0.5rem 1rem;
     height: 100%;
     margin-left: 160px;
     margin-right: 175px;
 }
 
-.to-region:hover {
+.to-region .text{
+
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    visibility: hidden;
+    z-index: 1;
+    }
+   
+
+.to-region:hover text{
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
     color: green;
+    visibility: visible;
+
   }
+
+  
+
+  /* .text:hover {
+    visibility: visible;
+  } */

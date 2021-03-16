@@ -17,6 +17,10 @@ function NavBar() {
     //Reversing the state of useState
     const handleClick = () => setClick(!click);
 
+    // TODO 3/15/21 Added new navigation to map so users can access within maps or charities
+    // I added icons to the navbar items & did some styling for margin purposes 
+
+
     return (
         <>
         <nav className = "navbar">
@@ -39,13 +43,15 @@ function NavBar() {
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/charities' className= 'nav-links'  >
+                <i class="fas fa-seedling"></i>
                 Charities 
                  </Link>
                 </li>
 
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/animal-list' className= 'nav-links'  >
+                <Link to='/animal-list' className= 'nav-links'>
+                <i class="fas fa-paw"></i>
                 Animals 
                  </Link>
                 </li>
