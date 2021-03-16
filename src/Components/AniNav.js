@@ -39,16 +39,27 @@ function NavBarAni() {
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/charities' className= 'nav-links'  >
+                <i class="fas fa-seedling"></i>
                 Charities 
                  </Link>
                 </li>
 
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/animal-list' className= 'nav-links'  >
+                <Link to='/animal-list' className= 'nav-links'>
+                <i class="fas fa-paw"></i>
                 Animals 
                  </Link>
                 </li>
+
+                <li className = 'nav-item'>
+                    {/* Sets the link to learnmore which does not exist currently */}
+                <Link to='/Asia' className= 'nav-links'  >
+                <i class="fas fa-globe-americas"></i>
+                Maps 
+                 </Link>
+                </li>
+
 
              </ul>
             </div>

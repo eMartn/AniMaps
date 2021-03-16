@@ -73,6 +73,13 @@ const WelcomeButton = ({children}) => {
     return (
         // Framer motion wrapper to get animations working 
         <motion.div
+        whileHover={{
+        scale: 1.1,
+        //  transition: {
+        //      yoyo: Infinity
+        //  }   
+    }
+        }
     className="container"
     initial={{ scale: 0 }}
     animate={{ rotate: 0, scale: 1 }}
