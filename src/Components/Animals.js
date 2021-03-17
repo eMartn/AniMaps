@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import './Cards.css';
 import AniNav from '../Components/AniNav';
 import {motion} from 'framer-motion';
- 
+import Modal from './Modal';
+import styled from 'styled-components';
+import Image from '../Sprites/tigerNew.png';
 /**
  * 
  * 3/14/21
@@ -18,6 +20,23 @@ import {motion} from 'framer-motion';
  * 
  */
 
+//  const AltButton = styled.button`
+//  width: 140vw;
+// padding: 80px 12px;
+//  border: none;
+// cursor: pointer;
+// background: url(${Image}) center;
+// background-repeat: no-repeat;
+// display: flex;
+// position: absolute;
+//   //top: 600px;
+//   //left: 1000px;
+//   top: 90vh;
+//   left: 15vw;
+//  z-index: 1px;
+
+// `
+
  //Function that takes in a prop to create cards in animals  
 function Cards(props) {
         // Varibale created to take in images for the cards background 
@@ -25,7 +44,10 @@ function Cards(props) {
         // Varibale created that assigns title & decription as props
         // alternate way of doing -> EX: prop.title or props.description
         // doing it like this makes it easier to manage
-        let {title, description} = props
+        let {title, description,modalInfo,modalTitle} = props
+
+        const [show,setShow] = useState(false);
+
         return (      
           // div created for the card
             <div className = "card">
@@ -41,8 +63,12 @@ function Cards(props) {
                     <h1>{title}</h1>
                    {/* p that uses the assigned description for the card */}
                     <p>{description}</p>
-                    {/* button that will promt the user info about the animal for the card ***NOT DONE** */}
-                    <button className = "buttonCard"> <i class="fas fa-bars"></i> Learn More</button>
+                    {/* button that will promt the user info about the animal for the card ***NOT DONE** */}    
+                     
+                <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
+                <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+                <p>{modalInfo}</p>
+                </Modal>                       
                 </div>
                 </div>
             </div>
@@ -51,6 +77,7 @@ function Cards(props) {
 
 // Function that will return the function we created above 
 function Animals() {
+  
     return (
       // empty fragment
        <>
@@ -58,7 +85,6 @@ function Animals() {
          <AniNav />
           {/* Greeting that greets users when on the animal list page */}
          <div className = "Greeting"><h1>Meet the animals</h1></div>
-
       {/* Uses motion framer to apply the pop animation like the one we used for the button on welcome page */}
         <motion.div className = "CardContainer"        
          initial={{ scale: 0 }}
@@ -80,7 +106,16 @@ function Animals() {
           images = "https://i.natgeofe.com/n/5892ed3f-0b48-4227-9900-a712811a5903/mammals-hero_2x3.jpg?w=600&h=900"
           // sets the description to the animal in the card which is a sample description for now 
           description = "I am a text 1"
+
+          modalTitle = "FIRST"
+
+          modalInfo = "FIRST DEC"
+
           />
+
+{/* <div className = "card1Button"><button onClick = {() => setShow(true)}> Click here </button></div> */}
+
+
            {/* uses the Cards component to create cards for these animals */}
           <Cards 
          // Sets the title to the animal in the card which is a sample animals for now 
@@ -89,7 +124,13 @@ function Animals() {
           images = "https://i.natgeofe.com/n/e1a32724-c999-4152-ad9f-ecdbf7e65399/amphibians-hero_2x3.jpg?w=600&h=900"
         // sets the description to the animal in the card which is a sample description for now 
           description = "Sample text 2"
+
+          modalTitle = "SECOND"
+
+          modalInfo = "SECONDDESRC"
          />
+
+         
          {/* Same as above */}
         <Cards
         title = "sample animal 3"
