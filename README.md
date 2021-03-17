@@ -9,9 +9,8 @@
 1. ## Javascript ##
 2. ## React Js ##
 3. ## HTML/CSS ##
-4. ## Semantic-UI-React ##
-5. ## Firebase ##
-6. ## Jira ##
+4. ## Firebase ##
+5. ## Jira ##
 
 ## Team:
 1. Erick Martinez :coffee: :scroll:
