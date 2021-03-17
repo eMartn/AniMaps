@@ -14,24 +14,39 @@ display: flex;
 align-items: center;
 justify-content: center;
 animation-name: zoom;
+z-index: 1;
+// animation-duration: 0.5s;
+// @keyframes zoom {
+//   from {transform: scale(0.1)} 
+//   to {transform: scale(1)}
+// }
+`
+// This one is resposible for the style of the modal itself 
+// This is where the content will be shown
+const ModalContentStyle = styled.div`
+<<<<<<< HEAD
+width: 85vw;
+height: 85vh;
+margin-top: 5vh;
+=======
+// width: 1390vw;
+width: 97vw;
+//height: 97px; 
+height: 80vh;
+>>>>>>> b8eae5b1ef9df791ced703ecb63118c546bcff9f
+background-color: rgba(104, 151, 158,0.8);
+color: black;
+z-index: 1;
+animation-name: zoom;
 animation-duration: 0.5s;
 @keyframes zoom {
   from {transform: scale(0.1)} 
   to {transform: scale(1)}
 }
 `
-// This one is resposible for the style of the modal itself 
-// This is where the content will be shown
-const ModalContentStyle = styled.div`
-width: 85vw;
-height: 85vh;
-margin-top: 5vh;
-background-color: rgba(104, 151, 158,0.8);
-color: black;
-`
 // This is responsible for the header style
 const ModalHFStyle = styled.div`
-padding: 20px;
+padding: 2vh;
 `
 // This is responsible for the title style
 const ModalTitleStyle = styled.div`
@@ -51,6 +66,12 @@ position: absolute;
 top: 100px;
 right: 60px;
 color: white;
+animation-name: zoom;
+animation-duration: 0.5s;
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
 `
 
 // exporting this to see the actual modal when called

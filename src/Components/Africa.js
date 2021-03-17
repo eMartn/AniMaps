@@ -12,47 +12,47 @@ import AniNav from '../Components/AniNav';
 
 
 // styling for the image sprites 
-const AltButton = styled.button`
- width: 140px;
-padding: 80px 12px;
- border: none;
-cursor: pointer;
-background: url(${Image}) center;
-background-repeat: no-repeat;
-display: flex;
-position: absolute;
-  //top: 600px;
-  //left: 1000px;
-  top: 50vh;
-  left: 52vw;
- animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
- // methods for the sprite animation 
-  @keyframes spawn {
-    // Animation for popping up 
-    0% {
-      transform: scale(0); /* scaling to 0 */
+  const AltButton = styled.button`
+  width: 140px;
+  padding: 80px 12px;
+  border: none;
+  cursor: pointer;
+  background: url(${Image}) center;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+    //top: 600px;
+    //left: 1000px;
+    top: 50vh;
+    left: 52vw;
+  animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
+  // methods for the sprite animation 
+    @keyframes spawn {
+      // Animation for popping up 
+      0% {
+        transform: scale(0); /* scaling to 0 */
+      }
+      50% {
+        transform: scale(1.1); /* increasing the size */
+      }
     }
-    50% {
-      transform: scale(1.1); /* increasing the size */
-    }
-  }
 
-  // Animation that makes it possible for image to "shake"
-@keyframes shake{
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    // Animation that makes it possible for image to "shake"
+  @keyframes shake{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
   }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-`
+  `
 // Styling for red panda sprite, works the same as one above 
 const RedPanda = styled.button`
 
@@ -98,11 +98,6 @@ position: absolute;
   }
 }
 `
-
-// const Imaging = styled.div`
-// display: flex;
-// justify-content: center;
-// `
 
 function Fox(){
 
