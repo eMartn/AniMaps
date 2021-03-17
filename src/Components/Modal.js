@@ -72,12 +72,12 @@ animation-duration: 0.5s;
 // This will show the modal when called and is needed to do so 
 const Modal2 = props =>{
 /*
-This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
-if it is true it will display the modal 
-if it is false it will hide it 
+  This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
+  if it is true it will display the modal 
+  if it is false it will hide it 
 */
   if(!props.show){
-   return null; 
+    return null; 
   }
 
 return(

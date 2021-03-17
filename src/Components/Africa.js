@@ -178,7 +178,7 @@ It returns a pair of values: the current state and a function that updates it.
             */}
             <div className = "asia-btns">
               {/* <h2>North America</h2> */}
-                <Link to='/America' className= 'to-region' >                  
+                <Link to='/SouthAmerica' className= 'to-region' >                  
                 {/* Font awesome icon */}
                 <i class="fas fa-arrow-left"></i>
                  </Link>
