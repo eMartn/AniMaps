@@ -8,8 +8,6 @@ import {transition } from '../Animations';
 import {Link} from 'react-router-dom';
 import NavBar from '../Components/NavBar';
 
-
-
 // CSS for GIF
 // creates a const for section which is used below
 const Section = styled.section`
@@ -57,8 +55,6 @@ button {
     
 }
 
-
-
 // CSS for paragraph
 p{
 font-size: clamp(1rem, 6vw, 1.2rem);
@@ -68,7 +64,7 @@ width: 750px;
 }
 `;
 
-// const that hlod the DISCOVER BUTTON 
+// const that holds the DISCOVER BUTTON 
 const WelcomeButton = ({children}) => {
     return (
         // Framer motion wrapper to get animations working 
@@ -105,7 +101,6 @@ const WelcomeButton = ({children}) => {
         // Motion uses motion farmer which allows for cool animations
         // needs to be wrapped in this in order for animation to work
         // Animation can be found in animations file
-        
         <motion.div
         // defines animations
             initial = "out"
@@ -121,7 +116,7 @@ const WelcomeButton = ({children}) => {
             {/* <Button> DISCOVER MORE</Button> */}
             <WelcomeButton>DISCOVER MORE</WelcomeButton>
 
-            {/* Fact that id displayed for now */}
+            {/* Fact that it displays for now */}
             <p>Cows poo up to 15 times a day, which can be as much as 115 pounds of manure per day, or approximately 21 tons per year.</p>
             </Container>
         </Section>

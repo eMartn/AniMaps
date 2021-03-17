@@ -10,6 +10,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 
+
 // styling for the image sprites 
 const AltButton = styled.button`
  width: 140px;
@@ -98,10 +99,10 @@ position: absolute;
 }
 `
 
-const Imaging = styled.div`
-display: flex;
-justify-content: center;
-`
+// const Imaging = styled.div`
+// display: flex;
+// justify-content: center;
+// `
 
 function Fox(){
 
@@ -146,7 +147,7 @@ function TheRedPanda(){
 // displays the image content 
 //TODO Figure out some conditional rendering so that when we click on redPanda the fox component does not render 
 //TODO https://reactjs.org/docs/conditional-rendering.html
-function AfricaContents(props) {
+function AfricaContents() {
 
   /* 
   use state for the modal to manage the value
@@ -237,7 +238,7 @@ It returns a pair of values: the current state and a function that updates it.
 }
 
 // this returns the methods above & has the animation warpped around it 
-// This is rendered and is how everything in Afria is displayed
+// This is rendered and is how everything in Africa is displayed
 function Africa() {
 
     return (
