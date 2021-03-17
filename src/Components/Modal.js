@@ -24,16 +24,10 @@ z-index: 1;
 // This one is resposible for the style of the modal itself 
 // This is where the content will be shown
 const ModalContentStyle = styled.div`
-<<<<<<< HEAD
-width: 85vw;
-height: 85vh;
-margin-top: 5vh;
-=======
 // width: 1390vw;
 width: 97vw;
 //height: 97px; 
 height: 80vh;
->>>>>>> b8eae5b1ef9df791ced703ecb63118c546bcff9f
 background-color: rgba(104, 151, 158,0.8);
 color: black;
 z-index: 1;
@@ -78,12 +72,12 @@ animation-duration: 0.5s;
 // This will show the modal when called and is needed to do so 
 const Modal2 = props =>{
 /*
-This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
-if it is true it will display the modal 
-if it is false it will hide it 
+  This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
+  if it is true it will display the modal 
+  if it is false it will hide it 
 */
   if(!props.show){
-   return null; 
+    return null; 
   }
 
 return(

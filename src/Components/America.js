@@ -91,13 +91,13 @@ It returns a pair of values: the current state and a function that updates it.
                 {/* Allows us to go to Austrlia from Africa 
                 Link is a replacement to A tag with React Router
                 */}
-                 <Link to='/Africa' className= 'to-region'>
+                 <Link to='/SouthAmerica' className= 'to-region'>
                    {/* Font awesome icon */}
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
            </div>
-            {/*  Image for the Africa continent    */}
+            {/*  Image for the North America continent    */}
             <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />
          
               {/*
