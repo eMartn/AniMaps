@@ -72,7 +72,7 @@ function Animals() {
         
          {/* creates a div for a row  */}
           <div className = "row ">
-            {/* uses the Cards function to create cards for these animals */}
+            {/* uses the Cards component to create cards for these animals */}
           <Cards 
           // Sets the title to the animal in the card which is a sample animals for now 
           title = "Sample Animal 1"
@@ -81,7 +81,7 @@ function Animals() {
           // sets the description to the animal in the card which is a sample description for now 
           description = "I am a text 1"
           />
-           {/* uses the Cards function to create cards for these animals */}
+           {/* uses the Cards component to create cards for these animals */}
           <Cards 
          // Sets the title to the animal in the card which is a sample animals for now 
           title = "sample Animal 2"
@@ -121,7 +121,7 @@ function Animals() {
            damping: 20
          }}
         >
-          <div className = "row ">
+          <div className = "row">
           <Cards 
           title = "Animal Text"
           images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
