@@ -21,8 +21,6 @@ function App() {
     
     <Switch>
       <Route path= '/' exact component = {Welcome}/>
-
-      
       <Route path= '/Australia' exact component = {Australia}/>
       <Route path= '/Asia' exact component = {AsiaSection}/>
       <Route path= '/Africa' exact component = {Africa}/>
@@ -32,9 +30,7 @@ function App() {
       </Switch>
       {/* Footer will go here */}
       </AnimatePresence>
-    </Router>
-    
-     
+    </Router>    
     </>
   );
 }
