@@ -57,9 +57,10 @@ border-bottom: 1px solid #eee;
 const ModalCloserStyle = styled.div`
 cursor: pointer;
 position: absolute;
-top: 100px;
-right: 60px;
+top: 12vh;
+right: 3vw;
 color: white;
+z-index: 1;
 animation-name: zoom;
 animation-duration: 0.5s;
 @keyframes zoom {

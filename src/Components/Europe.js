@@ -95,7 +95,7 @@ function EuropeContent() {
 
            </div>
             {/*  Image for the South America continent    */}
-            <img id = 'EuropeImg' src = "Images/Europe.jpg" alt = " " />
+            <img id = 'AsiaImg' src = "Images/Europe.jpg" alt = " " />
          
               {/*
              This is to display the red panda you see in Africa
