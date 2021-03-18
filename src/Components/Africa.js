@@ -178,16 +178,16 @@ It returns a pair of values: the current state and a function that updates it.
             */}
             <div className = "asia-btns">
               {/* <h2>North America</h2> */}
-                <Link to='/America' className= 'to-region' >                  
+                <Link to='/SouthAmerica' className= 'to-region' >                  
                 {/* Font awesome icon */}
                 <i class="fas fa-arrow-left"></i>
                  </Link>
 
                   {/*
-                   This allows us to go to the asia section from Africa
+                   This allows us to go to Europe from Africa
                   It uses a icon below from font awesome to display the arrow you see
                   */}
-                 <Link to='/Asia' className= 'to-region'>
+                 <Link to='/Europe' className= 'to-region'>
                 <i class="fas fa-arrow-right"></i>
                  </Link>
            </div>

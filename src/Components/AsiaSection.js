@@ -115,10 +115,10 @@ function AsiaSection() {
             damping: 20
             }}>      
             {/* 
-            Will take you to the region of Africa 
+            Will take you to Europe from Asia
             Link is a replacement to A tag with React Router
             */}
-                <Link to='/Africa' className= 'to-region' >  
+                <Link to='/Europe' className= 'to-region' >  
                 {/* <div className = "text">hi</div>  */}
                 <i class="fas fa-arrow-left"></i>
                 {/* <span class="tooltiptext">Africa</span> */}

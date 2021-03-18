@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-// This uses styled componets to style our components below
+// This uses styled components to style our components below
 //This one is resposible for the outer modal
 const ModalStyle = styled.div`
 position: fixed;
@@ -73,49 +73,49 @@ animation-duration: 0.5s;
 // This will show the modal when called and is needed to do so 
 const Modal2 = props =>{
 /*
-This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
-if it is true it will display the modal 
-if it is false it will hide it 
+  This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
+  if it is true it will display the modal 
+  if it is false it will hide it 
 */
   if(!props.show){
-   return null; 
+    return null; 
   }
 
 return(
 
-<ModalStyle>
-<div className = "modal2">
-  <ModalContentStyle>
-<div className = "modal-content">
-<ModalHFStyle>
-<div className = "modal-header">
+    <ModalStyle>
+    <div className = "modal2">
+      <ModalContentStyle>
+    <div className = "modal-content">
+    <ModalHFStyle>
+    <div className = "modal-header">
 
-<ModalTitleStyle>
-<h3 className = "modal-title"> {props.title}</h3>
-</ModalTitleStyle>
-</div>
-</ModalHFStyle>
-<ModalBodyStyle>
-<div className = "modal-body">
-{props.children}
-</div>
-</ModalBodyStyle>
+    <ModalTitleStyle>
+    <h3 className = "modal-title"> {props.title}</h3>
+    </ModalTitleStyle>
+    </div>
+    </ModalHFStyle>
+    <ModalBodyStyle>
+    <div className = "modal-body">
+    {props.children}
+    </div>
+    </ModalBodyStyle>
 
-<div className = "modal-closer">
-{/* className = "button" */}
-{/* 
-This manages onClose which will help close the modal
-I wrapped it in ModalCloserStyle for the styling 
-I also used a "X" icon from font awesome 
-*/}
-<ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle>
-</div>
+    <div className = "modal-closer">
+    {/* className = "button" */}
+    {/* 
+    This manages onClose which will help close the modal
+    I wrapped it in ModalCloserStyle for the styling 
+    I also used a "X" icon from font awesome 
+    */}
+    <ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle>
+    </div>
 
-</div>
-</ModalContentStyle>
-</div>
+    </div>
+    </ModalContentStyle>
+    </div>
 
-</ModalStyle>
+    </ModalStyle>
 )
 
 
