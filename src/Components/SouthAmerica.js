@@ -95,7 +95,7 @@ It returns a pair of values: the current state and a function that updates it.
 
            </div>
             {/*  Image for the South America continent    */}
-            <img id = 'SouthAmericaImg' src = "Images/SouthAmerica.png" alt = " " />
+            <img id = 'AsiaImg' src = "Images/SouthAmerica.png" alt = " " />
          
               {/*
              This is to display the red panda you see in Africa
