@@ -8,7 +8,7 @@ import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
-
+import LeftModal from './LeftModal';
 // styling for the image sprites 
 const AltButton = styled.button`
 width: 160px;
@@ -109,6 +109,9 @@ It returns a pair of values: the current state and a function that updates it.
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
             */}
+             <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a Panda</p>
+          </LeftModal> 
             <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
              <p>I am a panda</p>
              </Modal>
