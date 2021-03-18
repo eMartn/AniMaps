@@ -12,30 +12,19 @@ import Image from '../Sprites/tigerNew.png';
  * Added a button that will prompt information to the user about chosen animal
  * Got images from national geo website
  * Still need to make it responsive for different monitors 
+ * - Joshua Grimaldo
  * 
  *  3/15/21
  //TODO Added icon to the learn more button & messed witrh the spacing of the cards
  * Created a Meet our animals greeting in animals cards 
  Still need to make it responsive for different monitors 
- * 
+ * - Joshua Grimaldo
+ *
+ * 3/17/21
+ //TODO Implemented the modal into the animal cards so now a modal should show up
+ when clicking the learn more button. This will display info to the user 
+ - Joshua Grimaldo
  */
-
-//  const AltButton = styled.button`
-//  width: 140vw;
-// padding: 80px 12px;
-//  border: none;
-// cursor: pointer;
-// background: url(${Image}) center;
-// background-repeat: no-repeat;
-// display: flex;
-// position: absolute;
-//   //top: 600px;
-//   //left: 1000px;
-//   top: 90vh;
-//   left: 15vw;
-//  z-index: 1px;
-
-// `
 
  //Function that takes in a prop to create cards in animals  
 function Cards(props) {
