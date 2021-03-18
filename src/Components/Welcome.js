@@ -58,7 +58,9 @@ button {
 // CSS for paragraph
 p{
 font-size: clamp(1rem, 6vw, 1.2rem);
-color: black;
+color: whitesmoke;
+-webkit-text-stroke-width: 0.6px;
+-webkit-text-stroke-color: black;
 margin-top: 2vh;
 width: 750px;
 }
