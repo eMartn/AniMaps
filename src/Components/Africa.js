@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import Image from '../Sprites/tigerNew.png';
 import Image2 from '../Sprites/camel.png';
 import Modal from './Modal';
+import LeftModal from './LeftModal';
+
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
@@ -107,9 +109,14 @@ function Fox(){
       <div>
       <AltButton onClick = {() => setShow(true)}>  </AltButton>
                    
-                   <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-                   <p>Sample animal text Sample animal text</p>
-                   </Modal>
+        <LeftModal title = "Left modal" onClose = {() => setShow(false)} show = {show} >
+          <p>Left modal Left modal Left modal Left modal Left modal Left modal</p>
+         </LeftModal>
+
+        <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+          <p>Sample animal text Sample animal text</p>
+           </Modal>
+
       </div>
    
 )
@@ -129,8 +136,12 @@ function TheRedPanda(){
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
             */}
+            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
              <Modal title = "Raccoon" onClose = {() => setShow(false)} show = {show} >
-             <p>I AM PANDA ANIMAL</p>
+             <p>Sample animal text Sample animal text</p>
+
              </Modal>
       </div>
    
