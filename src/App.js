@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import AniNav from './Components/AniNav';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -12,8 +12,16 @@ import Europe from './Components/Europe';
 import Welcome from './Components/Welcome';
 import {AnimatePresence} from 'framer-motion';
 import Animals from './Components/Animals.js';
+import doesNotExist from './Components/Pages/404';
 
 function App() {
+  const [animals, setAnimals] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  if (loading)
+      {
+        return <h1>Loading...</h1>;
+      }
   
   return (
     <>
@@ -30,6 +38,7 @@ function App() {
         <Route path= '/SouthAmerica' exact component = {SouthAmerica}/>
         <Route path= '/Europe' exact component = {Europe}/>
         <Route path= '/Animal-list' exact component = {Animals}/>
+        <Route path= '*' exact component = {doesNotExist}/>
       </Switch>
       {/* Footer will go here */}
       </AnimatePresence>
