@@ -51,7 +51,7 @@ margin: 0;
 const ModalBodyStyle = styled.div`
 padding: 10px;
 border-top: 1px solid #eee;
-border-bottom: 1px solid #eee;
+// border-bottom: 1px solid #eee;
 `
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
