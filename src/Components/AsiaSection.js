@@ -1,4 +1,4 @@
-import React, {useState}  from 'react'
+import React, {useEffect, useState}  from 'react'
 import '../App.css';
 import './AsiaSection.css';
 import {Link} from 'react-router-dom';
@@ -9,10 +9,12 @@ import {upAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
+import AnimalProfileDeets from './../Dbtestpage.js';
 import LeftModal from './LeftModal';
 
 function Panda(){
-
+     
+    let animalRequest = "Panda";
     const [show,setShow] = useState(false);
         return (
         <div>
@@ -25,7 +27,7 @@ function Panda(){
            <p>I am a Panda</p>
           </Modal>     
         </div>
-  )
+        )
   }
 
   function Rhino(){
