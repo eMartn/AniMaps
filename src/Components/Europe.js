@@ -9,6 +9,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
+import AnimalProfileDeets from '../Dbtestpage';
 // styling for the image sprites 
 
 /*
@@ -22,13 +23,13 @@ function Animal(props){
         // Varibale created that assigns title & decription as props
         // alternate way of doing -> EX: prop.title or props.description
         // doing it like this makes it easier to manage
-        let {className, modalInfo,modalTitle,weight} = props
+        let {className, modalInfo, modalTitle, weight} = props
         const [show,setShow] = useState(false);
       return (
       <div>
          <div className = {className} onClick = {() => setShow(true)}  ></div>
          <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-         <p>{weight}</p>
+         <p>{AnimalProfileDeets(className)}</p>
         </LeftModal>   
 
         <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >

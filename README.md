@@ -1,4 +1,4 @@
-# AniMaps - a user-friendly animal wikipedia.
+# AniMaps - a user-friendly animal learning app.
 
 ### [Project Repo](https://github.com/eMartn/AniMaps)
 

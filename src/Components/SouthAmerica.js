@@ -58,7 +58,7 @@ animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
 function SouthAmericaContent() {
  /* 
   use state for the modal to manage the value
-It returns a pair of values: the current state and a function that updates it. 
+  It returns a pair of values: the current state and a function that updates it. 
   This is why we write const [show, setShow] = useState(false)
   It is false by default becuase nothing is shown initially   
   but when it is set to true it will show the modal
@@ -105,11 +105,11 @@ It returns a pair of values: the current state and a function that updates it.
             <AltButton onClick = {() => setShow(true)}>  </AltButton>
             {/*
              Uses the modal component we created in the Modal.js file
-            We set the title & text 
-            onClose handles the closing of the modal
-            Whenever it is called the show value will be false and close the modal
+             We set the title & text 
+             onClose handles the closing of the modal
+             Whenever it is called the show value will be false and close the modal
             */}
-             <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>I am a Panda</p>
           </LeftModal> 
             <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >

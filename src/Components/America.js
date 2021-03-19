@@ -54,27 +54,28 @@ function AmericaContent() {
              {/* Header for America */}
             <h1>North America</h1>
             {/*
-             assigns a class name for the buttons
-            again this uses asia section and will be changed in the future
+             Assigns a class name for the buttons
+             again, this uses asia section and will be changed in the future
             */}
             <div className = "america-btns">
                {/* Allows us to go to Austrlia from America
                Link is a replacement to A tag with React Router
                 */}
                 <Link to='/Australia' className= 'to-region' >   
-                {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
-                 </Link>
+                  {/* Font awesome icon */}
+                  <i class="fas fa-arrow-left"></i>
+                </Link>
 
-                {/* Allows us to go to Austrlia from Africa 
+                {/* Allows us to go to South America from North America
                 Link is a replacement to A tag with React Router
                 */}
-                 <Link to='/SouthAmerica' className= 'to-region'>
-                   {/* Font awesome icon */}
-                <i class="fas fa-arrow-right"></i>
-                 </Link>
+                <Link to='/SouthAmerica' className= 'to-region'>
+                  {/* Font awesome icon */}
+                  <i class="fas fa-arrow-right"></i>
+                </Link>
 
-           </div>
+            </div>
+
             {/*  Image for the North America continent    */}
             <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />
          
@@ -126,6 +127,12 @@ function AmericaContent() {
              weight = "130lbs-180lbs"
              className = "AltBear"
             />
+            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a Panda</p>
+          </LeftModal>  
+            <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
+             <p>I am a panda</p>
+             </Modal>
             
 
         </div>
