@@ -57,6 +57,7 @@ function AmericaContent() {
              Assigns a class name for the buttons
              again, this uses asia section and will be changed in the future
             */}
+
             <div className = "america-btns">
                {/* Allows us to go to Austrlia from America
                Link is a replacement to A tag with React Router
@@ -91,6 +92,7 @@ function AmericaContent() {
             Whenever it is called the show value will be false and close the modal
             */}
            
+                      
            
 
            <Animal 
@@ -128,6 +130,7 @@ function AmericaContent() {
              className = "AltBear"
             />
             
+
             
 
         </div>
