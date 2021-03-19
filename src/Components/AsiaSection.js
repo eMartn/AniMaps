@@ -17,13 +17,13 @@ function Animal(props){
   // Varibale created that assigns title & decription as props
   // alternate way of doing -> EX: prop.title or props.description
   // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight} = props
+  let {className, modalInfo,modalTitle,weight, id, images} = props
   const [show,setShow] = useState(false);
 return (
 <div>
    <div className = {className} onClick = {() => setShow(true)}  ></div>
    <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{weight}</p>
+   <img id = {id} src = {images} />
   </LeftModal>   
 
   <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
@@ -93,6 +93,8 @@ function AsiaSection() {
              modalInfo = "I am a panda"
              weight = "130lbs-180lbs"
              className = "Panda2"
+             id = "PandaImg"
+             images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
             />
 
             <Animal 
@@ -100,6 +102,8 @@ function AsiaSection() {
              modalInfo = "I am a monkey"
              weight = "130lbs-180lbs"
              className = "Monkey"
+             id = "MonkeyImg"
+             images = "https://i.natgeofe.com/n/5892ed3f-0b48-4227-9900-a712811a5903/mammals-hero_2x3.jpg?w=600&h=900"
             />
 
             <Animal 
@@ -107,6 +111,8 @@ function AsiaSection() {
              modalInfo = "I am a tiger"
              weight = "130lbs-180lbs"
              className = "Tiger"
+             id = "TigerImg"
+             images = "https://i.natgeofe.com/n/3659f71f-0f58-4295-954f-b0599c8a34b2/bengal-tiger_thumb_3x4.JPG?w=600&h=799.5"
             />    
 
             <Animal 
@@ -114,6 +120,8 @@ function AsiaSection() {
              modalInfo = "I am a goat"
              weight = "130lbs-180lbs"
              className = "Goat"
+             id = "GoatImg"
+             images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.d_l7H685x1G7v2zeByuYmAHaHa%26pid%3DApi&f=1"
             />    
 
             <Animal 
@@ -121,6 +129,8 @@ function AsiaSection() {
              modalInfo = "I am a elephant"
              weight = "130lbs-180lbs"
              className = "Elephant"
+             id = "Indian-Elephant"
+             images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xEEGNVoxNS9-5t6hVUsWbAHaLH%26pid%3DApi&f=1"
             />    
 
 

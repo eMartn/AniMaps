@@ -140,7 +140,7 @@ function EuropeContent() {
              weight = "130lbs-180lbs"
              className = "Bear"
              id = "BearImg"
-             Images = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.nationalgeographic.org%2Fwp-content%2Fuploads%2F2013%2F07%2F54A2007.jpg&f=1&nofb=1"
+             Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ENR3m2QMfCUyhHc-C62GugHaHa%26pid%3DApi&f=1"
             />
         
 
