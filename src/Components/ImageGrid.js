@@ -8,7 +8,13 @@ const ImageGrid = () => {
 
     return (
         <div className="img-grid">
-            images
+            {/* make sure docs exist, cycle through and out template for each doc */}
+            { docs && docs.map(doc => (
+                <div className="img-wrap" key={doc.id}>
+                    <img src={doc.url} alt="animal" />
+                </div>
+                
+            ))}
         </div>
     )
 }
