@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import '../App.css';
-import './America.css';
+import './SouthAmerica.css';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import Image from '../Sprites/elephantSprite.png';
@@ -53,6 +53,26 @@ animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
 }
 `
 
+function Animal(props){
+
+  // Varibale created that assigns title & decription as props
+  // alternate way of doing -> EX: prop.title or props.description
+  // doing it like this makes it easier to manage
+  let {className, modalInfo,modalTitle,weight} = props
+  const [show,setShow] = useState(false);
+return (
+<div>
+   <div className = {className} onClick = {() => setShow(true)}  ></div>
+   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{weight}</p>
+  </LeftModal>   
+
+  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{modalInfo}</p>
+  </Modal>     
+</div>
+)}
+
 // TODO Connect animals via links in modal
 // displays content 
 function SouthAmericaContent() {
@@ -102,21 +122,35 @@ function SouthAmericaContent() {
             The onClick handles the button to update show value
             to true which will then display the modal
             */}
-            <AltButton onClick = {() => setShow(true)}>  </AltButton>
-            {/*
-             Uses the modal component we created in the Modal.js file
-             We set the title & text 
-             onClose handles the closing of the modal
-             Whenever it is called the show value will be false and close the modal
-            */}
-            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Panda</p>
-          </LeftModal> 
-            <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
-             <p>I am a panda</p>
-             </Modal>
             
+            
+             <Animal 
+             modalTitle = "Toucan"
+             modalInfo = "I am a toucan"
+             weight = "130lbs-180lbs"
+             className = "Toucan"
+            />
 
+            <Animal 
+             modalTitle = "Southern Three-Banded Armadillo"
+             modalInfo = "I am an armadillo"
+             weight = "130lbs-180lbs"
+             className = "Southern-three-banded-armadillo"
+            />
+
+            <Animal 
+             modalTitle = "Andean Flamingo"
+             modalInfo = "I am a flamingo"
+             weight = "130lbs-180lbs"
+             className = "Andean-flamingo"
+            />
+
+            <Animal 
+             modalTitle = "Red-Eyed Tree Frog"
+             modalInfo = "I am a tree frog"
+             weight = "130lbs-180lbs"
+             className = "Red-eyed-tree-frog"
+            />
         </div>
     )
 }
