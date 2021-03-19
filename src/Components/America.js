@@ -127,12 +127,7 @@ function AmericaContent() {
              weight = "130lbs-180lbs"
              className = "AltBear"
             />
-            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Panda</p>
-          </LeftModal>  
-            <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
-             <p>I am a panda</p>
-             </Modal>
+            
             
 
         </div>
