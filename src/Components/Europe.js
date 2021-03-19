@@ -11,6 +11,12 @@ import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 // styling for the image sprites 
 
+/*
+3/18/21
+//TODO Created animals in Europe & gave it its own CSS 
+-Joshua Grimaldo
+*/
+
 function Animal(props){
 
         // Varibale created that assigns title & decription as props
