@@ -1,10 +1,33 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import '../App.css';
-import './AsiaSection.css';
+import './Australia.css';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {fromLeftAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
+import Modal from './Modal';
+import LeftModal from './LeftModal';
+
+function Animal(props){
+
+  // Varibale created that assigns title & decription as props
+  // alternate way of doing -> EX: prop.title or props.description
+  // doing it like this makes it easier to manage
+  let {className, modalInfo,modalTitle,weight} = props
+  const [show,setShow] = useState(false);
+return (
+<div>
+   <div className = {className} onClick = {() => setShow(true)}  ></div>
+   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{weight}</p>
+  </LeftModal>   
+
+  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{modalInfo}</p>
+  </Modal>     
+</div>
+)
+}
 
 function AustraliaContent() {
     return (
@@ -12,7 +35,7 @@ function AustraliaContent() {
       For now this uses the asia container css
       but will change in the future to have its own
       */
-        <div class = "asia-container">
+        <div class = "AU-container">
             {/* Australia header */}
             <h1> Australia</h1>
 
@@ -20,7 +43,7 @@ function AustraliaContent() {
              assigns a class name for the buttons
             again this uses asia section and will be changed in the future
             */}
-            <div className = "asia-btns">
+            <div className = "AU-btns">
                {/* Experimenting; Pls ignore this */}
                  {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
                  <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
@@ -46,7 +69,42 @@ function AustraliaContent() {
             {/*  Image for the Asia continent */}
             <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = " "/>
             
-            
+            <Animal 
+             modalTitle = "Crocodile"
+             modalInfo = "I am a Crocodile"
+             weight = "130lbs-180lbs"
+             className = "Crocodile"
+            />
+
+            <Animal 
+             modalTitle = "Kangaroo"
+             modalInfo = "I am a Kangaroo"
+             weight = "130lbs-180lbs"
+             className = "Kangaroo"
+            />
+
+            <Animal 
+             modalTitle = "Koala"
+             modalInfo = "I am a Koala"
+             weight = "130lbs-180lbs"
+             className = "Koala"
+            />
+
+            <Animal 
+             modalTitle = "Spider"
+             modalInfo = "I am a Spider"
+             weight = "130lbs-180lbs"
+             className = "Spider"
+            />
+
+            <Animal 
+             modalTitle = "Rabbit"
+             modalInfo = "I am a Rabbit"
+             weight = "130lbs-180lbs"
+             className = "Butterfly"
+            />
+
+
 
         </div>
     )
