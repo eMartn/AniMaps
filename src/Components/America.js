@@ -52,13 +52,29 @@ function AmericaContent() {
       */
         <div class = "america-container">
              {/* Header for America */}
-            <h1>North America</h1>
+            <motion.h1
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            >North America</motion.h1>
             {/*
              Assigns a class name for the buttons
              again, this uses asia section and will be changed in the future
             */}
 
-            <div className = "america-btns">
+            <motion.div className = "america-btns"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            >
                {/* Allows us to go to Austrlia from America
                Link is a replacement to A tag with React Router
                 */}
@@ -75,7 +91,7 @@ function AmericaContent() {
                   <i class="fas fa-arrow-right"></i>
                 </Link>
 
-            </div>
+            </motion.div>
 
             {/*  Image for the North America continent    */}
             <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />

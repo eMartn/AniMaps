@@ -1,4 +1,4 @@
-.america-container {
+.SA-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,16 +14,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   object-fit: contain;
 }
 
-.america-btns .btn {
+.SA-btns .btn {
   margin-left: 200px;
   margin-right: 200px;
 }
 
-.america-btns .btns {
+.SA-btns .btns {
   color: #fff;
   display: flex;
   align-items: center;

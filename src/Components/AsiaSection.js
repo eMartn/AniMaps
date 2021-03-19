@@ -12,96 +12,25 @@ import Modal from './Modal';
 import AnimalProfileDeets from './../Dbtestpage.js';
 import LeftModal from './LeftModal';
 
-function Panda(){
-     
-    let animalRequest = "Panda";
-    const [show,setShow] = useState(false);
-        return (
-        <div>
-           <div className = "Panda2" onClick = {() => setShow(true)}></div>
-           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </LeftModal>   
+function Animal(props){
 
-          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Panda</p>
-          </Modal>     
-        </div>
-        )
-  }
+  // Varibale created that assigns title & decription as props
+  // alternate way of doing -> EX: prop.title or props.description
+  // doing it like this makes it easier to manage
+  let {className, modalInfo,modalTitle,weight} = props
+  const [show,setShow] = useState(false);
+return (
+<div>
+   <div className = {className} onClick = {() => setShow(true)}  ></div>
+   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{weight}</p>
+  </LeftModal>   
 
-  function Rhino(){
-
-    const [show,setShow] = useState(false);
-        return (
-        <div>
-           <div className = "Monkey" onClick = {() => setShow(true)}></div>
-          
-           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </LeftModal>   
-
-          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </Modal>     
-        </div>
-  )
-  }
-
-  function Tiger(){
-
-    const [show,setShow] = useState(false);
-        return (
-        <div>
-           <div className = "Tiger" onClick = {() => setShow(true)}></div>
-          
-           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </LeftModal>   
-
-          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a tiger</p>
-          </Modal>     
-        </div>
-  )
-  }
-
-  function Goat(){
-
-    const [show,setShow] = useState(false);
-        return (
-        <div>
-           <div className = "Goat" onClick = {() => setShow(true)}></div>
-          
-           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </LeftModal>   
-
-          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Goat</p>
-          </Modal>     
-        </div>
-  )
-  }
-
-  function Elephant(){
-
-    const [show,setShow] = useState(false);
-        return (
-        <div>
-           <div className = "Elephant" onClick = {() => setShow(true)}></div>
-          
-           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a monkey</p>
-          </LeftModal>   
-
-          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Elephant</p>
-          </Modal>     
-        </div>
-  )
-  }
-
+  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{modalInfo}</p>
+  </Modal>     
+</div>
+)}
 
 function AsiaSection() {
     return (
@@ -146,8 +75,6 @@ function AsiaSection() {
                 {/* <span class="tooltiptext">Africa</span> */}
                  </Link>
                 
-            
-
             {/* Will take you to the region of Australia 
             Link is a replacement to A tag with React Router
             */}
@@ -160,11 +87,43 @@ function AsiaSection() {
             {/*  Image for the Asia continent    */}
             <img id = 'AsiaImg' src = "Images/Asia.png" alt = " " />
 
-            <Panda />
-            <Rhino />
-            <Tiger />
-            <Goat />
-            <Elephant/>
+            
+            <Animal 
+             modalTitle = "Panda"
+             modalInfo = "I am a panda"
+             weight = "130lbs-180lbs"
+             className = "Panda2"
+            />
+
+            <Animal 
+             modalTitle = "Monkey"
+             modalInfo = "I am a monkey"
+             weight = "130lbs-180lbs"
+             className = "Monkey"
+            />
+
+            <Animal 
+             modalTitle = "Tiger"
+             modalInfo = "I am a tiger"
+             weight = "130lbs-180lbs"
+             className = "Tiger"
+            />    
+
+            <Animal 
+             modalTitle = "Goat"
+             modalInfo = "I am a goat"
+             weight = "130lbs-180lbs"
+             className = "Goat"
+            />    
+
+            <Animal 
+             modalTitle = "Elephant"
+             modalInfo = "I am a elephant"
+             weight = "130lbs-180lbs"
+             className = "Elephant"
+            />    
+
+
             
         </div>
 
