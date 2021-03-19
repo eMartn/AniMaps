@@ -4,6 +4,7 @@ import AniNav from '../Components/AniNav';
 import {motion} from 'framer-motion';
 import Modal from './Modal';
 import LeftModal from './LeftModal';
+import ImageGrid from './ImageGrid';
 
 /**
  * 
@@ -187,9 +188,22 @@ function Animals() {
         images = "https://i.natgeofe.com/n/9b97e60e-e8db-4961-853b-d68ba28d7629/red-fox_thumb_3x4.JPG?w=600&h=799.5"
         description = "I am a text 4"
         />
+
+        
+
+
           </div>  
+          
+          
         </motion.div>
+
+        
+        <div className = "row">
+          <ImageGrid />
+          </div>
         </>
+
+        
     )
 }
 
