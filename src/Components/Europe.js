@@ -81,7 +81,7 @@ function EuropeContent() {
 
            </div>
             {/*  Image for the South America continent    */}
-            <img id = 'europeImg' src = "Images/Europe.jpg" alt = " " />
+            <img id = 'AsiaImg' src = "Images/Europe.jpg" alt = " " />
          
                  
             <Animal 

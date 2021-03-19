@@ -9,17 +9,18 @@
         
     }
     
-    #europeImg{
-        height: 80vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        object-fit: contain;
-        margin-bottom: 5px;
-        margin-top: 10px;
+    #EuropeImg{
 
-    }
+
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      object-fit: contain;
+  }
+
+    
     
     
     .europe-btns .btn {
@@ -104,8 +105,8 @@
         background: url('../Sprites/crow.svg') center;
         background-repeat: no-repeat;
         position: absolute;
-          top: 52vh;
-          left: 31vw;
+          top: 56vh;
+          left: 28vw;
          animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
       }
     

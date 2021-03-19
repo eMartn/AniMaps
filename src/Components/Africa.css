@@ -85,7 +85,7 @@
     background: url('../Sprites/elephant.svg') center;
     background-repeat: no-repeat;
     position: absolute;
-      top: 65vh;
+      top: 70vh;
       left: 50vw;
      animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
     
@@ -104,7 +104,7 @@
         background-repeat: no-repeat;
         position: absolute;
           top: 42vh;
-          left: 37vw;
+          left: 31vw;
          animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
       }
     
@@ -135,7 +135,7 @@
         background: url('../Sprites/rhinoceros.svg') center;
         background-repeat: no-repeat;
         position: absolute;
-          top: 88vh;
+          top: 96vh;
           left: 49vw;
          animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
       }

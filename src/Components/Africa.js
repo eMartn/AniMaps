@@ -87,7 +87,7 @@ It returns a pair of values: the current state and a function that updates it.
 
             {/*  Image for the Africa continent    */}
             {/* <Imaging> */}
-            <img id = 'AfricaImg' src = "Images/Africa.jpg" alt = " " />
+            <img id = 'AsiaImg' src = "Images/Africa.jpg" alt = " " />
             
             <Animal 
              modalTitle = "Elephant"
