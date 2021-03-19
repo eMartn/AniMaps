@@ -6,7 +6,11 @@
     const [animals, setAnimals] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    const ref = firebase.firestore().collection("Animals");
+    const ref = firebase.firestore().collection("Animals"); //this is a reference to the Animals collection in the db
+
+    /**
+     * function that iterates through the Animal collection to find the specific animal document requested
+     */
     function getAnimals()
     {
       setLoading(true);
@@ -14,13 +18,13 @@
         const items = [];
         querySnapshot.forEach((doc) => {
           console.log(animalName);
-            if (doc.data().name === animalName)
+            if (doc.data().name === animalName) // if the name in the document is the same, add the data to the array
             {
               items.push(doc.data());
               return;
             }         
         });
-        setAnimals(items);
+        setAnimals(items); 
         setLoading(false);
       });
     }
@@ -31,9 +35,10 @@
 
     if (loading)
       {
-        return <h1>Loading...</h1>;
+        return <h1>Loading...</h1>; // displays this while the data is loading
       }
 
+      // returns the properties of the animal in paragraph tags
       return (
         <div>
            {animals.map((animal) =>(             

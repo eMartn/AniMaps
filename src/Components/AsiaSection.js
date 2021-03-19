@@ -10,6 +10,7 @@ import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
 import AnimalProfileDeets from './../Dbtestpage.js';
+import LeftModal from './LeftModal';
 
 function Panda(){
      
@@ -17,10 +18,14 @@ function Panda(){
     const [show,setShow] = useState(false);
         return (
         <div>
-           <div className = "Panda2" onClick = {() => setShow(true)}></div>          
-           <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
-            <p> {AnimalProfileDeets(animalRequest)} </p>
-           </Modal>     
+           <div className = "Panda2" onClick = {() => setShow(true)}></div>
+           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
+
+          <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a Panda</p>
+          </Modal>     
         </div>
         )
   }
@@ -32,6 +37,10 @@ function Panda(){
         <div>
            <div className = "Monkey" onClick = {() => setShow(true)}></div>
           
+           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
+
           <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>I am a monkey</p>
           </Modal>     
@@ -46,6 +55,10 @@ function Panda(){
         <div>
            <div className = "Tiger" onClick = {() => setShow(true)}></div>
           
+           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
+
           <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>I am a tiger</p>
           </Modal>     
@@ -60,6 +73,10 @@ function Panda(){
         <div>
            <div className = "Goat" onClick = {() => setShow(true)}></div>
           
+           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
+
           <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>I am a Goat</p>
           </Modal>     
@@ -74,6 +91,10 @@ function Panda(){
         <div>
            <div className = "Elephant" onClick = {() => setShow(true)}></div>
           
+           <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a monkey</p>
+          </LeftModal>   
+
           <Modal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
            <p>I am a Elephant</p>
           </Modal>     

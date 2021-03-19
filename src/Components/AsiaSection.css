@@ -86,7 +86,7 @@ background-repeat: no-repeat;
 position: absolute;
   top: 65vh;
   left: 69vw;
- animation: spawn 3s ease, shake 4s ease-in-out 5s 3;
+ animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
 
   }
 
@@ -104,7 +104,7 @@ position: absolute;
     position: absolute;
       top: 72vh;
       left: 29vw;
-     animation: spawn 3s ease, shake 4s ease-in-out 25s 7;
+     animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
   }
 
   .Tiger{
@@ -120,7 +120,7 @@ position: absolute;
     position: absolute;
       top: 42vh;
       left: 49vw;
-     animation: spawn 3s ease, shake 4s ease-in-out 15s infinite;
+     animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
   }
 
   .Goat{
@@ -152,7 +152,7 @@ position: absolute;
     position: absolute;
       top: 76vh;
       left: 57vw;
-     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+     animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
   }
 
   @keyframes spawn {
@@ -164,6 +164,8 @@ position: absolute;
       transform: scale(1.1); /* increasing the size */
     }
   }
+
+  
   
   @keyframes shake{
     10%, 90% {
@@ -180,6 +182,30 @@ position: absolute;
     }
   }
 
-  /* .text:hover {
-    visibility: visible;
-  } */
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes wiggle2 { 
+  0% { transform: skewX(9deg); } 
+  10% { transform: skewX(-8deg); } 
+  20% { transform: skewX(7deg); } 
+  30% { transform: skewX(-6deg); } 
+  40% { transform: skewX(5deg); } 
+  50% { transform: skewX(-4deg); } 
+  60% { transform: skewX(3deg); } 
+  70% { transform: skewX(-2deg); } 
+  80% { transform: skewX(1deg); } 
+  90% { transform: skewX(0deg); } 
+  100% { transform: skewX(0deg); } 
+}
+
+@keyframes violentShake  {
+	0% {transform:rotate(4deg);}
+	50% {transform:rotate(-4deg);}
+	100% {transform:rotate(4deg);}
+}

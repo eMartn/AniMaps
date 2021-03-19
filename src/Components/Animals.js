@@ -3,8 +3,8 @@ import './Cards.css';
 import AniNav from '../Components/AniNav';
 import {motion} from 'framer-motion';
 import Modal from './Modal';
-import styled from 'styled-components';
-import Image from '../Sprites/tigerNew.png';
+import LeftModal from './LeftModal';
+
 /**
  * 
  * 3/14/21
@@ -33,7 +33,7 @@ function Cards(props) {
         // Varibale created that assigns title & decription as props
         // alternate way of doing -> EX: prop.title or props.description
         // doing it like this makes it easier to manage
-        let {title, description,modalInfo,modalTitle} = props
+        let {title, description,modalInfo,modalTitle,weight} = props
 
         const [show,setShow] = useState(false);
 
@@ -55,6 +55,11 @@ function Cards(props) {
                     {/* button that will promt the user info about the animal for the card ***NOT DONE** */}    
                      
                 <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
+                
+                <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+                <p>{weight}</p>
+                </LeftModal>  
+                
                 <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
                 <p>{modalInfo}</p>
                 </Modal>                       
@@ -100,6 +105,8 @@ function Animals() {
 
           modalInfo = "FIRST DEC"
 
+          weight = "130lbs-180lbs"
+
           />
 
 {/* <div className = "card1Button"><button onClick = {() => setShow(true)}> Click here </button></div> */}
@@ -116,7 +123,7 @@ function Animals() {
 
           modalTitle = "SECOND"
 
-          modalInfo = "SECONDDESRC"
+          modalInfo = "SECOND DESRC"
          />
 
          

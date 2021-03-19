@@ -8,6 +8,7 @@ import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
+import LeftModal from './LeftModal';
 
 // styling for the image sprites 
 const AltButton = styled.button`
@@ -76,27 +77,28 @@ It returns a pair of values: the current state and a function that updates it.
              {/* Header for America */}
             <h1>North America</h1>
             {/*
-             assigns a class name for the buttons
-            again this uses asia section and will be changed in the future
+             Assigns a class name for the buttons
+             again, this uses asia section and will be changed in the future
             */}
             <div className = "asia-btns">
-               {/* Allows us to go to Austrlia from America
-               Link is a replacement to A tag with React Router
+                {/* Allows us to go to Australia from America
+                    Link is a replacement to A tag with React Router
                 */}
                 <Link to='/Australia' className= 'to-region' >   
-                {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
-                 </Link>
+                  {/* Font awesome icon */}
+                  <i class="fas fa-arrow-left"></i>
+                </Link>
 
-                {/* Allows us to go to Austrlia from Africa 
+                {/* Allows us to go to South America from North America
                 Link is a replacement to A tag with React Router
                 */}
-                 <Link to='/SouthAmerica' className= 'to-region'>
-                   {/* Font awesome icon */}
-                <i class="fas fa-arrow-right"></i>
-                 </Link>
+                <Link to='/SouthAmerica' className= 'to-region'>
+                  {/* Font awesome icon */}
+                  <i class="fas fa-arrow-right"></i>
+                </Link>
 
-           </div>
+            </div>
+
             {/*  Image for the North America continent    */}
             <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />
          
@@ -112,6 +114,9 @@ It returns a pair of values: the current state and a function that updates it.
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
             */}
+            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
+           <p>I am a Panda</p>
+          </LeftModal>  
             <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
              <p>I am a panda</p>
              </Modal>
