@@ -61,10 +61,26 @@ function EuropeContent() {
         */
         <div class = "europe-container">
              {/* Header for South America */}
-            <h1>Europe</h1>
+            <motion.h1
+            
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}>Europe</motion.h1>
             {/*assigns a class name for the buttons
                again this uses asia section and will be changed in the future*/}
-            <div className = "europe-btns">
+            <motion.div className = "europe-btns"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            >
                {/* Allows us to go Africa from Europe
                    Link is a replacement to A tag with React Router*/}
                 <Link to='/Africa' className= 'to-region' >   
@@ -80,7 +96,7 @@ function EuropeContent() {
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
-           </div>
+           </motion.div>
             {/*  Image for the South America continent    */}
             <img id = 'AsiaImg' src = "Images/Europe.jpg" alt = " " />
          

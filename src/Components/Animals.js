@@ -78,7 +78,15 @@ function Animals() {
        {/* AniNav navbar is being called here so it renders */}
          <AniNav />
           {/* Greeting that greets users when on the animal list page */}
-         <div className = "Greeting"><h1>Meet the animals</h1></div>
+         <motion.div className = "Greeting"
+         initial={{ scale: 0 }}
+         animate={{ rotate: 0, scale: 1 }}
+         transition={{
+           type: "spring",
+           stiffness: 260,
+           damping: 20
+         }}
+         ><h1>Meet the animals</h1></motion.div>
       {/* Uses motion framer to apply the pop animation like the one we used for the button on welcome page */}
         <motion.div className = "CardContainer"        
          initial={{ scale: 0 }}

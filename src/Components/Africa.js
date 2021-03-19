@@ -63,13 +63,29 @@ It returns a pair of values: the current state and a function that updates it.
       */
         <div class = "africa-container">
           {/* Header for africa */}
-            <h1> Africa </h1>
+            <motion.h1
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            > Africa </motion.h1>
 
             {/*
              assigns a class name for the buttons
             again this uses asia section and will be changed in the future
             */}
-            <div className = "africa-btns">
+            <motion.div className = "africa-btns"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            >
               {/* <h2>North America</h2> */}
                 <Link to='/SouthAmerica' className= 'to-region' >                  
                 {/* Font awesome icon */}
@@ -83,7 +99,7 @@ It returns a pair of values: the current state and a function that updates it.
                  <Link to='/Europe' className= 'to-region'>
                 <i class="fas fa-arrow-right"></i>
                  </Link>
-           </div>
+           </motion.div>
 
             {/*  Image for the Africa continent    */}
             {/* <Imaging> */}

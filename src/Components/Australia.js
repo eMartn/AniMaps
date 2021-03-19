@@ -37,13 +37,29 @@ function AustraliaContent() {
       */
         <div class = "AU-container">
             {/* Australia header */}
-            <h1> Australia</h1>
+            <motion.h1
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            > Australia</motion.h1>
 
            {/*
              assigns a class name for the buttons
             again this uses asia section and will be changed in the future
             */}
-            <div className = "AU-btns">
+            <motion.div className = "AU-btns"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 0, scale: 1 }}
+            transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+            }}
+            >
                {/* Experimenting; Pls ignore this */}
                  {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
                  <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
@@ -65,7 +81,7 @@ function AustraliaContent() {
                 <i class="fas fa-arrow-right"></i>
                  </Link>
 
-           </div>
+           </motion.div>
             {/*  Image for the Asia continent */}
             <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = " "/>
             
