@@ -10,79 +10,57 @@ import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 
-// styling for the image sprites 
-const AltButton = styled.button`
-width: 160px;
-height: 145px;
-padding: 60px 32px;
-border: none;
-background: black;
-color: white;
-cursor: pointer;
-background: url(${Image}) center;
-background-repeat: no-repeat;
-position: absolute;
-display: flex;
-top: 50vh;
-left: 52vw;
-animation: spawn 3s ease, shake 4s ease-in-out 5s infinite;
- // methods for the sprite animation 
-  @keyframes spawn {
-    // Animation for popping up 
-    0% {
-      transform: scale(0); /* scaling to 0 */
-    }
-    50% {
-      transform: scale(1.1); /* increasing the size */
-    }
-  }
-
-  // Animation that makes it possible for image to "shake"
-@keyframes shake{
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-`
-
-// TODO Connect animals via links in modal
-// displays content 
-function AmericaContent() {
  /* 
   use state for the modal to manage the value
 It returns a pair of values: the current state and a function that updates it. 
   This is why we write const [show, setShow] = useState(false)
   It is false by default becuase nothing is shown initially   
   but when it is set to true it will show the modal
-  Look at line 143
+  Look at line 29
  For more info: https://reactjs.org/docs/hooks-state.html
 */
+function Animal(props){
+
+  // Varibale created that assigns title & decription as props
+  // alternate way of doing -> EX: prop.title or props.description
+  // doing it like this makes it easier to manage
+  let {className, modalInfo,modalTitle,weight} = props
+  
   const [show,setShow] = useState(false);
+return (
+<div>
+   <div className = {className} onClick = {() => setShow(true)}  ></div>
+   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{weight}</p>
+  </LeftModal>   
+
+  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <p>{modalInfo}</p>
+  </Modal>     
+</div>
+)
+}
+
+// TODO Connect animals via links in modal
+// displays content 
+function AmericaContent() {
 
     return (
       /*
       For now this uses the asia container css
       but will change in the future to have its own
       */
-        <div class = "asia-container">
+        <div class = "america-container">
              {/* Header for America */}
             <h1>North America</h1>
             {/*
              Assigns a class name for the buttons
              again, this uses asia section and will be changed in the future
             */}
-            <div className = "asia-btns">
-                {/* Allows us to go to Australia from America
-                    Link is a replacement to A tag with React Router
+
+            <div className = "america-btns">
+               {/* Allows us to go to Austrlia from America
+               Link is a replacement to A tag with React Router
                 */}
                 <Link to='/Australia' className= 'to-region' >   
                   {/* Font awesome icon */}
@@ -107,19 +85,49 @@ It returns a pair of values: the current state and a function that updates it.
             The onClick handles the button to update show value
             to true which will then display the modal
             */}
-            <AltButton onClick = {() => setShow(true)}>  </AltButton>
             {/*
              Uses the modal component we created in the Modal.js file
             We set the title & text 
             onClose handles the closing of the modal
             Whenever it is called the show value will be false and close the modal
-            */}
-            <LeftModal title = "Sample Animal" onClose = {() => setShow(false)} show = {show} >
-           <p>I am a Panda</p>
-          </LeftModal>  
-            <Modal title = "Panda" onClose = {() => setShow(false)} show = {show} >
-             <p>I am a panda</p>
-             </Modal>
+            */}           
+           
+
+           <Animal 
+             modalTitle = "Flamingo"
+             modalInfo = "I am a Flamingo"
+             weight = "130lbs-180lbs"
+             className = "Flamingo"
+            />
+
+            <Animal 
+             modalTitle = "Bee"
+             modalInfo = "I am a Bee"
+             weight = "130lbs-180lbs"
+             className = "Bee"
+            />
+
+              <Animal 
+             modalTitle = "Deer"
+             modalInfo = "I am a Deer"
+             weight = "130lbs-180lbs"
+             className = "Deer"
+            />
+
+            <Animal 
+             modalTitle = "Boar"
+             modalInfo = "I am a Boar"
+             weight = "130lbs-180lbs"
+             className = "Boar"
+            />
+
+            <Animal 
+             modalTitle = "Bear"
+             modalInfo = "I am a Bear"
+             weight = "130lbs-180lbs"
+             className = "AltBear"
+            />
+
             
 
         </div>
