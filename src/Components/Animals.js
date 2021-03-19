@@ -198,9 +198,10 @@ function Animals() {
         </motion.div>
 
         
-        <div className = "row">
+        
           <ImageGrid />
-          </div>
+          <ImageGrid />
+        
         </>
 
         
