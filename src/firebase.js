@@ -1,5 +1,6 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import firebase from "firebase/app";
+import 'firebase/storage';
 import "firebase/firestore";
 
 require('dotenv').config();
@@ -17,4 +18,8 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 
+  const projectStorage = firebase.storage();
+  const projectFirestore = firebase.firestore();
+
   export default firebase;
+  export { projectFirestore, projectStorage };
