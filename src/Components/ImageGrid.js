@@ -52,84 +52,77 @@ const ImageGrid = () => {
     const { docs } = useFirestore('Animals');
     console.log(docs);
 
-    let docCount = 1;
+    // multiple rows
+    const grouped = docs.reduce((acc, post, ind) => {
+        var index = parseInt(ind / 4);
+        acc[index] = acc[index] || [];
+        acc[index].push(
+            <div>
+            <Cards 
+                // Sets the title to the animal in the card which is a sample animals for now 
+                title = {docs[ind].name}
+                // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
+                images = {docs[ind].url}
+                // sets the description to the animal in the card which is a sample description for now 
+                description = "Sample text"
+                modalTitle = {docs[ind].name}
+                modalInfo = "SECOND DESRC"
+            />
+            </div>
+        );
+        return acc;
+    }, []);
+    return (
+        <div>
+            {grouped.map((row, i) => {
+                return (
+                    
+                    <div className="row" key={`row-${i}`}>{row}</div>
+                    
+                    )
+            })}
+        </div>
+    );
 
-    // docs && docs.map(doc => {
-    //     if (docCount % 4 !== 0)
-    //         return <div>
-    //         <div className="img-wrap" key={doc.id}>
-    //             <img src={doc.url} alt="animal" />
-    //         </div>
+    
 
-    //         {docCount++}
-    //         {console.log(docCount)}
-    //     </div>
-    //     return <div>
-    //     <div className="img-wrap" key={doc.id}>
-    //         <img src={doc.url} alt="animal" />
-    //     </div>
-
-    //     {docCount++}
-    //     {console.log(docCount)}
-    //     {console.log("new row")}
-        
-    // </div>
-    // })
-
+    //Keep formatting
     // return (
-    //     <div className="img-grid">
+    //     <motion.div className = "CardContainer"
+    //      initial={{ scale: 0 }}
+    //      animate={{ rotate: 0, scale: 1 }}
+    //      transition={{
+    //        type: "spring",
+    //        stiffness: 260,
+    //        damping: 20
+    //      }}
+    //     >
+    //     <div className="row">
     //         {/* make sure docs exist, cycle through and out template for each doc */}
     //         { docs && docs.map((doc, i) => (
                 
     //             <div>
-    //                 <div className="img-wrap" key={doc.id}>
-    //                     <img src={doc.url} alt="animal" />
-    //                 </div>
+    //                 <Cards 
+    //                 // Sets the title to the animal in the card which is a sample animals for now 
+    //                 title = {doc.name}
+    //                 // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
+    //                 images = {doc.url}
+    //                 // sets the description to the animal in the card which is a sample description for now 
+    //                 description = "Sample text"
+    //                 modalTitle = {doc.name}
+    //                 modalInfo = "SECOND DESRC"
+    //                 />
+                
+                
 
     //                 {i++}
     //                 {console.log(i)}
     //             </div>
     //         ))}
     //     </div>
-    // )
-
-    //Keep formatting
-    return (
-        <motion.div className = "CardContainer"
-         initial={{ scale: 0 }}
-         animate={{ rotate: 0, scale: 1 }}
-         transition={{
-           type: "spring",
-           stiffness: 260,
-           damping: 20
-         }}
-        >
-        <div className="row">
-            {/* make sure docs exist, cycle through and out template for each doc */}
-            { docs && docs.map((doc, i) => (
-                
-                <div>
-                    <Cards 
-                    // Sets the title to the animal in the card which is a sample animals for now 
-                    title = {doc.name}
-                    // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
-                    images = {doc.url}
-                    // sets the description to the animal in the card which is a sample description for now 
-                    description = "Sample text"
-                    modalTitle = {doc.name}
-                    modalInfo = "SECOND DESRC"
-                    />
-                
-                
-
-                    {i++}
-                    {console.log(i)}
-                </div>
-            ))}
-        </div>
         
-        </motion.div>
-    )
+    //     </motion.div>
+    // )
 }
 
 export default ImageGrid;

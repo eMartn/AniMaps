@@ -89,7 +89,7 @@ function Animals() {
          }}
          ><h1>Meet the animals</h1></motion.div>
       {/* Uses motion framer to apply the pop animation like the one we used for the button on welcome page */}
-        <motion.div className = "CardContainer"        
+        {/* <motion.div className = "CardContainer"        
          initial={{ scale: 0 }}
          animate={{ rotate: 0, scale: 1 }}
          transition={{
@@ -97,12 +97,12 @@ function Animals() {
            stiffness: 260,
            damping: 20
          }}
-        >
+        > */}
         
          {/* creates a div for a row  */}
-          <div className = "row ">
+          {/* <div className = "row "> */}
             {/* uses the Cards component to create cards for these animals */}
-          <Cards 
+          {/* <Cards 
           // Sets the title to the animal in the card which is a sample animals for now 
           title = "Sample Animal 1"
           // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
@@ -116,13 +116,13 @@ function Animals() {
 
           weight = "130lbs-180lbs"
 
-          />
+          /> */}
 
 {/* <div className = "card1Button"><button onClick = {() => setShow(true)}> Click here </button></div> */}
 
 
            {/* uses the Cards component to create cards for these animals */}
-          <Cards 
+          {/* <Cards 
          // Sets the title to the animal in the card which is a sample animals for now 
           title = "sample Animal 2"
           // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
@@ -133,24 +133,24 @@ function Animals() {
           modalTitle = "SECOND"
 
           modalInfo = "SECOND DESRC"
-         />
+         /> */}
 
          
          {/* Same as above */}
-        <Cards
+        {/* <Cards
         title = "sample animal 3"
         images = "https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_2x3.jpg?w=600&h=900"
         description = "I am a text 3"
-        />
+        /> */}
         {/* Same as above */}
-        <Cards   
+        {/* <Cards   
         title = "sample animal 4"
         images = "https://i.natgeofe.com/n/ec4956e6-d21d-4ce9-a6fd-b5e26bb94ba3/koala_thumb_3x4.JPG?w=600&h=799.5"
         description = "I am a text 4"
         />
           </div>  
 
-        </motion.div>
+        </motion.div> */}
 
          {/* 
          Repeats the same process as the one above and this is to show more animal cards 
@@ -158,7 +158,7 @@ function Animals() {
          If we placed them above and kept going then it would be a continious row  
 
          */}
-        <motion.div className = "CardContainer"
+        {/* <motion.div className = "CardContainer"
          initial={{ scale: 0 }}
          animate={{ rotate: 0, scale: 1 }}
          transition={{
@@ -195,12 +195,20 @@ function Animals() {
           </div>  
           
           
-        </motion.div>
+        </motion.div> */}
 
         
+        <br></br>
         
-          <ImageGrid />
-          <ImageGrid />
+        <motion.div>
+        <ImageGrid />
+
+        </motion.div>
+        
+        
+        
+          
+          
         
         </>
 
