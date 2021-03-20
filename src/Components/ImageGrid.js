@@ -76,8 +76,17 @@ const ImageGrid = () => {
         <div>
             {grouped.map((row, i) => {
                 return (
-                    
-                    <div className="row" key={`row-${i}`}>{row}</div>
+                    <motion.div className = "CardContainer"
+                    initial={{ scale: 0 }}
+                    animate={{ rotate: 0, scale: 1 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20
+                    }}>
+                        <div className="row" key={`row-${i}`}>{row}</div>
+                        
+                    </motion.div>
                     
                     )
             })}
