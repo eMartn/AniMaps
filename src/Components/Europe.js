@@ -17,7 +17,15 @@ import AnimalProfileDeets from '../Dbtestpage';
 //TODO Created animals in Europe & gave it its own CSS 
 -Joshua Grimaldo
 */
-
+ /* 
+  use state for the modal to manage the value
+  It returns a pair of values: the current state and a function that updates it. 
+  This is why we write const [show, setShow] = useState(false)
+  It is false by default becuase nothing is shown initially   
+  but when it is set to true it will show the modal
+  Look at line 143
+ For more info: https://reactjs.org/docs/hooks-state.html
+*/
 function Animal(props){
 
         // Varibale created that assigns title & decription as props
@@ -47,17 +55,7 @@ function Animal(props){
 // TODO Connect animals via links in modal
 // displays content 
 function EuropeContent() {
- /* 
-  use state for the modal to manage the value
-  It returns a pair of values: the current state and a function that updates it. 
-  This is why we write const [show, setShow] = useState(false)
-  It is false by default becuase nothing is shown initially   
-  but when it is set to true it will show the modal
-  Look at line 143
- For more info: https://reactjs.org/docs/hooks-state.html
-*/
-  const [show,setShow] = useState(false);
-
+ 
     return (
         /*
           For now this uses the asia container css
@@ -73,34 +71,26 @@ function EuropeContent() {
             type: "spring",
             stiffness: 260,
             damping: 20
-            }}>Europe</motion.h1>
-            {/*assigns a class name for the buttons
-               again this uses asia section and will be changed in the future*/}
-            <motion.div className = "europe-btns"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
-            >
-               {/* Allows us to go Africa from Europe
-                   Link is a replacement to A tag with React Router*/}
-                <Link to='/Africa' className= 'to-region' >   
+            }}>
+              
+              <Link to='/Africa' className= 'to-region' >   
                 {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-chevron-left"></i>
                  </Link>
+                 
+              Europe
+              
 
-                {/* Allows us to go to Asia from Europe
-                    Link is a replacement to A tag with React Router
-                */}
-                 <Link to='/Asia' className= 'to-region'>
+              <Link to='/Asia' className= 'to-region'>
                    {/* Font awesome icon */}
-                <i class="fas fa-arrow-right"></i>
+                   <i class="fas fa-chevron-right"></i>
                  </Link>
-
-           </motion.div>
+               
+                 
+              </motion.h1>
+              &nbsp;
+              
+           
             {/*  Image for the South America continent    */}
             <img id = 'AsiaImg' src = "Images/Europe.jpg" alt = " " />
          

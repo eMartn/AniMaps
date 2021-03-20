@@ -49,6 +49,8 @@ function AsiaSection() {
            {/* Creates a class for a container for styling in AsiaSection.css */}
         <div class = "asia-container">
             {/* Asia header */}
+
+            {/* <div className = "asia-btns">  */}
             
             <motion.h1 initial={{ scale: 0 }}
             animate={{ rotate: 0, scale: 1 }}
@@ -56,7 +58,22 @@ function AsiaSection() {
             type: "spring",
             stiffness: 260,
             damping: 20
-            }}> Asia</motion.h1>
+            }} > 
+            
+            {/* <Link to='/Europe' className= 'to-region' >  
+                <i class="fas fa-arrow-left"></i>
+                 </Link> */}
+            Asia
+            
+            {/* <Link to='/Australia' className= 'to-region'>
+                <i class="fas fa-arrow-right"></i>
+                 </Link> */}
+            
+            </motion.h1>
+
+            {/* </div>   */}
+
+
              {/* Creates a class for buttons for styling in AsiaSection.css */}
             <motion.div className = "asia-btns" initial={{ scale: 0 }}
             animate={{ rotate: 0, scale: 1 }}
@@ -64,15 +81,17 @@ function AsiaSection() {
             type: "spring",
             stiffness: 260,
             damping: 20
-            }}>      
+            }}>    
+
+        
             {/* 
             Will take you to Europe from Asia
             Link is a replacement to A tag with React Router
             */}
                 <Link to='/Europe' className= 'to-region' >  
-                {/* <div className = "text">hi</div>  */}
+                
                 <i class="fas fa-arrow-left"></i>
-                {/* <span class="tooltiptext">Africa</span> */}
+                
                  </Link>
                 
             {/* Will take you to the region of Australia 
