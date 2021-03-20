@@ -93,10 +93,10 @@ function Animals() {
         
         <br></br>
         
-        <motion.div>
+        
         <ImageGrid />
 
-        </motion.div>
+        
         
         
         
