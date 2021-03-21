@@ -71,35 +71,23 @@ It returns a pair of values: the current state and a function that updates it.
             stiffness: 260,
             damping: 20
             }}
-            > Africa </motion.h1>
-
-            {/*
-             assigns a class name for the buttons
-            again this uses asia section and will be changed in the future
-            */}
-            <motion.div className = "africa-btns"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
-            >
-              {/* <h2>North America</h2> */}
-                <Link to='/SouthAmerica' className= 'to-region' >                  
+            > 
+            
+            <Link to='/SouthAmerica' className= 'to-region' >                  
                 {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-chevron-left"></i>
+                 </Link>
+            
+            Africa
+            
+            <Link to='/Europe' className= 'to-region'>
+            <i class="fas fa-chevron-right"></i>
                  </Link>
 
-                  {/*
-                   This allows us to go to Europe from Africa
-                  It uses a icon below from font awesome to display the arrow you see
-                  */}
-                 <Link to='/Europe' className= 'to-region'>
-                <i class="fas fa-arrow-right"></i>
-                 </Link>
-           </motion.div>
+             </motion.h1>
+             &nbsp;
+
+           
 
             {/*  Image for the Africa continent    */}
             {/* <Imaging> */}

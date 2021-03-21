@@ -45,43 +45,29 @@ function AustraliaContent() {
             stiffness: 260,
             damping: 20
             }}
-            > Australia</motion.h1>
-
-           {/*
-             assigns a class name for the buttons
-            again this uses asia section and will be changed in the future
-            */}
-            <motion.div className = "AU-btns"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
-            >
-               {/* Experimenting; Pls ignore this */}
-                 {/* <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-left"></i></Button>
-                 <Button className = 'btns' buttonStyle = 'btn--primary'  buttonSize = 'btn--large'>   <i class="fas fa-arrow-right"></i></Button>
-                */}
-
-                {/* Allows us to go to Asia from Australia 
+            > 
+            
+            {/* Allows us to go to Asia from Australia 
                 Link is a replacement to A tag with React Router
                 */}
                 <Link to='/Asia' className= 'to-region' >   
                 {/* Uses a icon from font awesome */}
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-chevron-left"></i>
                  </Link>
-                 
-                {/* Allows us to go to Australia to America 
+
+            Australia
+            
+             {/* Allows us to go to Australia to America 
                 Link is a replacement to A tag with React Router
                 */}
                  <Link to='/America' className= 'to-region'>
                      {/* Uses a icon from font awesome */}
-                <i class="fas fa-arrow-right"></i>
+                     <i class="fas fa-chevron-right"></i>
                  </Link>
+            
+            </motion.h1>
+            &nbsp;
 
-           </motion.div>
             {/*  Image for the Asia continent */}
             <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = " "/>
             
@@ -130,8 +116,6 @@ function AustraliaContent() {
              id = "ButterflyImg"
              images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa9%2Fe8%2Fab%2Fa9e8abbecea72b6bb0774ce29918f261.jpg&f=1&nofb=1"
             />
-
-
 
         </div>
     )

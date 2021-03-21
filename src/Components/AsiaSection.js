@@ -60,49 +60,21 @@ function AsiaSection() {
             damping: 20
             }} > 
             
-            {/* <Link to='/Europe' className= 'to-region' >  
-                <i class="fas fa-arrow-left"></i>
-                 </Link> */}
+            <Link to='/Europe' className= 'to-region' >  
+            <i class="fas fa-chevron-left"></i>
+                 </Link>
             Asia
             
-            {/* <Link to='/Australia' className= 'to-region'>
-                <i class="fas fa-arrow-right"></i>
-                 </Link> */}
+            <Link to='/Australia' className= 'to-region'>
+            <i class="fas fa-chevron-right"></i>
+                 </Link>
             
             </motion.h1>
 
             {/* </div>   */}
 
 
-             {/* Creates a class for buttons for styling in AsiaSection.css */}
-            <motion.div className = "asia-btns" initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}>    
 
-        
-            {/* 
-            Will take you to Europe from Asia
-            Link is a replacement to A tag with React Router
-            */}
-                <Link to='/Europe' className= 'to-region' >  
-                
-                <i class="fas fa-arrow-left"></i>
-                
-                 </Link>
-                
-            {/* Will take you to the region of Australia 
-            Link is a replacement to A tag with React Router
-            */}
-
-                 <Link to='/Australia' className= 'to-region'>
-                <i class="fas fa-arrow-right"></i>
-                 </Link>
-
-           </motion.div>
             {/*  Image for the Asia continent    */}
             <img id = 'AsiaImg' src = "Images/Asia.png" alt = " " />
 
@@ -147,7 +119,7 @@ function AsiaSection() {
              modalTitle = "Elephant"
              modalInfo = "I am a elephant"
              weight = "130lbs-180lbs"
-             className = "Elephant"
+             className = "AS-Elephant"
              id = "Indian-Elephant"
              images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xEEGNVoxNS9-5t6hVUsWbAHaLH%26pid%3DApi&f=1"
             />    

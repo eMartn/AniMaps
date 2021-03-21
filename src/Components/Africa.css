@@ -7,8 +7,8 @@
         object-fit: contain;
         background-color: rgba(22, 22, 22, 0.945);
         color: rgba(255, 255, 255, 0.952);
-        font-size: 1.7em;
-        
+        font-size: 1.5em;
+        padding-top: 2.5vh;
     }
     
     #AfricaImg{
@@ -51,8 +51,10 @@
         align-items: center;
         padding: 0.5rem 1rem;
         height: 100%;
-        margin-left: 160px;
-        margin-right: 175px;
+        margin-left: 29vh;
+        margin-right: 29vh;
+        
+        
     }
     
     .to-region .text{
@@ -96,8 +98,8 @@
     
         display: flex;
         /* height: 125px; */
-        width: 115px;
-        padding: 40px 0px;
+        width: 5vw;
+        padding: 4vw 0px;
          border: none;
         cursor: pointer;
         background: url('../Sprites/lion.svg') center;
@@ -112,8 +114,8 @@
     
         display: flex;
         /* height: 135px; */
-        width: 115px;
-        padding: 40px 0px;
+        width: 5vw;
+        padding: 4vw 0px;
          border: none;
         cursor: pointer;
         background: url('../Sprites/giraffee.svg') center;
@@ -128,8 +130,8 @@
     
         display: flex;
         /* height: 135px; */
-        width: 115px;
-        padding: 40px 0px;
+        width: 5vw;
+        padding: 4vw 0px;
          border: none;
         cursor: pointer;
         background: url('../Sprites/rhinoceros.svg') center;
@@ -140,19 +142,19 @@
          animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
       }
     
-      .Elephant{
+      .African-Elephant{
     
         display: flex;
         /* height: 135px; */
-        width: 115px;
-        padding: 40px 0px;
+        width: 5vw;
+    padding: 4vw 0px;
          border: none;
         cursor: pointer;
         background: url('../Sprites/elephant.svg') center;
         background-repeat: no-repeat;
         position: absolute;
           top: 76vh;
-          left: 57vw;
+          left: 52vw;
          animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
       }
     
