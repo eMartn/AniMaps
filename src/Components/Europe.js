@@ -10,6 +10,8 @@ import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import AnimalProfileDeets from '../Dbtestpage';
+import useAnimalDoc from './hooks/useDoc.js';
+ 
 // styling for the image sprites 
 
 /*
