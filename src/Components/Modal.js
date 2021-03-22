@@ -43,6 +43,7 @@ padding: 2vh;
 // This is responsible for the title style
 const ModalTitleStyle = styled.div`
 margin: 0;
+//font-size: 1.5rem;
 `
 // This is responsible for the body style aka the white border 
 // you see in the modal
@@ -51,6 +52,7 @@ padding: 10px;
 border-top: 1px solid #eee;
 text-align: left;
 // border-bottom: 1px solid #eee;
+
 `
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
