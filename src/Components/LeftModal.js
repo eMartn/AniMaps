@@ -22,6 +22,7 @@ width: 22vw;
 height: 90vh;
 background-color: rgba(104, 151, 158,0.8);
 color: black;
+
 z-index: 1;
 -ms-transform: translateX(55%);
 transform: translateX(-150%);
@@ -37,6 +38,7 @@ animation-duration: 0.5s;
 // This is responsible for the header style
 const ModalHFStyle = styled.div`
 padding: 2vh;
+//font-size: 1.5rem;
 `
 // This is responsible for the title style
 const ModalTitleStyle = styled.div`
