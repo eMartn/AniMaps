@@ -11,26 +11,9 @@ import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
 import AnimalProfileDeets from './../Dbtestpage.js';
 import LeftModal from './LeftModal';
+import Animal from './Animal';
 
-function Animal(props){
 
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight, id, images} = props
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <img id = {id} src = {images} />
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)}
 
 function AsiaSection() {
     return (
