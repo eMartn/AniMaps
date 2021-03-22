@@ -43,6 +43,7 @@
         <div>
            {animals.map((animal) =>(             
                 <div key={animal.id}>
+                  <img id="CrowImg" src={animal.url} alt=''/>
                   <p>{animal.name}</p>
                   <p>{animal.avgMatureHeight}</p>
                   <p>{animal.avgMatureLength}</p>

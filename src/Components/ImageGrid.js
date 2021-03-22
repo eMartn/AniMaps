@@ -5,6 +5,12 @@ import Modal from './Modal';
 import LeftModal from './LeftModal';
 
 
+/** 3/21/21
+ * TODO refactor Cards function so that modal info is pulled from one location for both animals page and map pages 
+ * - Trevor Lee 
+ * */ 
+
+
 function Cards(props) {
     // Varibale created to take in images for the cards background 
     let bg_img = `url(${props.images})`
@@ -46,6 +52,11 @@ function Cards(props) {
         </div>
     )
 }
+
+/** 3/21/21
+ * TODO order animals alphabetically before displaying 
+ * - Trevor Lee
+ * */
 
 // returns rows of cards from database for Animals page
 const ImageGrid = () => {
