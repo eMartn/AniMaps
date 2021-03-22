@@ -9,37 +9,9 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
+import Animal from './Animal';
 
- /* 
-  use state for the modal to manage the value
-It returns a pair of values: the current state and a function that updates it. 
-  This is why we write const [show, setShow] = useState(false)
-  It is false by default becuase nothing is shown initially   
-  but when it is set to true it will show the modal
-  Look at line 29
- For more info: https://reactjs.org/docs/hooks-state.html
-*/
-function Animal(props){
-
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight} = props
-  
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{weight}</p>
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)
-}
+ 
 
 // TODO Connect animals via links in modal
 // displays content 

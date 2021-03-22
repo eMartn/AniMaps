@@ -10,6 +10,8 @@ import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import AnimalProfileDeets from '../Dbtestpage';
+import Animal from './Animal';
+
 // styling for the image sprites 
 
 /*
@@ -26,30 +28,6 @@ import AnimalProfileDeets from '../Dbtestpage';
   Look at line 143
  For more info: https://reactjs.org/docs/hooks-state.html
 */
-function Animal(props){
-
-        // Varibale created that assigns title & decription as props
-        // alternate way of doing -> EX: prop.title or props.description
-        // doing it like this makes it easier to manage
-        let {className, modalInfo, modalTitle, weight,id, Images} = props
-        const [show,setShow] = useState(false);
-      return (
-      <div>
-         <div className = {className} onClick = {() => setShow(true)}  ></div>
-         <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-       
-        {/* <img id = {id} src = {Images} /> */}
-
-         <p>{AnimalProfileDeets(modalTitle)}</p>
-        </LeftModal>   
-
-        <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-        {/* <img id = "Crow" src = {Image} /> */}
-         <p>{modalInfo}</p>
-        </Modal>     
-      </div>
-)
-}
 
 
 // TODO Connect animals via links in modal
