@@ -38,9 +38,9 @@ function Animal(props){
          <div className = {className} onClick = {() => setShow(true)}  ></div>
          <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
        
-        <img id = {id} src = {Images} />
+        {/* <img id = {id} src = {Images} /> */}
 
-         <p>{AnimalProfileDeets(className)}</p>
+         <p>{AnimalProfileDeets(modalTitle)}</p>
         </LeftModal>   
 
         <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
@@ -111,7 +111,7 @@ function EuropeContent() {
              weight = "130lbs-180lbs"
              className = "Crow"
              id = "CrowImg"
-            Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F57%2F84%2F5f%2F57845fb2287fee6434de97bb5a8742c5.jpg&f=1&nofb=1"
+            // Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F57%2F84%2F5f%2F57845fb2287fee6434de97bb5a8742c5.jpg&f=1&nofb=1"
 
             />
 
