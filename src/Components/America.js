@@ -60,39 +60,29 @@ function AmericaContent() {
             stiffness: 260,
             damping: 20
             }}
-            >North America</motion.h1>
-            {/*
-             Assigns a class name for the buttons
-             again, this uses asia section and will be changed in the future
-            */}
-
-            <motion.div className = "america-btns"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
             >
-               {/* Allows us to go to Austrlia from America
+              
+              {/* Allows us to go to Austrlia from America
                Link is a replacement to A tag with React Router
                 */}
                 <Link to='/Australia' className= 'to-region' >   
                   {/* Font awesome icon */}
-                  <i class="fas fa-arrow-left"></i>
+                  <i class="fas fa-chevron-left"></i>
                 </Link>
 
+              North America
+              
                 {/* Allows us to go to South America from North America
                 Link is a replacement to A tag with React Router
                 */}
                 <Link to='/SouthAmerica' className= 'to-region'>
                   {/* Font awesome icon */}
-                  <i class="fas fa-arrow-right"></i>
+                  <i class="fas fa-chevron-right"></i>
                 </Link>
-
-            </motion.div>
-
+              
+              </motion.h1>
+              &nbsp;
+            
             {/*  Image for the North America continent    */}
             <img id = 'AsiaImg' src = "Images/America.jpg" alt = " " />
          

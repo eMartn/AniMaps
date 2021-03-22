@@ -7,13 +7,12 @@
     object-fit: contain;
     background-color: rgba(22, 22, 22, 0.945);
     color: rgba(255, 255, 255, 0.952);
-    font-size: 1.7em;
+    font-size: 1.5em;
+    padding-top: 2.5vh;
     
 }
 
 #AsiaImg{
-
-
     height: 80vh;
     width: 100%;
     display: flex;
@@ -22,6 +21,13 @@
     object-fit: contain;
 }
 
+#GoatImg, #MonkeyImg, #TigerImg, #Indian-Elephant, #PandaImg{
+  width:100%;
+  height:400px;
+ padding-left: 5px;
+ padding-right: 5px;
+
+}
 
 .asia-btns .btn {
 
@@ -37,7 +43,7 @@ margin-right: 200px;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
-    margin-left: 330px;
+    margin-left: 430px;
     margin-right: 170px;
 
 
@@ -49,8 +55,12 @@ margin-right: 200px;
     align-items: center;
     padding: 0.5rem 1rem;
     height: 100%;
-    margin-left: 160px;
-    margin-right: 175px;
+    margin-left: 29vh;
+    margin-right: 29vh;
+    
+    
+    /* margin-top: 55px;
+    margin-bottom: 50px; */
 }
 
 .to-region .text{
@@ -77,8 +87,8 @@ margin-right: 200px;
   .Panda2{
 display: flex;
 /* height: 145px; */
-width: 115px;
-padding: 50px 0px;
+width: 6vw;
+padding: 4vw 0px;
  border: none;
 cursor: pointer;
 background: url('../Sprites/pandaNew.svg') center;
@@ -95,8 +105,8 @@ position: absolute;
 
     display: flex;
     /* height: 125px; */
-    width: 115px;
-    padding: 40px 0px;
+    width: 5vw;
+    padding: 4vw 0px;
      border: none;
     cursor: pointer;
     background: url('../Sprites/monke.svg') center;
@@ -111,8 +121,8 @@ position: absolute;
 
     display: flex;
     /* height: 135px; */
-    width: 115px;
-    padding: 40px 0px;
+    width: 5vw;
+    padding: 4vw 0px;
      border: none;
     cursor: pointer;
     background: url('../Sprites/tiger.svg') center;
@@ -127,24 +137,24 @@ position: absolute;
 
     display: flex;
     /* height: 135px; */
-    width: 115px;
-    padding: 40px 0px;
+    width: 5vw;
+    padding: 4vw 0px;
      border: none;
     cursor: pointer;
     background: url('../Sprites/goat.svg') center;
     background-repeat: no-repeat;
     position: absolute;
-      top: 58vh;
+      top: 52vh;
       left: 4vw;
      animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
 
-  .Elephant{
+  .AS-Elephant{
 
     display: flex;
     /* height: 135px; */
-    width: 115px;
-    padding: 40px 0px;
+    width: 5vw;
+    padding: 4vw 0px;
      border: none;
     cursor: pointer;
     background: url('../Sprites/elephant.svg') center;

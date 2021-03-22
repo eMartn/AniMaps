@@ -2,6 +2,7 @@
 import firebase from "firebase/app";
 import 'firebase/storage';
 import "firebase/firestore";
+
 require('dotenv').config();
 
 const firebaseConfig = {

@@ -3,7 +3,7 @@ import '../App.css';
 import './Europe.css';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Image from '../Sprites/frog.svg';
+// import Image from '../Sprites/crow.jpg';
 import Modal from './Modal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
@@ -17,22 +17,34 @@ import AnimalProfileDeets from '../Dbtestpage';
 //TODO Created animals in Europe & gave it its own CSS 
 -Joshua Grimaldo
 */
-
+ /* 
+  use state for the modal to manage the value
+  It returns a pair of values: the current state and a function that updates it. 
+  This is why we write const [show, setShow] = useState(false)
+  It is false by default becuase nothing is shown initially   
+  but when it is set to true it will show the modal
+  Look at line 143
+ For more info: https://reactjs.org/docs/hooks-state.html
+*/
 function Animal(props){
 
         // Varibale created that assigns title & decription as props
         // alternate way of doing -> EX: prop.title or props.description
         // doing it like this makes it easier to manage
-        let {className, modalInfo, modalTitle, weight} = props
+        let {className, modalInfo, modalTitle, weight,id, Images} = props
         const [show,setShow] = useState(false);
       return (
       <div>
          <div className = {className} onClick = {() => setShow(true)}  ></div>
          <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+       
+        <img id = {id} src = {Images} />
+
          <p>{AnimalProfileDeets(className)}</p>
         </LeftModal>   
 
         <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+        {/* <img id = "Crow" src = {Image} /> */}
          <p>{modalInfo}</p>
         </Modal>     
       </div>
@@ -43,17 +55,7 @@ function Animal(props){
 // TODO Connect animals via links in modal
 // displays content 
 function EuropeContent() {
- /* 
-  use state for the modal to manage the value
-  It returns a pair of values: the current state and a function that updates it. 
-  This is why we write const [show, setShow] = useState(false)
-  It is false by default becuase nothing is shown initially   
-  but when it is set to true it will show the modal
-  Look at line 143
- For more info: https://reactjs.org/docs/hooks-state.html
-*/
-  const [show,setShow] = useState(false);
-
+ 
     return (
         /*
           For now this uses the asia container css
@@ -69,50 +71,48 @@ function EuropeContent() {
             type: "spring",
             stiffness: 260,
             damping: 20
-            }}>Europe</motion.h1>
-            {/*assigns a class name for the buttons
-               again this uses asia section and will be changed in the future*/}
-            <motion.div className = "europe-btns"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
-            >
-               {/* Allows us to go Africa from Europe
-                   Link is a replacement to A tag with React Router*/}
-                <Link to='/Africa' className= 'to-region' >   
+            }}>
+              
+              <Link to='/Africa' className= 'to-region' >   
                 {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-chevron-left"></i>
                  </Link>
+                 
+              Europe
+              
 
-                {/* Allows us to go to Asia from Europe
-                    Link is a replacement to A tag with React Router
-                */}
-                 <Link to='/Asia' className= 'to-region'>
+              <Link to='/Asia' className= 'to-region'>
                    {/* Font awesome icon */}
-                <i class="fas fa-arrow-right"></i>
+                   <i class="fas fa-chevron-right"></i>
                  </Link>
-
-           </motion.div>
+               
+                 
+              </motion.h1>
+              &nbsp;
+              
+           
             {/*  Image for the South America continent    */}
             <img id = 'AsiaImg' src = "Images/Europe.jpg" alt = " " />
          
                  
             <Animal 
-             modalTitle = "FIRST"
-             modalInfo = "FIRST DEC"
+             modalTitle = "Frog"
+             modalInfo = "I am a frog"
              weight = "130lbs-180lbs"
              className = "Frog"
+              id = "FrogImg"
+              Images = "https://i.natgeofe.com/n/e1a32724-c999-4152-ad9f-ecdbf7e65399/amphibians-hero_2x3.jpg?w=600&h=900"
+
             />
 
             <Animal 
-             modalTitle = "BIRD"
-             modalInfo = "I am a bird"
+             modalTitle = "Crow"
+             modalInfo = "I am a Crow"
              weight = "130lbs-180lbs"
              className = "Crow"
+             id = "CrowImg"
+            Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F57%2F84%2F5f%2F57845fb2287fee6434de97bb5a8742c5.jpg&f=1&nofb=1"
+
             />
 
             <Animal 
@@ -120,6 +120,8 @@ function EuropeContent() {
              modalInfo = "I am a moose"
              weight = "130lbs-180lbs"
              className = "Moose"
+             id = "MooseImg"
+             Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Fdb%2F6b%2F0e%2Fdb6b0eb9c9dde5328ddc8db0854fee24--elk-hunting-bull-elk.jpg&f=1&nofb=1"
             />
 
             <Animal 
@@ -127,6 +129,8 @@ function EuropeContent() {
              modalInfo = "I am a bear"
              weight = "130lbs-180lbs"
              className = "Bear"
+             id = "BearImg"
+             Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ENR3m2QMfCUyhHc-C62GugHaHa%26pid%3DApi&f=1"
             />
         
 

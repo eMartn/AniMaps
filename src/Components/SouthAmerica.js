@@ -56,44 +56,28 @@ function SouthAmericaContent() {
              type: "spring",
              stiffness: 260,
              damping: 20
-             }}>South America</motion.h1>
-            {/*assigns a class name for the buttons
-               again this uses asia section and will be changed in the future*/}
-            <motion.div className = "SA-btns"
-            
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
-            transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-            }}
-            >
+             }}>
                {/* Allows us to go to North America from South America
                    Link is a replacement to A tag with React Router*/}
                 <Link to='/America' className= 'to-region' >   
                 {/* Font awesome icon */}
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-chevron-left"></i>
                  </Link>
 
-                {/* Allows us to go to Africa from South America 
+               South America
+               
+                 {/* Allows us to go to Africa from South America 
                     Link is a replacement to A tag with React Router
                 */}
                  <Link to='/Africa' className= 'to-region'>
                    {/* Font awesome icon */}
-                <i class="fas fa-arrow-right"></i>
+                   <i class="fas fa-chevron-right"></i>
                  </Link>
-
-           </motion.div>
+               </motion.h1>
+           
+               &nbsp;
             {/*  Image for the South America continent    */}
             <img id = 'AsiaImg' src = "Images/SouthAmerica.png" alt = " " />
-         
-              {/*
-             This is to display the red panda you see in Africa
-            The onClick handles the button to update show value
-            to true which will then display the modal
-            */}
-            
             
              <Animal 
              modalTitle = "Toucan"
