@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
-import AnimalProfileDeets from './../Dbtestpage.js';
+import AnimalProfileDeets from '../RenderProfile.js';
 
 /* 
   use state for the modal to manage the value

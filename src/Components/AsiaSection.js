@@ -9,7 +9,7 @@ import {upAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
-import AnimalProfileDeets from './../Dbtestpage.js';
+import AnimalProfileDeets from '../RenderProfile.js';
 import LeftModal from './LeftModal';
 
 function Animal(props){

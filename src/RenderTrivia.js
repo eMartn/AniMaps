@@ -89,9 +89,7 @@ function TriviaDetails(animalName)
             
                 <p>{trivia.map((trivias) => (     
                 <div>
-                    {console.log("hi")}
-                    <p>{trivias.trivia1}</p>
-                    {console.log("hello")}
+                    <p style={{textAlign: 'left'}}>{trivias.trivia1}</p>                   
                 </div>
             ))} </p>           
       </div>                                        
