@@ -81,7 +81,7 @@ function AsiaSection() {
 
             
             <Animal 
-             modalTitle = "Panda"
+             modalTitle = "GiantPanda"
              modalInfo = "I am a panda"
              weight = "130lbs-180lbs"
              className = "Panda2"

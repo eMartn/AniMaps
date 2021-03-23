@@ -5,7 +5,7 @@
  {
     const [animals, setAnimals] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [trivia, setTrivia] = useState([]);
+    //const [trivia, setTrivia] = useState([]);
     
     const db = firebase.firestore();
     const ref = db.collection("Animals"); //this is a reference to the Animals collection in the db
@@ -18,7 +18,7 @@
       ref.onSnapshot((querySnapshot) => {
         const items = [];
         querySnapshot.forEach((doc) => {
-            if (doc.data().name === animalName) // if the name in the document is the same, add the data to the array
+            if (doc.id === animalName) // if the name in the document is the same, add the data to the array
             {
               // I am trying to find the name of the document having already known the name of the animal
               items.push({...doc.data(), id: doc.id});
@@ -27,40 +27,42 @@
         });
         setAnimals(items); 
         setLoading(false);
-      });
-      
+      }); 
     
     }
 
     useEffect(() => {
       getAnimals();
-      getTrivia();
+      //getTrivia();
     }, []);
 
-    const onlyAnim = animals;
-    console.log(onlyAnim);
-    let animalId;
-    animals.map((animal) => {
-       animalId = animal.id
-    });
-    const triviaRef = db.collection('Animals').doc(animalId).collection('Trivia'); //reference to an animal's trivia collection
-    console.log(triviaRef);
-    console.log(animalId);
     
-    function getTrivia()
-    {
-      console.log("omg")
-      setLoading(true);
-      triviaRef.get().then(querySnapshot => {
-        const trivias = [];
-        querySnapshot.docs.forEach(doc => {
-          console.log(doc.data());
-          trivias.push(doc.data());
-        });
-        console.log(trivias);
-        setTrivia(trivias);
-        setLoading(false);
-      });
+    // this block of code gets the document's id (i.e. GrizzlyBear)
+    // const onlyAnim = animals;
+    // console.log(onlyAnim);
+    // let animalId;
+    // animals.map((animal) => {
+    //    animalId = animal.id
+    // });
+
+    // const triviaRef = db.collection('Animals').doc(animalName).collection('Trivia'); //reference to an animal's trivia collection
+    // console.log(triviaRef);
+    //console.log(animalId);
+    
+    // function getTrivia()
+    // {
+    //   console.log("omg")
+    //   setLoading(true);
+    //   triviaRef.get().then(querySnapshot => {
+    //     const trivias = [];
+    //     querySnapshot.docs.forEach(doc => {
+    //       console.log(doc.data());
+    //       trivias.push(doc.data());
+    //     });
+    //     console.log(trivias);
+    //     setTrivia(trivias);
+    //     setLoading(false);
+    //   });
       // triviaRef.onSnapshot((querySnapshot) => {
       //   const trivias = [];
       //   console.log("hi there");
@@ -73,12 +75,9 @@
       //   setTrivia(trivias);
       //   setLoading(false);
       // });
-    }
+    //}
 
-    if (loading)
-      {
-        return <h1>Loading...</h1>; // displays this while the data is loading
-      }
+    
 
 
       // returns the properties of the animal in paragraph tags
@@ -95,13 +94,13 @@
                   <p>{animal.lifeExpectancy}</p>
                   <p>{animal.otherNames}</p>
                   <p>{animal.id}</p>   
-                  <p>{trivia.map((trivias) => (     
+                  {/* <p>{trivia.map((trivias) => (     
                     <div>
                        {console.log("hi")}
                       <p>{trivias.trivia1}</p>
                       {console.log("hello")}
                     </div>
-                  ))} </p>           
+                  ))} </p>            */}
                 </div>                            
           ))}  
           

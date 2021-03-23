@@ -10,6 +10,7 @@ import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import AnimalProfileDeets from './../Dbtestpage.js';
+import TriviaDetails from '../TestTrivia';
 
  /* 
   use state for the modal to manage the value
@@ -31,12 +32,12 @@ function Animal(props){
 return (
 <div>
    <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+   <LeftModal title = {className} onClose = {() => setShow(false)} show = {show} >
    <p>{AnimalProfileDeets(modalTitle)}</p>
   </LeftModal>   
 
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
+  <Modal title = {className} onClose = {() => setShow(false)} show = {show} >
+   <p>{TriviaDetails(modalTitle)}</p>
   </Modal>     
 </div>
 )
@@ -131,10 +132,10 @@ function AmericaContent() {
             />
 
             <Animal 
-             modalTitle = "Grizzly Bear"
+             modalTitle = "GrizzlyBear"
              modalInfo = "I am a Bear"
              weight = "130lbs-180lbs"
-             className = "AltBear"
+             className = "Grizzly Bear"
             />
             
 
