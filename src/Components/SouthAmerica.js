@@ -9,25 +9,6 @@ import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
 
-
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight} = props
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{AnimalProfileDeets(modalTitle)}</p>
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)}
-
 // TODO Connect animals via links in modal
 // displays content 
 function SouthAmericaContent() {

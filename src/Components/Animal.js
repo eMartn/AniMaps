@@ -18,16 +18,17 @@ function Animal(props){
   return (
   <div>
      <div className = {className} onClick = {() => setShow(true)}  ></div>
-     <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+     <LeftModal onClose = {() => setShow(false)} show = {show} >
    
     {/* <img id = {id} src = {Images} /> */}
 
-     <p>{AnimalProfileDeets(modalTitle)}</p>
+     <p>{AnimalProfileDeets(modalTitle, "profile")}</p>
     </LeftModal>   
 
-    <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+    <Modal onClose = {() => setShow(false)} show = {show} >
     {/* <img id = "Crow" src = {Image} /> */}
-     <p>{modalInfo}</p>
+    <p>{AnimalProfileDeets(modalTitle, "description")}</p>
+     <p>{TriviaDetails(modalTitle)}</p>
     </Modal>     
   </div>
 )

@@ -9,7 +9,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
-import AnimalProfileDeets from '../Dbtestpage';
+import AnimalProfileDeets from '../RenderProfile';
 import Animal from './Animal';
 
 // styling for the image sprites 
