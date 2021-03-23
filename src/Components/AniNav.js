@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 import './AniNav.css';
+import Dropdown from './Dropdown';
 
 // inports React from React using extension es7
 // Download extension clicking last logo in the bar
@@ -17,6 +18,23 @@ function NavBarAni() {
     //Reversing the state of useState
     const handleClick = () => setClick(!click);
 
+    const [dropdown, setDropdown] = useState(false);
+
+    const onMouseEnter = () => {
+        if (window.innerWidth < 960) {
+          setDropdown(false);
+        } else {
+          setDropdown(true);
+        }
+      };
+    
+      const onMouseLeave = () => {
+        if (window.innerWidth < 960) {
+          setDropdown(false);
+        } else {
+          setDropdown(false);
+        }
+      };
     return (
         <>
         <nav className = "navbarClass">
@@ -52,15 +70,18 @@ function NavBarAni() {
                  </Link>
                 </li>
 
-                <li className = 'nav-item'>
+                <li className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/Asia' className= 'nav-links'  >
+                <Link to='/Asia'className= 'nav-links'  >
                 <i class="fas fa-globe-americas"></i>
                 Maps 
                  </Link>
+
+                    {dropdown && <Dropdown />}
+
                 </li>
-
-
              </ul>
             </div>
          </nav>

@@ -94,21 +94,6 @@
              animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
           }
         
-          .Koala{
-        
-            display: flex;
-            /* height: 135px; */
-            width: 5vw;
-            padding: 4vw 0px;
-             border: none;
-            cursor: pointer;
-            background: url('../Sprites/koala.svg') center;
-            background-repeat: no-repeat;
-            position: absolute;
-              top: 65vh;
-              left: 67vw;
-             animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
-          }
         
           .Deer{
         
@@ -211,4 +196,172 @@
             0% {transform:rotate(4deg);}
             50% {transform:rotate(-4deg);}
             100% {transform:rotate(4deg);}
+        }
+
+        @media only screen and (max-width: 600px) {
+
+          .Flamingo{
+            display: flex;
+            width: 4vw;
+            padding: 3vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/flamingo.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 82vh;
+              left: 81vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+            
+              }
+            
+            
+              .Bee{
+            
+                display: flex;
+                /* height: 125px; */
+                width: 5vw;
+              padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/bee.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 77vh;
+                  left: 71vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+              }
+            
+            
+              .Deer{
+            
+                display: flex;
+                
+                width: 6vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/deer.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 70vh;
+                  left: 55vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+              }
+            
+              .Boar{
+            
+                display: flex;
+                /* height: 135px; */
+                width: 5vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/boar.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 80vh;
+                  left: 45vw;
+                 animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+              }
+    
+              .AltBear{
+            
+                display: flex;
+                
+                width: 5vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/altbear.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 70vh;
+                  left: 5vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+              }
+        }
+
+        @media only screen and (min-width: 700px) and (max-width: 900px) {
+          .Flamingo{
+            display: flex;
+            width: 4vw;
+            padding: 3vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/flamingo.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 72vh;
+              left: 81vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+            
+              }
+            
+            
+              .Bee{
+            
+                display: flex;
+                /* height: 125px; */
+                width: 5vw;
+              padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/bee.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 60vh;
+                  left: 71vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+              }
+            
+            
+              .Deer{
+            
+                display: flex;
+                
+                width: 6vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/deer.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 50vh;
+                  left: 55vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+              }
+            
+              .Boar{
+            
+                display: flex;
+                /* height: 135px; */
+                width: 5vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/boar.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 65vh;
+                  left: 45vw;
+                 animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+              }
+    
+              .AltBear{
+            
+                display: flex;
+                
+                width: 5vw;
+                padding: 4vw 0px;
+                 border: none;
+                cursor: pointer;
+                background: url('../Sprites/altbear.svg') center;
+                background-repeat: no-repeat;
+                position: absolute;
+                  top: 50vh;
+                  left: 5vw;
+                 animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+              }
+
         }
