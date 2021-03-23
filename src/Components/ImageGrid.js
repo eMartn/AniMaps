@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import useFirestore from './hooks/useFirestore';
 import Modal from './Modal';
 import LeftModal from './LeftModal';
-
+import Cards from './Cards';
 
 /** 3/21/21
  * TODO refactor Cards function so that modal info is pulled from one location for both animals page and map pages 
@@ -11,47 +11,7 @@ import LeftModal from './LeftModal';
  * */ 
 
 
-function Cards(props) {
-    // Varibale created to take in images for the cards background 
-    let bg_img = `url(${props.images})`
-    // Varibale created that assigns title & decription as props
-    // alternate way of doing -> EX: prop.title or props.description
-    // doing it like this makes it easier to manage
-    let {title, description,modalInfo,modalTitle,weight} = props
 
-    const [show,setShow] = useState(false);
-
-    return (      
-      // div created for the card
-        <div className = "card">
-          {/* Wrapper created for the card */}
-            <div className = "wrapper">
-            {/* <div className = "name"></div> */}
-            {/* Div created for image card & sets the image as the background */}
-            <div className = "card_img" style = {{backgroundImage: bg_img}}>
-            </div>
-            {/* div created to hold info for the card */}
-            <div className = "cardTitle">
-              {/* h1 that uses the assigned title for the card */}
-                <h1>{title}</h1>
-               {/* p that uses the assigned description for the card */}
-                <p>{description}</p>
-                {/* button that will promt the user info about the animal for the card ***NOT DONE** */}    
-                 
-            <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
-            
-            <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-            <p>{weight}</p>
-            </LeftModal>  
-            
-            <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-            <p>{modalInfo}</p>
-            </Modal>                       
-            </div>
-            </div>
-        </div>
-    )
-}
 
 /** 3/21/21
  * TODO order animals alphabetically before displaying 
@@ -79,6 +39,7 @@ const ImageGrid = () => {
                 description = "Sample text"
                 modalTitle = {docs[docsIndex].name}
                 modalInfo = "SECOND DESRC"
+                doc = {docs[docsIndex]}
             />
             </div>
         );
