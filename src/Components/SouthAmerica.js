@@ -9,8 +9,6 @@ import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
 
-
-
 // TODO Connect animals via links in modal
 // displays content 
 function SouthAmericaContent() {
@@ -61,21 +59,21 @@ function SouthAmericaContent() {
             />
 
             <Animal 
-             modalTitle = "Southern Three-Banded Armadillo"
+             modalTitle = "SouthernThreeBandedArmadillo"
              modalInfo = "I am an armadillo"
              weight = "130lbs-180lbs"
              className = "Southern-three-banded-armadillo"
             />
 
             <Animal 
-             modalTitle = "Andean Flamingo"
+             modalTitle = "AndeanFlamingo"
              modalInfo = "I am a flamingo"
              weight = "130lbs-180lbs"
              className = "Andean-flamingo"
             />
 
             <Animal 
-             modalTitle = "Red-Eyed Tree Frog"
+             modalTitle = "RedEyedTreeFrog"
              modalInfo = "I am a tree frog"
              weight = "130lbs-180lbs"
              className = "Red-eyed-tree-frog"

@@ -11,8 +11,6 @@ import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
 
- 
-
 // TODO Connect animals via links in modal
 // displays content 
 function AmericaContent() {
@@ -102,7 +100,7 @@ function AmericaContent() {
             />
 
             <Animal 
-             modalTitle = "Bear"
+             modalTitle = "GrizzlyBear"
              modalInfo = "I am a Bear"
              weight = "130lbs-180lbs"
              className = "AltBear"

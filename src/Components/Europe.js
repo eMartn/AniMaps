@@ -9,7 +9,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
-import AnimalProfileDeets from '../Dbtestpage';
+import AnimalProfileDeets from '../RenderProfile';
 import Animal from './Animal';
 
 // styling for the image sprites 
@@ -108,7 +108,7 @@ function EuropeContent() {
              weight = "130lbs-180lbs"
              className = "Bear"
              id = "BearImg"
-             Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ENR3m2QMfCUyhHc-C62GugHaHa%26pid%3DApi&f=1"
+             //Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ENR3m2QMfCUyhHc-C62GugHaHa%26pid%3DApi&f=1"
             />
         
 

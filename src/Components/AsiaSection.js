@@ -9,11 +9,9 @@ import {upAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
-import AnimalProfileDeets from './../Dbtestpage.js';
+import AnimalProfileDeets from '../RenderProfile.js';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
-
-
 
 function AsiaSection() {
     return (
@@ -63,12 +61,12 @@ function AsiaSection() {
 
             
             <Animal 
-             modalTitle = "Panda"
+             modalTitle = "GiantPanda"
              modalInfo = "I am a panda"
              weight = "130lbs-180lbs"
              className = "Panda2"
              id = "PandaImg"
-             images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
+             //images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
             />
 
             <Animal 

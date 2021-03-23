@@ -1,8 +1,11 @@
+import AniNav from '../../Components/AniNav';
+
 function doesNotExist()
 {
     return(
         <div>
-            <h1>Seems like you tried to reach outer space! This page does not exist.</h1>
+            <AniNav />
+            <h1 style={{textAlign: 'center'}}>Seems like you tried to reach outer space! This page does not exist.</h1>
         </div>
     )
 }
