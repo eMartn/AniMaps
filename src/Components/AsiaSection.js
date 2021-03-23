@@ -23,7 +23,8 @@ return (
 <div>
    <div className = {className} onClick = {() => setShow(true)}  ></div>
    <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <img id = {id} src = {images} />
+   {/* <img id = {id} src = {images} /> */}
+   <p>{AnimalProfileDeets(modalTitle)}</p>
   </LeftModal>   
 
   <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
@@ -85,7 +86,7 @@ function AsiaSection() {
              weight = "130lbs-180lbs"
              className = "Panda2"
              id = "PandaImg"
-             images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
+             //images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
             />
 
             <Animal 

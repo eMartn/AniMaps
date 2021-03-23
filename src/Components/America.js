@@ -9,6 +9,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
+import AnimalProfileDeets from './../Dbtestpage.js';
 
  /* 
   use state for the modal to manage the value
@@ -31,7 +32,7 @@ return (
 <div>
    <div className = {className} onClick = {() => setShow(true)}  ></div>
    <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{weight}</p>
+   <p>{AnimalProfileDeets(modalTitle)}</p>
   </LeftModal>   
 
   <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
@@ -130,7 +131,7 @@ function AmericaContent() {
             />
 
             <Animal 
-             modalTitle = "Bear"
+             modalTitle = "Grizzly Bear"
              modalInfo = "I am a Bear"
              weight = "130lbs-180lbs"
              className = "AltBear"
