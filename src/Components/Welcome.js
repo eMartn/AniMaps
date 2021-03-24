@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import Image from '../Sprites/legs.gif';
+import Image from '../Sprites/gecko.gif';
 import {motion} from 'framer-motion';
 import {flashAnimation} from '../Animations';
 import { Button } from './Button';

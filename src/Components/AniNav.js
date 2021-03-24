@@ -18,8 +18,13 @@ function NavBarAni() {
     //Reversing the state of useState
     const handleClick = () => setClick(!click);
 
+    // useState that is responsible for the dropdown showing up or not
+    // If it is false it will not show else true it will
+    // We want it to be false initially so it wont show until we want it to
     const [dropdown, setDropdown] = useState(false);
 
+// Determines when the dropwdown will show based on window size
+// For dropdown to show up
     const onMouseEnter = () => {
         if (window.innerWidth < 960) {
           setDropdown(false);
@@ -27,7 +32,9 @@ function NavBarAni() {
           setDropdown(true);
         }
       };
-    
+
+// Determines when the dropwdown will show based on window size
+// For dropdown to leave when mouse is not hovering on it
       const onMouseLeave = () => {
         if (window.innerWidth < 960) {
           setDropdown(false);
@@ -35,6 +42,8 @@ function NavBarAni() {
           setDropdown(false);
         }
       };
+
+
     return (
         <>
         <nav className = "navbarClass">
@@ -71,9 +80,10 @@ function NavBarAni() {
                 </li>
 
                 <li className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}>
-                    {/* Sets the link to learnmore which does not exist currently */}
+                onMouseEnter={onMouseEnter}
+               onMouseLeave={onMouseLeave}
+                >
+                
                 <Link to='/Asia'className= 'nav-links'  >
                 <i class="fas fa-globe-americas"></i>
                 Maps 
