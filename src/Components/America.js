@@ -72,37 +72,27 @@ function AmericaContent() {
            
 
            <Animal 
-             modalTitle = "Flamingo"
-             modalInfo = "I am a Flamingo"
-             weight = "130lbs-180lbs"
+             modalTitle = "AmericanFlamingo"
              className = "Flamingo"
             />
 
             <Animal 
-             modalTitle = "Bee"
-             modalInfo = "I am a Bee"
-             weight = "130lbs-180lbs"
+             modalTitle = "CommonEasternBumbleBee"
              className = "Bee"
             />
 
               <Animal 
-             modalTitle = "Deer"
-             modalInfo = "I am a Deer"
-             weight = "130lbs-180lbs"
+             modalTitle = "WhiteTailedDeer"
              className = "Deer"
             />
 
             <Animal 
-             modalTitle = "Boar"
-             modalInfo = "I am a Boar"
-             weight = "130lbs-180lbs"
+             modalTitle = "WildBoar"
              className = "Boar"
             />
 
             <Animal 
              modalTitle = "GrizzlyBear"
-             modalInfo = "I am a Bear"
-             weight = "130lbs-180lbs"
              className = "AltBear"
             />
             
