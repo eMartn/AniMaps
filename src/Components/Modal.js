@@ -56,8 +56,8 @@ text-align: left;
 const ModalCloserStyle = styled.div`
 cursor: pointer;
 position: absolute;
-top: 3vh;
-right: 3vw;
+top: 0.5vh;
+right: 2.5vw;
 color: white;
 // z-index: 1;
 `
