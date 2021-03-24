@@ -1,0 +1,14 @@
+
+.notfoundText{
+
+    text-align: center;
+     background: url('../../Sprites/space-animation.gif');
+     background-repeat: no-repeat;
+     background-size: cover;
+
+        height: 100%;
+        width: 100%;
+        padding: 500px;
+        color: white;
+
+}
