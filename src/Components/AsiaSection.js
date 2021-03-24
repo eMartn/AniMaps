@@ -9,28 +9,9 @@ import {upAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
-import AnimalProfileDeets from './../Dbtestpage.js';
+import AnimalProfileDeets from '../RenderProfile.js';
 import LeftModal from './LeftModal';
-
-function Animal(props){
-
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight, id, images} = props
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <img id = {id} src = {images} />
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)}
+import Animal from './Animal';
 
 function AsiaSection() {
     return (
@@ -80,12 +61,12 @@ function AsiaSection() {
 
             
             <Animal 
-             modalTitle = "Panda"
+             modalTitle = "GiantPanda"
              modalInfo = "I am a panda"
              weight = "130lbs-180lbs"
              className = "Panda2"
              id = "PandaImg"
-             images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
+             //images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
             />
 
             <Animal 

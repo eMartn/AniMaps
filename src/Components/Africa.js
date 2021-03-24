@@ -10,27 +10,9 @@ import LeftModal from './LeftModal';
 import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
+import Animal from './Animal';
 
-function Animal(props){
 
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight} = props
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{weight}</p>
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)
-}
 
 // displays the image content 
 //TODO Figure out some conditional rendering so that when we click on redPanda the fox component does not render 

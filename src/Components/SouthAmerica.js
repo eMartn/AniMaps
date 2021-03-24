@@ -7,35 +7,7 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
-
-/* 
-  use state for the modal to manage the value
-  It returns a pair of values: the current state and a function that updates it. 
-  This is why we write const [show, setShow] = useState(false)
-  It is false by default becuase nothing is shown initially   
-  but when it is set to true it will show the modal
-  Look at line 28
- For more info: https://reactjs.org/docs/hooks-state.html
-*/
-function Animal(props){
-
-  // Varibale created that assigns title & decription as props
-  // alternate way of doing -> EX: prop.title or props.description
-  // doing it like this makes it easier to manage
-  let {className, modalInfo,modalTitle,weight} = props
-  const [show,setShow] = useState(false);
-return (
-<div>
-   <div className = {className} onClick = {() => setShow(true)}  ></div>
-   <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{weight}</p>
-  </LeftModal>   
-
-  <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-   <p>{modalInfo}</p>
-  </Modal>     
-</div>
-)}
+import Animal from './Animal';
 
 // TODO Connect animals via links in modal
 // displays content 
@@ -87,21 +59,21 @@ function SouthAmericaContent() {
             />
 
             <Animal 
-             modalTitle = "Southern Three-Banded Armadillo"
+             modalTitle = "SouthernThreeBandedArmadillo"
              modalInfo = "I am an armadillo"
              weight = "130lbs-180lbs"
              className = "Southern-three-banded-armadillo"
             />
 
             <Animal 
-             modalTitle = "Andean Flamingo"
+             modalTitle = "AndeanFlamingo"
              modalInfo = "I am a flamingo"
              weight = "130lbs-180lbs"
              className = "Andean-flamingo"
             />
 
             <Animal 
-             modalTitle = "Red-Eyed Tree Frog"
+             modalTitle = "RedEyedTreeFrog"
              modalInfo = "I am a tree frog"
              weight = "130lbs-180lbs"
              className = "Red-eyed-tree-frog"

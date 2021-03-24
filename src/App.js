@@ -13,7 +13,7 @@ import Welcome from './Components/Welcome';
 import {AnimatePresence} from 'framer-motion';
 import Animals from './Components/Animals.js';
 import doesNotExist from './Components/Pages/404';
-import Dbtestpage from './Dbtestpage';
+import Dbtestpage from './RenderProfile';
 
 function App() {
  
