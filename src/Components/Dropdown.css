@@ -8,12 +8,12 @@ text-align: start;
 }
 
 .dropdown-menu li {
-background: rgb(43, 104, 119);
+background:  rgba(33, 126, 75, 0.7);
 cursor: pointer;
 }
 
 .dropdown-menu li:hover{
-background: rgb(16, 62, 83);
+background: rgba(15, 95, 75, 0.411);
 }
 
 .dropdown-menu.clicked{
