@@ -221,3 +221,171 @@
         50% {transform:rotate(-4deg);}
         100% {transform:rotate(4deg);}
     }
+
+    @media only screen and (max-width: 600px) {
+
+      .Crocodile{
+        display: flex;
+        width: 5vw;
+       padding: 4vw 0px;
+         border: none;
+        cursor: pointer;
+        background: url('../Sprites/crocodile.svg') center;
+        background-repeat: no-repeat;
+        position: absolute;
+          top: 65vh;
+          left: 47vw;
+         animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+        
+          }
+        
+        
+          .Kangaroo{
+        
+            display: flex;
+            /* height: 125px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/kangaroo.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 72vh;
+              left: 29vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+          }
+        
+          .Koala{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/koala.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 75vh;
+              left: 69vw;
+             animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+          }
+        
+          .Spider{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/spider.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 80vh;
+              left: 55vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+          }
+        
+          .Butterfly{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/butterfly.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 72vh;
+              left: 57vw;
+             animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+          }
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 900px) {
+
+
+      .Crocodile{
+        display: flex;
+        width: 5vw;
+       padding: 4vw 0px;
+         border: none;
+        cursor: pointer;
+        background: url('../Sprites/crocodile.svg') center;
+        background-repeat: no-repeat;
+        position: absolute;
+          top: 43vh;
+          left: 47vw;
+         animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+        
+          }
+        
+        
+          .Kangaroo{
+        
+            display: flex;
+            /* height: 125px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/kangaroo.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 58vh;
+              left: 29vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+          }
+        
+          .Koala{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/koala.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 65vh;
+              left: 69vw;
+             animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+          }
+        
+          .Spider{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/spider.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 66vh;
+              left: 55vw;
+             animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+          }
+        
+          .Butterfly{
+        
+            display: flex;
+            /* height: 135px; */
+            width: 5vw;
+            padding: 4vw 0px;
+             border: none;
+            cursor: pointer;
+            background: url('../Sprites/butterfly.svg') center;
+            background-repeat: no-repeat;
+            position: absolute;
+              top: 56vh;
+              left: 57vw;
+             animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+          }
+
+    }

@@ -33,7 +33,6 @@ z-index: 1;
 transform: translateX(19%);
 // transform: translateY(-20%);
 border-radius: 0px 20px 20px 0px;
-
 `
 
 // This is responsible for the header style
@@ -52,7 +51,6 @@ padding: 10px;
 border-top: 1px solid #eee;
 text-align: left;
 // border-bottom: 1px solid #eee;
-
 `
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
@@ -62,7 +60,6 @@ top: 3vh;
 right: 3vw;
 color: white;
 // z-index: 1;
-
 `
 
 // exporting this to see the actual modal when called
