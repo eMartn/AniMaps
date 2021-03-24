@@ -55,7 +55,7 @@
                    <p>{animal.conservationStatus}</p>
                    <p>{animal.lifeExpectancy}</p>
                    <p>{animal.otherNames}</p>
-                   <p>{animal.status}</p>
+                   <p>Conservation Status: {animal.status}</p>
          
                  </div>                            
            ))}  
