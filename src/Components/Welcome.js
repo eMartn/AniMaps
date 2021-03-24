@@ -1,3 +1,4 @@
+
 import React from 'react';
 import styled from 'styled-components'
 import Image from '../Sprites/gecko.gif';
@@ -79,7 +80,7 @@ const Container = styled.div`
 // CSS for button
 button {    
     text-decoration-color: green;
-    margin-top: 25vh;
+    //margin-top: 25vh;
     font-size: clamp(2rem, 4vw, 2.15rem);
    padding: 2rem 5rem;
    border-radius: 12px;
@@ -101,8 +102,9 @@ p{
 font-size: clamp(1.3rem, 6vw, 1.55rem);
 color: white;
 -webkit-text-stroke-width: 1.2px;
--webkit-text-stroke-color: black;
-margin-top: 2vh;
+-webkit-text-stroke-color: gray;
+margin-top: 30vh;
+margin-bottom: 2vh;
 width: 750px;
 }
 `;
@@ -155,12 +157,17 @@ const WelcomeButton = ({children}) => {
          <NavBar />
         <Section>
             <Container>
+
+
+{/* Fact that it displays for now */}
+<p>{RandomFact()}</p>
+
             {/* Button responsbile for leading you to asia section  */}
             {/* <Button> DISCOVER MORE</Button> */}
             <WelcomeButton>DISCOVER MORE</WelcomeButton>
 
             {/* Fact that it displays for now */}
-            <p>{RandomFact()}</p>
+            {/* <p>{RandomFact()}</p> */}
             </Container>
         </Section>
 
