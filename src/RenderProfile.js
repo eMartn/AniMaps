@@ -52,9 +52,11 @@
                    <p>{animal.name}</p>
                    <p>{animal.size}</p>                  
                    <p>{animal.avgMatureWeight}</p>
+                   <p>{animal.avgMatureWeight}</p>
+                   <p>Weight: {animal.weight}</p>
                    <p>{animal.conservationStatus}</p>
-                   <p>{animal.lifeExpectancy}</p>
-                   <p>{animal.otherNames}</p>
+                   <p>Life Expectancy: {animal.lifeExpectancy}</p>
+                   <p>Other Names: {animal.otherNames}</p>
                    <p>Conservation Status: {animal.status}</p>
          
                  </div>                            
