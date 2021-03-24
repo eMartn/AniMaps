@@ -30,7 +30,7 @@ opacity: 0.8;
 background-filter: blur[5px];
 
 animation-name: animate;
-animation-direction: alterate-reverse;
+animation-direction: normal;
 animation-duration: 30s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
