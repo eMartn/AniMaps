@@ -54,7 +54,7 @@ function AustraliaContent() {
             <img id = 'AsiaImg' src = "Images/Australia.jpg" alt = " "/>
             
             <Animal 
-             modalTitle = "SaltWaterCrocodile"
+             modalTitle = "SaltwaterCrocodile"
              className = "Crocodile"
             />
 
