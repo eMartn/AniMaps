@@ -73,40 +73,24 @@ function EuropeContent() {
          
                  
             <Animal 
-             modalTitle = "Frog"
-             modalInfo = "I am a frog"
-             weight = "130lbs-180lbs"
+             modalTitle = "EuropeanTreeFrog"
              className = "Frog"
-              id = "FrogImg"
-              Images = "https://i.natgeofe.com/n/e1a32724-c999-4152-ad9f-ecdbf7e65399/amphibians-hero_2x3.jpg?w=600&h=900"
 
             />
 
             <Animal 
              modalTitle = "CarrionCrow"
-             modalInfo = "I am a Crow"
-             weight = "130lbs-180lbs"
              className = "Crow"
-             id = "CrowImg"
-
             />
 
             <Animal 
-             modalTitle = "Moose"
-             modalInfo = "I am a moose"
-             weight = "130lbs-180lbs"
+             modalTitle = "EurasianMoose"
              className = "Moose"
-             id = "MooseImg"
-             Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Fdb%2F6b%2F0e%2Fdb6b0eb9c9dde5328ddc8db0854fee24--elk-hunting-bull-elk.jpg&f=1&nofb=1"
             />
 
             <Animal 
-             modalTitle = "Bear"
-             modalInfo = "I am a bear"
-             weight = "130lbs-180lbs"
+             modalTitle = "EurasianBrownBear"
              className = "Bear"
-             id = "BearImg"
-             //Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ENR3m2QMfCUyhHc-C62GugHaHa%26pid%3DApi&f=1"
             />
         
 
