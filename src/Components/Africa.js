@@ -76,30 +76,22 @@ It returns a pair of values: the current state and a function that updates it.
             <img id = 'AsiaImg' src = "Images/Africa.jpg" alt = " " />
             
             <Animal 
-             modalTitle = "Elephant"
-             modalInfo = "I am a elephant"
-             weight = "130lbs-180lbs"
+             modalTitle = "AfricanElephant"
              className = "African-Elephant"
             />
 
             <Animal 
-             modalTitle = "Lion"
-             modalInfo = "I am a lion"
-             weight = "130lbs-180lbs"
+             modalTitle = "AfricanLion"
              className = "Lion"
             />
 
             <Animal 
-             modalTitle = "Giraffee"
-             modalInfo = "I am a Giraffee"
-             weight = "130lbs-180lbs"
+             modalTitle = "MasaiGiraffe"
              className = "Giraffee"
             />
 
             <Animal 
-             modalTitle = "Rhino"
-             modalInfo = "I am a Rhino"
-             weight = "130lbs-180lbs"
+             modalTitle = "WhiteRhinoceros"
              className = "Rhino"
             />
 
