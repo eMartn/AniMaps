@@ -41,12 +41,16 @@ function TriviaDetails(animalName)
 
 
      // returns the properties of the animal in paragraph tags
+    
      return (
        <div>
             
-                <p>{trivia.map((trivias) => (     
+                <p>{trivia.map((trivias) => ( 
+                
                 <div>
-                    <p style={{textAlign: 'left'}}>{trivias.trivia1}</p>                   
+                    <p style={{textAlign: 'left'}}>
+                      {trivias.trivia1}
+                    </p>                   
                 </div>
             ))} </p>           
       </div>                                        

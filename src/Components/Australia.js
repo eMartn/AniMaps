@@ -82,7 +82,7 @@ function AustraliaContent() {
 
             <Animal 
 
-             modalTitle = "Peacock spider"
+             modalTitle = "PeacockSpider"
              modalInfo = "I am a Spider"
              weight = "130lbs-180lbs"
              className = "Spider"
