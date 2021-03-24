@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   object-fit: contain;
-  background-color: rgba(22, 22, 22, 0.945);
+  background-color: #060911;
   color: rgba(255, 255, 255, 0.952);
   font-size: 1.5em;
   padding-top: 2.5vh;
@@ -43,7 +43,6 @@
   height: 100%;
   margin-left: 29vh;
   margin-right: 29vh;
-  
 }
 
 .to-region:hover {
@@ -206,67 +205,65 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .Toucan {
+    display: flex;
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/toucan.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65vh;
+    left: 50vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+  }
 
-.Toucan {
-  display: flex;
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/toucan.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 65vh;
-  left: 50vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+  .Southern-three-banded-armadillo {
+    display: flex;
+    /* height: 125px; */
+    width: 4vw;
+    padding: 3vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/armadillo.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80vh;
+    left: 55vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+  }
+
+  .Andean-flamingo {
+    display: flex;
+    /* height: 135px; */
+    width: 6vw;
+    padding: 3vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/andean-flamingo.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 75vh;
+    left: 48vw;
+    animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+  }
+
+  .Red-eyed-tree-frog {
+    display: flex;
+
+    width: 4vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/tree-frog.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 67vh;
+    left: 43vw;
+    animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+  }
 }
-
-.Southern-three-banded-armadillo {
-  display: flex;
-  /* height: 125px; */
-  width: 4vw;
-  padding: 3vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/armadillo.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 80vh;
-  left: 55vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
-}
-
-.Andean-flamingo {
-  display: flex;
-  /* height: 135px; */
-  width: 6vw;
-  padding: 3vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/andean-flamingo.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 75vh;
-  left: 48vw;
-  animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
-}
-
-.Red-eyed-tree-frog {
-  display: flex;
-
-  width: 4vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/tree-frog.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 67vh;
-  left: 43vw;
-  animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
-}
-}
-
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
   .Toucan {
@@ -282,10 +279,10 @@
     left: 50vw;
     animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
   }
-  
+
   .Southern-three-banded-armadillo {
     display: flex;
-   
+
     width: 4vw;
     padding: 3vw 0px;
     border: none;
@@ -297,10 +294,10 @@
     left: 55vw;
     animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
   }
-  
+
   .Andean-flamingo {
     display: flex;
- 
+
     width: 6vw;
     padding: 3vw 0px;
     border: none;
@@ -312,10 +309,10 @@
     left: 48vw;
     animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
   }
-  
+
   .Red-eyed-tree-frog {
     display: flex;
-  
+
     width: 4vw;
     padding: 4vw 0px;
     border: none;
@@ -327,5 +324,4 @@
     left: 43vw;
     animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
   }
-
 }
