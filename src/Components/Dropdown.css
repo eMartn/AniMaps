@@ -8,13 +8,15 @@ text-align: start;
 }
 
 .dropdown-menu li {
-background: rgb(43, 104, 119);
+background:  rgb(32, 117, 70);
 cursor: pointer;
+
 }
 
 .dropdown-menu li:hover{
-background: rgb(16, 62, 83);
-}
+    background: rgb(20, 63, 52);
+    
+    }
 
 .dropdown-menu.clicked{
 display: none;
@@ -28,3 +30,7 @@ text-decoration: none;
 color: white;
 padding: 16px;
 }
+
+/* .dropdown-link:hover{
+    color: rgb(0, 0, 0);
+} */

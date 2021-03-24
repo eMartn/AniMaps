@@ -9,7 +9,7 @@ const useFirestore = (collection) => {
     useEffect(() => {
         // use firestore service to reach into collection and then listen for documents inside collection with onSnapshot
         const unsub = projectFirestore.collection(collection)   // returned function is used to unsubscribe from collection if image grid component is unmounted
-            .orderBy('name', 'desc')    // order by whatever property specified in the arguments
+            .orderBy('name', 'asc')    // order by whatever property specified in the arguments
             .onSnapshot((snap) => {
                 // create array of documents we will eventually return
                 let documents = [];
