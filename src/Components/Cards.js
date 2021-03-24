@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import LeftModal from './LeftModal';
 import Modal from './Modal';
+import TriviaDetails from '../RenderTrivia';
+
 
 function Cards(props) {
     // Varibale created to take in images for the cards background 
@@ -45,7 +47,8 @@ function Cards(props) {
             </LeftModal>  
             
             <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
-            <p>{modalInfo}</p>
+            <p style={{textAlign: 'left'}}>{document.description}</p>
+            <p>{TriviaDetails(document.id)}</p>
             </Modal>                       
             </div>
             </div>
