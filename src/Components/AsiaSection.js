@@ -70,39 +70,23 @@ function AsiaSection() {
             />
 
             <Animal 
-             modalTitle = "Monkey"
-             modalInfo = "I am a monkey"
-             weight = "130lbs-180lbs"
+             modalTitle = "RhesusMacaque"
              className = "Monkey"
-             id = "MonkeyImg"
-             images = "https://i.natgeofe.com/n/5892ed3f-0b48-4227-9900-a712811a5903/mammals-hero_2x3.jpg?w=600&h=900"
             />
 
             <Animal 
-             modalTitle = "Tiger"
-             modalInfo = "I am a tiger"
-             weight = "130lbs-180lbs"
+             modalTitle = "BengalTiger"
              className = "Tiger"
-             id = "TigerImg"
-             images = "https://i.natgeofe.com/n/3659f71f-0f58-4295-954f-b0599c8a34b2/bengal-tiger_thumb_3x4.JPG?w=600&h=799.5"
             />    
 
             <Animal 
-             modalTitle = "Goat"
-             modalInfo = "I am a goat"
-             weight = "130lbs-180lbs"
+             modalTitle = "WildGoat"
              className = "Goat"
-             id = "GoatImg"
-             images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.d_l7H685x1G7v2zeByuYmAHaHa%26pid%3DApi&f=1"
             />    
 
             <Animal 
-             modalTitle = "Elephant"
-             modalInfo = "I am a elephant"
-             weight = "130lbs-180lbs"
+             modalTitle = "AsianElephant"
              className = "AS-Elephant"
-             id = "Indian-Elephant"
-             images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xEEGNVoxNS9-5t6hVUsWbAHaLH%26pid%3DApi&f=1"
             />    
 
 
