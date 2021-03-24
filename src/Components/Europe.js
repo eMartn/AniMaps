@@ -84,7 +84,7 @@ function EuropeContent() {
             />
 
             <Animal 
-             modalTitle = "Crow"
+             modalTitle = "CarrionCrow"
              modalInfo = "I am a Crow"
              weight = "130lbs-180lbs"
              className = "Crow"
@@ -94,7 +94,7 @@ function EuropeContent() {
             />
 
             <Animal 
-             modalTitle = "MOOSE"
+             modalTitle = "Moose"
              modalInfo = "I am a moose"
              weight = "130lbs-180lbs"
              className = "Moose"
