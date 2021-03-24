@@ -5,7 +5,6 @@
  {
     const [animals, setAnimals] = useState([]);
     const [loading, setLoading] = useState(false);
-    //const [trivia, setTrivia] = useState([]);
     
     const db = firebase.firestore();
     const ref = db.collection("Animals"); //this is a reference to the Animals collection in the db
@@ -51,12 +50,12 @@
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
                    <p>{animal.name}</p>
-                   <p>{animal.avgMatureHeight}</p>
-                   <p>{animal.avgMatureLength}</p>
+                   <p>{animal.size}</p>                  
                    <p>{animal.avgMatureWeight}</p>
                    <p>{animal.conservationStatus}</p>
                    <p>{animal.lifeExpectancy}</p>
                    <p>{animal.otherNames}</p>
+                   <p>{animal.status}</p>
          
                  </div>                            
            ))}  
