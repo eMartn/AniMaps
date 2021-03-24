@@ -9,7 +9,6 @@ import {motion} from 'framer-motion';
 import {fromRightAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
-import AnimalProfileDeets from '../RenderProfile';
 import Animal from './Animal';
 
 // styling for the image sprites 
@@ -89,7 +88,6 @@ function EuropeContent() {
              weight = "130lbs-180lbs"
              className = "Crow"
              id = "CrowImg"
-            // Images = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F57%2F84%2F5f%2F57845fb2287fee6434de97bb5a8742c5.jpg&f=1&nofb=1"
 
             />
 

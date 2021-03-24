@@ -34,14 +34,14 @@
       getAnimals();
       //getTrivia();
     }, []);
-
+    
     if (loading)
       {
         return <h1>Loading...</h1>; // displays this while the data is loading
       }
 
       // returns the properties of the animal in paragraph tags
-      
+      console.log(animals.length);
         if (output === "profile")
         {
           return (
@@ -66,6 +66,7 @@
           {
             return (
               <div>
+                
                 {animals.map((animal) =>(             
                     <div key={animal.id}>
                       <p style={{textAlign: 'left'}}>{animal.description}</p>

@@ -13,6 +13,7 @@ import { Button } from './Button';
 import {transition } from '../Animations';
 import {Link} from 'react-router-dom';
 import NavBar from '../Components/NavBar';
+import RandomFact from '../RandomFact';
 
 // CSS for GIF
 // creates a const for section which is used below
@@ -159,7 +160,7 @@ const WelcomeButton = ({children}) => {
             <WelcomeButton>DISCOVER MORE</WelcomeButton>
 
             {/* Fact that it displays for now */}
-            <p>Cows poo up to 15 times a day, which can be as much as 115 pounds of manure per day, or approximately 21 tons per year.</p>
+            <p>{RandomFact()}</p>
             </Container>
         </Section>
 
