@@ -52,30 +52,22 @@ function SouthAmericaContent() {
             <img id = 'AsiaImg' src = "Images/SouthAmerica.png" alt = " " />
             
              <Animal 
-             modalTitle = "Toucan"
-             modalInfo = "I am a toucan"
-             weight = "130lbs-180lbs"
+             modalTitle = "TocoToucan"
              className = "Toucan"
             />
 
             <Animal 
              modalTitle = "SouthernThreeBandedArmadillo"
-             modalInfo = "I am an armadillo"
-             weight = "130lbs-180lbs"
              className = "Southern-three-banded-armadillo"
             />
 
             <Animal 
              modalTitle = "AndeanFlamingo"
-             modalInfo = "I am a flamingo"
-             weight = "130lbs-180lbs"
              className = "Andean-flamingo"
             />
 
             <Animal 
              modalTitle = "RedEyedTreeFrog"
-             modalInfo = "I am a tree frog"
-             weight = "130lbs-180lbs"
              className = "Red-eyed-tree-frog"
             />
         </div>
