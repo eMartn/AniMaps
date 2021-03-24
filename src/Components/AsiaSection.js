@@ -62,11 +62,7 @@ function AsiaSection() {
             
             <Animal 
              modalTitle = "GiantPanda"
-             modalInfo = "I am a panda"
-             weight = "130lbs-180lbs"
              className = "Panda2"
-             id = "PandaImg"
-             //images = "https://i.natgeofe.com/n/c138931f-bd4e-46c9-8d23-5795c2e9254f/giant-panda_thumb_3x4.JPG?w=600&h=799.5"
             />
 
             <Animal 
