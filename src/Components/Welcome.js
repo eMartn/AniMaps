@@ -38,7 +38,6 @@ animation-iteration-count: infinite;
 animation-play-state: running;
 animation-timing-function: ease-in-out;
 
-
 @keyframes animate{
     
 0%{
