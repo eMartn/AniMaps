@@ -15,10 +15,15 @@ function Cards(props) {
 
     const [show,setShow] = useState(false);
     const [document, setDocument] = useState(doc);
-
+    
     return (      
+
+        
       // div created for the card
         <div className = "card">
+
+        
+
           {/* Wrapper created for the card */}
             <div className = "wrapper">
             {/* <div className = "name"></div> */}
@@ -29,7 +34,9 @@ function Cards(props) {
             <div className = "cardTitle">
               {/* h1 that uses the assigned title for the card */}
                 <h1>{title}</h1>
-               {/* p that uses the assigned description for the card */}
+               {/* p that uses the assigned description for the card 
+                FIRST CHILD 
+               */}
                 <p>{description}</p>
                 {/* button that will promt the user info about the animal for the card ***NOT DONE** */}    
                  
@@ -37,7 +44,8 @@ function Cards(props) {
             
             <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
-              <p>{document.name}</p>
+               {/* remember if you want to get rid of animal name just comment it out here  */}
+              <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
               <p>{document.avgMatureHeight}</p>
               <p>{document.avgMatureLength}</p>
               <p>{document.avgMatureWeight}</p>
@@ -46,12 +54,24 @@ function Cards(props) {
               <p>{document.otherNames}</p>
             </LeftModal>  
             
-            <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+            <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show}
+            
+            content1 =  {document.description}
+
+            content2 = {TriviaDetails(document.id)}
+
+            content3 = "I am funner"
+
+            
+            >
             <p style={{textAlign: 'left'}}>{document.description}</p>
             <p>{TriviaDetails(document.id)}</p>
             </Modal>                       
             </div>
             </div>
+
+
+
         </div>
     )
 }

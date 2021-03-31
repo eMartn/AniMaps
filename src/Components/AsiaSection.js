@@ -63,26 +63,31 @@ function AsiaSection() {
             <Animal 
              modalTitle = "GiantPanda"
              className = "Panda2"
+             unrelated = "Giant Panda"
             />
 
             <Animal 
              modalTitle = "RhesusMacaque"
              className = "Monkey"
+             unrelated = "Rhesus Macaque"
             />
 
             <Animal 
              modalTitle = "BengalTiger"
              className = "Tiger"
+             unrelated = "Bengal Tiger"
             />    
 
             <Animal 
              modalTitle = "WildGoat"
              className = "Goat"
+             unrelated = "Wild Goat"
             />    
 
             <Animal 
              modalTitle = "AsianElephant"
              className = "AS-Elephant"
+             unrelated = "Asian Elephant"
             />    
 
 

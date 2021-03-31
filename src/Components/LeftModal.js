@@ -28,12 +28,31 @@ z-index: 1;
 transform: translateX(-150%);
 //first value tope left second top right
 border-radius: 20px 0px 0px 20px;
+border-style: ridge;
+border-color: rgba(19, 49, 56, 0.561);
+border-width: 5px;
 animation-name: zoom;
 animation-duration: 0.5s;
 @keyframes zoom {
   from {transform: scale(0.1)} 
   to {transform: scale(1)}
 }
+
+@media only screen and (max-width: 600px) {
+
+  width: 25vw;
+  height: 70vh;
+}
+
+@media only screen (min-width: 700px) and (max-width: 900px) {
+
+  width: 23vw;
+  height: 70vh;
+
+}
+
+
+
 `
 // This is responsible for the header style
 const ModalHFStyle = styled.div`

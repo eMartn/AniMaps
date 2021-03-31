@@ -1,5 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
+import './Modal.css';
+import {motion} from 'framer-motion';
+
+
+/*
+Logs: 3/28/21
+Added a transition on the tabs when you switch to another one 
+Added a dark orange on the text ti give it a nice contrast
+Added border to the right and bttom of the tabs to give it specific border to get rid of double border issue
+Added a line height to the H of the content 
+*/
 
 // This uses styled components to style our components below
 //This one is resposible for the outer modal
@@ -9,6 +20,7 @@ left: 0;
 top: 0;
 right: 0;
 bottom: 0;
+
 // background-color: rgba(0,0,0,0.7);
 display: flex;
 align-items: center;
@@ -31,35 +43,61 @@ color: black;
 z-index: 1;
 -ms-transform: translateX(5%);
 transform: translateX(19%);
-// transform: translateY(-20%);
 border-radius: 0px 20px 20px 0px;
+border-style: ridge;
+border-color: rgba(19, 49, 56, 0.561);
+border-width: 5px;
+@media only screen and (max-width: 600px) {
+
+  width: 80vw;
+  height: 70vh;
+
+  border-radius: 0px 19px 20px 0px;
+  border-style: ridge;
+  border-color: rgba(19, 49, 56, 0.561);
+  border-width: 4px;
+  overflow: scroll;
+}
+
 `
 
 // This is responsible for the header style
 const ModalHFStyle = styled.div`
 padding: 2vh;
+
+
 `
 // This is responsible for the title style
 const ModalTitleStyle = styled.div`
 margin: 0;
 //font-size: 1.5rem;
+
 `
 // This is responsible for the body style aka the white border 
 // you see in the modal
 const ModalBodyStyle = styled.div`
 padding: 10px;
-border-top: 1px solid #eee;
+//border-top: 1px solid #eee;
 text-align: left;
 // border-bottom: 1px solid #eee;
+
 `
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
 cursor: pointer;
 position: absolute;
-top: 0.5vh;
-right: 2.5vw;
+top: 10vh;
+right: 3vw;
 color: white;
 // z-index: 1;
+
+
+@media only screen and (max-width: 600px) {
+  cursor: pointer;
+  position: absolute;
+  top: 11vh;
+  right: 7vw;
+}
 `
 
 // exporting this to see the actual modal when called
@@ -69,44 +107,216 @@ const Modal = props =>{
   This  will handle show/hide by props.show value so we possibly have 2 use cases either true or false.
   if it is true it will display the modal 
   if it is false it will hide it 
-*/
-  if(!props.show){
-    return null; 
-  }
+  useState is 1 since it is initially what is shown when modalis opened for the first time
+  If user leaves modal one second tab then leaves and comes back it will be on second tab given tey don't refresh the page or go to a new one 
+  Every time we click on tab we are chaning state passing 1,2, or 3
+  */
 
-return(
+const [toggleState, setToggleState] = useState(1);
+// display index of the tab takes from parameter in tab
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
 
-    <ModalStyle>
-    <div className = "modal2">
-      <ModalContent>
-    <div className = "modal-content">
-    <ModalHFStyle>
-    <div className = "modal-header">
+   if(!props.show){
+     return null; 
+   }
 
-    <ModalTitleStyle>
-    <h3 className = "modal-title"> {props.title}</h3>
-    </ModalTitleStyle>
-    </div>
-    </ModalHFStyle>
-    <ModalBodyStyle>
-    <div className = "modal-body">
-    {props.children}
-    </div>
-    </ModalBodyStyle>
-    <div className = "modal-closer">
-    {/* className = "button" */}
-    {/* 
-    This manages onClose which will help close the modal
-    I wrapped it in ModalCloserStyle for the styling 
-    I also used a "X" icon from font awesome 
-    */}
-    <ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle>
-    </div>
-    </div>
+ return(
+
+<ModalStyle>
+       <ModalContent>
+     <div className = "modal-content">
+     <div className = "bloc-tabs">
+
+     <button
+     // tenary operator to change css based on toggleState
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+         // pass 1 arguement 
+          onClick={() => toggleTab(1)}
+        >
+           Description
+        </button>
+
+
+        <button
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
+        >
+          Trivia
+        </button>
+
+        <button
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)}
+        >
+          Related species
+        </button>
+
+     </div>
+
+
+     <ModalBodyStyle>
+     <div className = "modal-body">
+     <div
+             // if toggle state equals to 1 then display content for 1
+            // rest work that way as well
+          className={toggleState === 1 ? "content  active-content" : "content"}
+        >
+          <h2>Description</h2> 
+          <p>
+            {props.content1}
+          </p>
+        </div>
+
+
+        <div
+          className={toggleState === 2 ? "content  active-content" : "content"}
+        >
+          <h2>Trivia</h2>
+
+          <p>
+           {props.content2}
+          </p>
+        </div>
+
+        <div
+          className={toggleState === 3 ? "content  active-content" : "content"}
+        >
+          <h2>Related Species</h2>
+
+          <p>
+            {props.content3}
+          </p>
+        </div>
+
+     </div>
+     </ModalBodyStyle>
+     <div className = "modal-closer">
+   
+   
+     <ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle>
+     </div>
+  </div>
     </ModalContent>
-    </div>
-    </ModalStyle>
-)
-}
+     </ModalStyle>
+ )
+ }
+
+
+
+
+// function Modal(props) {
+//   const [toggleState, setToggleState] = useState(1);
+
+
+  
+//   const toggleTab = (index) => {
+//     setToggleState(index);
+//   };
+
+//   const [show,setShow] = useState(false);
+
+//   return (
+    
+//     <div className="container" >
+//       <div className="bloc-tabs" >
+{/* 
+        <button
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)} onClose = {() => setShow(false)} show = {show}
+        >
+          Tab 1
+        </button>
+
+
+        <button
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
+        >
+          Tab 2
+        </button>
+        <button
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)}
+        >
+          Tab 3
+        </button>
+
+        <ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle> */}
+
+
+    
+//      <ModalStyle>
+//      <div className = "modal2">
+//        <ModalContent>
+//     <div className = "modal-content">
+//      <ModalHFStyle>
+//      <div className = "modal-header">
+
+//      <ModalTitleStyle>
+//      <h3 className = "modal-title"> {props.title}</h3>
+//      </ModalTitleStyle>
+//      </div>
+//      </ModalHFStyle>
+//      <ModalBodyStyle>
+//      <div className = "modal-body">
+//     {props.children}
+//      </div>
+//      </ModalBodyStyle>
+//      <div className = "modal-closer">
+    
+//      <ModalCloserStyle onClick={props.onClose} ><i class="fas fa-times"></i></ModalCloserStyle>
+//      </div>
+//      </div>
+//      </ModalContent>
+//      </div>
+//      </ModalStyle>
+
+
+//       </div>
+
+//       <div className="content-tabs">
+//         <div
+//           className={toggleState === 1 ? "content  active-content" : "content"}
+//         >
+//           <h2>Content 1</h2>
+         
+//           <p>
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+//             praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
+//             vel voluptatum?
+//           </p>
+//         </div>
+
+//         <div
+//           className={toggleState === 2 ? "content  active-content" : "content"}
+//         >
+//           <h2>Content 2</h2>
+         
+//           <p>
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+//             voluptatum qui adipisci.
+//           </p>
+//         </div>
+
+//         <div
+//           className={toggleState === 3 ? "content  active-content" : "content"}
+//         >
+//           <h2>Content 3</h2>
+         
+//           <p>
+//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
+//             nostrum rerum laudantium totam unde adipisci incidunt modi alias!
+//             Accusamus in quia odit aspernatur provident et ad vel distinctio
+//             recusandae totam quidem repudiandae omnis veritatis nostrum
+//             laboriosam architecto optio rem, dignissimos voluptatum beatae
+//             aperiam voluptatem atque. Beatae rerum dolores sunt.
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default Modal;

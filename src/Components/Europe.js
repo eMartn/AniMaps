@@ -11,6 +11,7 @@ import AniNav from '../Components/AniNav';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
 
+
 // styling for the image sprites 
 
 /*
@@ -27,7 +28,6 @@ import Animal from './Animal';
   Look at line 143
  For more info: https://reactjs.org/docs/hooks-state.html
 */
-
 
 // TODO Connect animals via links in modal
 // displays content 
@@ -75,7 +75,7 @@ function EuropeContent() {
             <Animal 
              modalTitle = "EuropeanTreeFrog"
              className = "Frog"
-
+             
             />
 
             <Animal 

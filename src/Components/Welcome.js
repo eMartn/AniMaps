@@ -159,7 +159,7 @@ const WelcomeButton = ({children}) => {
 
 
 {/* Fact that it displays for now */}
-<p>{RandomFact()}</p>
+            <p>{RandomFact()}</p>
 
             {/* Button responsbile for leading you to asia section  */}
             {/* <Button> DISCOVER MORE</Button> */}
