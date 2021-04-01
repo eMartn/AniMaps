@@ -65,12 +65,18 @@
          );
         }else if (output === "description")
           {
+            let description;
+            {animals.map((animal) =>(             
+               description = animal.description
+              .replaceAll("\\n", "\n")                        
+            ))}  
+            
             return (
               <div>
                 
                 {animals.map((animal) =>(             
                     <div key={animal.id}>
-                      <p style={{textAlign: 'left'}}>{animal.description}</p>
+                      <p style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>{description}</p>
            
                     </div>                            
               ))}  
