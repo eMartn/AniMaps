@@ -50,11 +50,10 @@
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
                    <p>{animal.name}</p>
-                   <p>{animal.size}</p>                  
-                   <p>{animal.avgMatureWeight}</p>
-                   <p>{animal.conservationStatus}</p>
-                   <p>{animal.lifeExpectancy}</p>
-                   <p>{animal.otherNames}</p>
+                   <p>Size: {animal.size}</p>                  
+                   <p>Weight: {animal.weight}</p>
+                   <p>Life Expectancy: {animal.lifeExpectancy}</p>
+                   <p>Other Names: {animal.otherNames}</p>
                    <p>Conservation Status: {animal.status}</p>
          
                  </div>                            
