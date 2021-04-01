@@ -33,7 +33,7 @@
 
 /* .wrapper:hover{
         transform:translateY(-10px);
-        
+        z-index: -1;
     } */
 
 .card_img {
@@ -78,6 +78,11 @@ p {
   text-align: center;
   margin-bottom: 5px;
 }
+
+/* .leftModalTitle{
+  font-size: 1.8vw;
+  
+} */
 
 .buttonCard {
   background: #95be22;

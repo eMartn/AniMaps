@@ -5,7 +5,9 @@ import {motion} from 'framer-motion';
 import Modal from './Modal';
 import LeftModal from './LeftModal';
 import ImageGrid from './ImageGrid';
-
+import TriviaDetails from '../RenderTrivia';
+import Cards from './Cards';
+import useFirestore from './hooks/useFirestore';
 /**
  * 
  * 3/14/21
@@ -32,7 +34,7 @@ import ImageGrid from './ImageGrid';
 
 // Function that will return the function we created above 
 function Animals() {
-  
+
     return (
       // empty fragment
        <>
@@ -48,9 +50,7 @@ function Animals() {
            damping: 20
          }}
          ><h1>Meet the animals</h1></motion.div>
-      
 
-        
         <br></br>
         
         

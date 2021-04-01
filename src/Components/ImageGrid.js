@@ -24,6 +24,8 @@ const ImageGrid = () => {
     const { docs } = useFirestore('Animals');
     console.log(docs);
 
+    
+
     // go through docs, build cards, and group cards by how long we want the row to be; accumulates an array of arrays, where each array in each index is 4 cards (for one row)
     const groupedCards = docs.reduce((acc, currentValue, docsIndex) => {   // reduce method takes an accumulator, a current value, and an index and loops through docs
         var accIndex = parseInt(docsIndex / 4); // docsIndex values of 0, 1, 2, and 3 will evalute to 0 here for our accumulator index (and then cards 4 through 7 will go in accIndex 1)

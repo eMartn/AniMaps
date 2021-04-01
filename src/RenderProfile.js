@@ -41,6 +41,8 @@
       }
 
       // returns the properties of the animal in paragraph tags
+      // remember if you want to get rid of animal name just comment it out here 
+      //style = {{fontSize: '1.8vw'}}
       console.log(animals.length);
         if (output === "profile")
         {
@@ -50,10 +52,10 @@
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
                    <p>{animal.name}</p>
-                   <p>Size: {animal.size}</p>                  
-                   <p>Weight: {animal.weight}</p>
-                   <p>Life Expectancy: {animal.lifeExpectancy}</p>
                    <p>Other Names: {animal.otherNames}</p>
+                   <p>Size: {animal.size}</p>                                  
+                   <p>Weight: {animal.weight}</p>
+                   <p>Life Expectancy: {animal.lifeExpectancy}</p>      
                    <p>Conservation Status: {animal.status}</p>
          
                  </div>                            
