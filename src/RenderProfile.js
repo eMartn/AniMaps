@@ -52,11 +52,11 @@
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
                    <p style = {{fontSize: '1.8vw'}}>{animal.name}</p>
-                   <p>Other Names: {animal.otherNames}</p>
-                   <p>Size: {animal.size}</p>                                  
-                   <p>Weight: {animal.weight}</p>
-                   <p>Life Expectancy: {animal.lifeExpectancy}</p>      
-                   <p>Conservation Status: {animal.status}</p>
+                   <p >Other Names: {animal.otherNames}</p>
+                   <p >Size: {animal.size}</p>                                  
+                   <p >Weight: {animal.weight}</p>
+                   <p >Life Expectancy: {animal.lifeExpectancy}</p>      
+                   <p >Conservation Status: {animal.status}</p>
          
                  </div>                            
            ))}  
