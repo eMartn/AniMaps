@@ -51,7 +51,7 @@
             {animals.map((animal) =>(             
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
-                   <p >{animal.name}</p>
+                   <p style = {{fontSize: '1.8vw'}}>{animal.name}</p>
                    <p>{animal.size}</p>                  
                    <p>{animal.avgMatureWeight}</p>
                    <p>{animal.avgMatureWeight}</p>

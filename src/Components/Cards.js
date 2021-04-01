@@ -42,7 +42,7 @@ function Cards(props) {
                  
             <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
             
-            <LeftModal title = {modalTitle} onClose = {() => setShow(false)} show = {show} >
+            <LeftModal onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
                {/* remember if you want to get rid of animal name just comment it out here  */}
               <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
