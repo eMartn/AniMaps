@@ -38,7 +38,6 @@ animation-iteration-count: infinite;
 animation-play-state: running;
 animation-timing-function: ease-in-out;
 
-
 @keyframes animate{
     
 0%{
@@ -160,7 +159,7 @@ const WelcomeButton = ({children}) => {
 
 
 {/* Fact that it displays for now */}
-<p>{RandomFact()}</p>
+            <p>{RandomFact()}</p>
 
             {/* Button responsbile for leading you to asia section  */}
             {/* <Button> DISCOVER MORE</Button> */}

@@ -41,6 +41,8 @@
       }
 
       // returns the properties of the animal in paragraph tags
+      // remember if you want to get rid of animal name just comment it out here 
+      //style = {{fontSize: '1.8vw'}}
       console.log(animals.length);
         if (output === "profile")
         {
@@ -49,7 +51,7 @@
             {animals.map((animal) =>(             
                  <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
-                   <p>{animal.name}</p>
+                   <p >{animal.name}</p>
                    <p>{animal.size}</p>                  
                    <p>{animal.avgMatureWeight}</p>
                    <p>{animal.avgMatureWeight}</p>

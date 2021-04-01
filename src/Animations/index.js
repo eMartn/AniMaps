@@ -51,11 +51,11 @@ export const fromLeftAnimation ={
 
         in:{
             opacity: 0.8,
-            x: 300
+            x: 50
         },
         out:{
-            opacity: 0.9,
-            x: -300
+            opacity: 0.8,
+            x: -50
         },
         end:{
             x: 0,
@@ -67,11 +67,11 @@ export const fromRightAnimation ={
 
     in:{
         opacity: 0.8,
-        x: -300
+        x: -50
     },
     out:{
         opacity: 0.9,
-        x: 300
+        x: 50
     },
     end:{
         x: 0,
