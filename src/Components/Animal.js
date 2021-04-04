@@ -27,7 +27,7 @@ TODO PUSH PHOTO UP TO COVER HEADER AREA ON LEFT MODAL
 
 function Animal(props){
 
-    // Varibale created that assigns title & decription as props
+    // Variable created that assigns title & decription as props
     // alternate way of doing -> EX: prop.title or props.description
     // doing it like this makes it easier to manage
     let {className, modalInfo, modalTitle, weight,id, Images,unrelated} = props

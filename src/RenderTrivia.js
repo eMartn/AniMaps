@@ -15,7 +15,7 @@ function TriviaDetails(animalName)
    }, []);
 
    const triviaRef = ref.doc(animalName).collection('Trivia'); //reference to an animal's trivia collection
-   console.log(triviaRef);
+   //console.log(triviaRef);
    //console.log(animalId);
    
    function getTrivia()
@@ -28,7 +28,7 @@ function TriviaDetails(animalName)
          //console.log(doc.data());
          trivias.push(doc.data());
        });
-       console.log(trivias);
+       //console.log(trivias);
        setTrivia(trivias);
        setLoading(false);
      });
@@ -48,7 +48,7 @@ function TriviaDetails(animalName)
                 <p>{trivia.map((trivias) => ( 
                 
                 <div>
-                    <p style={{textAlign: 'left'}}>
+                    <p style={{textAlign: 'left', width: '75%'}}>
                       {trivias.trivia1}
                     </p>                   
                 </div>

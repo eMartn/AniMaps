@@ -32,7 +32,7 @@
 }
 
 .europe-btns .btns {
-  color: #fff;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -43,7 +43,7 @@
 }
 
 .to-region {
-  color: #fff;
+  color: whitesmoke;
   display: inline-flexbox;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -67,7 +67,7 @@
 }
 
 .to-region:hover text {
-  border-bottom: 4px solid #fff;
+  /* border-bottom: 4px solid #fff; */
   transition: all 0.2s ease-out;
   color: green;
   visibility: visible;
@@ -102,7 +102,6 @@
   margin-top: -20px;
   /* border-radius: 50%; */
   /* box-shadow: 5px 1px #000000; */
-
 }
 
 .Crow {
@@ -273,7 +272,7 @@
   }
 
   .europe-btns .btns {
-    color: #fff;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -284,7 +283,7 @@
   }
 
   .to-region {
-    color: #fff;
+    color: whitesmoke;
     display: inline-flexbox;
     align-items: center;
     /* padding: 0.5rem 1rem; */
@@ -305,7 +304,7 @@
   }
 
   .to-region:hover text {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid whitesmoke;
     transition: all 0.2s ease-out;
     color: green;
     visibility: visible;
@@ -507,7 +506,7 @@
   }
 
   .europe-btns .btns {
-    color: #fff;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -518,7 +517,7 @@
   }
 
   .to-region {
-    color: #fff;
+    color: whitesmoke;
     display: inline-flexbox;
     align-items: center;
     /* padding: 0.5rem 1rem; */
@@ -539,7 +538,7 @@
   }
 
   .to-region:hover text {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid whitesmoke;
     transition: all 0.2s ease-out;
     color: green;
     visibility: visible;
@@ -573,7 +572,6 @@
     height: 25vh;
     padding-left: 5px;
     padding-right: 13px;
-
   }
 
   .Crow {
@@ -622,10 +620,7 @@
   }
 }
 
-
 @media only screen and (min-width: 1440px) {
-
-
   .Frog {
     height: 80px;
     width: 5vw;
@@ -639,12 +634,10 @@
     position: absolute;
     display: flex;
     top: 60vh;
-  left: 42vw; 
+    left: 42vw;
     animation: spawn 3s ease, shake 4s ease-in-out 5s 1;
     z-index: 1;
   }
-
-
 
   .Crow {
     display: flex;
@@ -690,11 +683,9 @@
     left: 71vw;
     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
-
 }
 
-@media screen and (min-width: 2560px) and (max-height: 1440px){
- 
+@media screen and (min-width: 2560px) and (max-height: 1440px) {
   .Frog {
     height: 80px;
     width: 5vw;
@@ -712,50 +703,49 @@
     animation: spawn 3s ease, shake 4s ease-in-out 5s 1;
     z-index: 1;
   }
-  
-.Crow {
-  display: flex;
-  /* height: 125px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/crow.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 49vh;
-  left: 32vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
-}
 
-.Moose {
-  display: flex;
-  /* height: 135px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/moose2.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 36vh;
-  left: 53vw;
-  animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
-}
+  .Crow {
+    display: flex;
+    /* height: 125px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/crow.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 49vh;
+    left: 32vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+  }
 
-.Bear {
-  display: flex;
-  /* height: 135px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/bear.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 40vh;
-  left: 68vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
-}
+  .Moose {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/moose2.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36vh;
+    left: 53vw;
+    animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+  }
 
+  .Bear {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/bear.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40vh;
+    left: 68vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+  }
 }

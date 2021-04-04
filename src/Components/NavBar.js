@@ -26,7 +26,7 @@ function NavBar() {
         <nav className = "navbar">
             <div className ="navbar-container">
                 {/* AniMaps logo and text */}
-            <Link to ="/" className= "navbar-logo"> 
+            <Link to ="/" className= "navbar-logo-welcome"> 
             ANIMAPS <i class="fas fa-frog"></i>
             </Link> 
             {/* Mobile icon & links */}
@@ -42,7 +42,7 @@ function NavBar() {
                 */}
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/charities' className= 'nav-links'  >
+                <Link to='/charities' className= 'nav-links-welcome'  >
                 <i class="fas fa-seedling"></i>
                 Charities 
                  </Link>
@@ -50,7 +50,7 @@ function NavBar() {
 
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/animal-list' className= 'nav-links'>
+                <Link to='/animal-list' className= 'nav-links-welcome'>
                 <i class="fas fa-paw"></i>
                 Animals 
                  </Link>

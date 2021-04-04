@@ -20,7 +20,7 @@ z-index: 1;
 const ModalContentStyle = styled.div`
 width: 22vw;
 height: 90vh;
-background-color: rgba(104, 151, 158,0.8);
+background-color: rgba(110, 135, 104,0.8);
 color: black;
 
 z-index: 1;

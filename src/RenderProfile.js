@@ -43,21 +43,22 @@
       // returns the properties of the animal in paragraph tags
       // remember if you want to get rid of animal name just comment it out here 
       //style = {{fontSize: '1.8vw'}}
-      console.log(animals.length);
+      //console.log(animals.length);
         if (output === "profile")
         {
           return (
           <div>
             {animals.map((animal) =>(             
-                 <div key={animal.id} >
+                 <div key={animal.id}>
                    <img id="CrowImg" src={animal.url} alt=''/>
-                   <p style = {{fontSize: '1.8vw', textAlign: 'center'}}>{animal.name}</p>
-                   <p style={{textAlign: 'left'}}>Other Names: {animal.otherNames}</p>
-                   <p style={{textAlign: 'left'}}>Size: {animal.size}</p>                                  
-                   <p style={{textAlign: 'left'}}>Weight: {animal.weight}</p>
-                   <p style={{textAlign: 'left'}}>Life Expectancy: {animal.lifeExpectancy}</p>      
-                   <p style={{textAlign: 'left'}}>Conservation Status: {animal.status}</p>
-         
+                   <div>
+                    <p style = {{fontSize: '1.8vw', textAlign: 'center'}}>{animal.name}</p> 
+                    <p style={{textAlign: 'left'}}>Other Names: {animal.otherNames}</p>                       
+                    <p style={{textAlign: 'left'}}>Size: {animal.size}</p>                                  
+                    <p style={{textAlign: 'left'}}>Weight: {animal.weight}</p>
+                    <p style={{textAlign: 'left'}}>Life Expectancy: {animal.lifeExpectancy}</p>      
+                    <p style={{textAlign: 'left'}}>Conservation Status: {animal.status}</p>
+                   </div>
                  </div>                            
            ))}  
            
@@ -76,7 +77,7 @@
                 
                 {animals.map((animal) =>(             
                     <div key={animal.id}>
-                      <p style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>{description}</p>
+                      <p style={{textAlign: 'left', whiteSpace: 'pre-wrap', width: '75%'}}>{description}</p>
            
                     </div>                            
               ))}  
