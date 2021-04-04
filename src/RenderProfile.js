@@ -49,14 +49,14 @@
           return (
           <div>
             {animals.map((animal) =>(             
-                 <div key={animal.id}>
+                 <div key={animal.id} >
                    <img id="CrowImg" src={animal.url} alt=''/>
-                   <p style = {{fontSize: '1.8vw'}}>{animal.name}</p>
-                   <p>Other Names: {animal.otherNames}</p>
-                   <p>Size: {animal.size}</p>                                  
-                   <p>Weight: {animal.weight}</p>
-                   <p>Life Expectancy: {animal.lifeExpectancy}</p>      
-                   <p>Conservation Status: {animal.status}</p>
+                   <p style = {{fontSize: '1.8vw', textAlign: 'center'}}>{animal.name}</p>
+                   <p style={{textAlign: 'left'}}>Other Names: {animal.otherNames}</p>
+                   <p style={{textAlign: 'left'}}>Size: {animal.size}</p>                                  
+                   <p style={{textAlign: 'left'}}>Weight: {animal.weight}</p>
+                   <p style={{textAlign: 'left'}}>Life Expectancy: {animal.lifeExpectancy}</p>      
+                   <p style={{textAlign: 'left'}}>Conservation Status: {animal.status}</p>
          
                  </div>                            
            ))}  

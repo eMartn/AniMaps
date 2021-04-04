@@ -14,7 +14,7 @@ function TriviaDetails(animalName)
      getTrivia();
    }, []);
 
-   const triviaRef = db.collection('Animals').doc(animalName).collection('Trivia'); //reference to an animal's trivia collection
+   const triviaRef = ref.doc(animalName).collection('Trivia'); //reference to an animal's trivia collection
    console.log(triviaRef);
    //console.log(animalId);
    
@@ -25,7 +25,7 @@ function TriviaDetails(animalName)
      triviaRef.get().then(querySnapshot => {
        const trivias = [];
        querySnapshot.docs.forEach(doc => {
-         console.log(doc.data());
+         //console.log(doc.data());
          trivias.push(doc.data());
        });
        console.log(trivias);
