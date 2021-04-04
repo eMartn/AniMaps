@@ -27,7 +27,7 @@
 }
 
 .africa-btns .btns {
-  color: #fff;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -38,7 +38,7 @@
 }
 
 .to-region {
-  color: #fff;
+  color: whitesmoke;
   display: inline-flexbox;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -59,7 +59,7 @@
 }
 
 .to-region:hover text {
-  border-bottom: 4px solid #fff;
+  /* border-bottom: 4px solid #fff; */
   transition: all 0.2s ease-out;
   color: green;
   visibility: visible;
@@ -481,81 +481,78 @@
   }
 }
 
+@media screen and (min-width: 2560px) and (max-height: 1440px) {
+  .African-Elephant {
+    display: flex;
+    width: 105px;
+    padding: 40px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/elephant.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70vh;
+    left: 50vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+  }
 
-@media screen and (min-width: 2560px) and (max-height: 1440px){
-  
-.African-Elephant {
-  display: flex;
-  width: 105px;
-  padding: 40px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/elephant.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 70vh;
-  left: 50vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
-}
+  .Lion {
+    display: flex;
+    /* height: 125px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/lion.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32vh;
+    left: 34vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+  }
 
-.Lion {
-  display: flex;
-  /* height: 125px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/lion.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 32vh;
-  left: 34vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
-}
+  .Giraffee {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/giraffee.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32vh;
+    left: 51vw;
+    animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+  }
 
-.Giraffee {
-  display: flex;
-  /* height: 135px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/giraffee.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 32vh;
-  left: 51vw;
-  animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
-}
+  .Rhino {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/rhinoceros.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 89vh;
+    left: 49vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+  }
 
-.Rhino {
-  display: flex;
-  /* height: 135px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/rhinoceros.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 89vh;
-  left: 49vw;
-  animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
-}
-
-.African-Elephant {
-  display: flex;
-  /* height: 135px; */
-  width: 5vw;
-  padding: 4vw 0px;
-  border: none;
-  cursor: pointer;
-  background: url("../Sprites/elephant.svg") center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 66vh;
-  left: 52vw;
-  animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
-}
-
+  .African-Elephant {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/elephant.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 66vh;
+    left: 52vw;
+    animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+  }
 }
