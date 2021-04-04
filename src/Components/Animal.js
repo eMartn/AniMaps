@@ -36,7 +36,7 @@ function Animal(props){
   <div>
      <div className = {className} onClick = {() => setShow(true)}  ></div>
      {/* If you want that title gone or shown it is controlled via title = {modalTitle} */}
-     <LeftModal title = {unrelated} onClose = {() => setShow(false)} show = {show} >
+     <LeftModal  onClose = {() => setShow(false)} show = {show} >
    
     {/* <img id = {id} src = {Images} /> */}
     {/* <p>{modalTitle} </p> */}

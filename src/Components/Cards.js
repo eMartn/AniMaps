@@ -4,7 +4,6 @@ import LeftModal from './LeftModal';
 import Modal from './Modal';
 import TriviaDetails from '../RenderTrivia';
 
-
 function Cards(props) {
     // Varibale created to take in images for the cards background 
     let bg_img = `url(${props.images})`
@@ -44,9 +43,8 @@ function Cards(props) {
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
-               {/* remember if you want to get rid of animal name just comment it out here  */}
               <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
-              <p>{document.avgMatureHeight}</p>
+              <p >{document.avgMatureHeight}</p>
               <p>{document.avgMatureLength}</p>
               <p>{document.avgMatureWeight}</p>
               <p>{document.conservationStatus}</p>
@@ -66,7 +64,10 @@ function Cards(props) {
             >
             <p style={{textAlign: 'left'}}>{document.description}</p>
             <p>{TriviaDetails(document.id)}</p>
-            </Modal>                       
+            </Modal> 
+
+          
+
             </div>
             </div>
 

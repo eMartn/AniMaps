@@ -247,7 +247,19 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* phones */
+@media  screen and (max-width: 600px) {
+
+  #AsiaImg {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    /* cursor: pointer; */
+  }
+
   .Panda2 {
     display: flex;
     /* height: 145px; */
@@ -325,6 +337,17 @@
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
+  
+  #AsiaImg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+  }
+  
+  
   .Panda2 {
     display: flex;
     /* height: 145px; */
@@ -399,4 +422,88 @@
     left: 60vw;
     animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
   }
+}
+
+
+@media screen and (min-width: 2560px) and (max-height: 1440px){
+  
+
+  
+  
+  .Panda2 {
+    display: flex;
+    /* height: 145px; */
+    width: 6vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/pandaNew.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 59vh;
+    left: 68vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+  }
+
+  .Monkey {
+    display: flex;
+    /* height: 125px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/monke.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65vh;
+    left: 32vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+  }
+
+  .Tiger {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/tiger.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 42vh;
+    left: 49vw;
+    animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
+  }
+
+  .Goat {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/goat.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 42vh;
+    left: 11vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+  }
+
+  .AS-Elephant {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/elephant.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 76vh;
+    left: 58vw;
+    animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+  }
+
+
 }

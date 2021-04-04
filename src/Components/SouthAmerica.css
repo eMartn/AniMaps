@@ -325,3 +325,22 @@
     animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
   }
 }
+
+
+@media screen and (min-width: 2560px) and (max-height: 1440px){
+  
+  .Red-eyed-tree-frog {
+    display: flex;
+
+    width: 4vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/tree-frog.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24vh;
+    left: 45vw;
+    animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+  }
+}
