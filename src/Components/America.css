@@ -372,3 +372,81 @@
     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
 }
+
+@media screen and (min-width: 2560px) and (max-height: 1440px){
+
+  .Flamingo {
+    display: flex;
+    width: 4vw;
+    padding: 3vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/flamingo.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 82vh;
+    left: 76vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 15s 6;
+  }
+
+  .Bee {
+    display: flex;
+    /* height: 125px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/bee.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60vh;
+    left: 71vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 35s 7;
+  }
+
+  .Deer {
+    display: flex;
+
+    width: 6vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/deer.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40vh;
+    left: 55vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+  }
+
+  .Boar {
+    display: flex;
+    /* height: 135px; */
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/boar.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 66vh;
+    left: 46vw;
+    animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
+  }
+
+  .AltBear {
+    display: flex;
+
+    width: 5vw;
+    padding: 4vw 0px;
+    border: none;
+    cursor: pointer;
+    background: url("../Sprites/altbear.svg") center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 38vh;
+    left: 12vw;
+    animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
+  }
+
+}
