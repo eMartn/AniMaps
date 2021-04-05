@@ -104,11 +104,11 @@ button {
 .content {
   /* background-color: rgba(104, 151, 158,0.8); */
   padding: 20px;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   display: none;
   /* background-color: rgba(104, 151, 158, 0.01); */
-  text-align: left;
+  /* text-align: left; */
 }
 .content h2 {
   padding: 0px 0 5px 0px;
@@ -118,8 +118,8 @@ button {
 }
 
 .content p {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   text-align: left;
   font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

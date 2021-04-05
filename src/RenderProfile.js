@@ -94,31 +94,32 @@
                        </div>
                    </div>
               </div>                                           
-           ))}  
+          ))}  
            
-         </div>
-         );
-        }else if (output === "description")
-          {
-            let description;
-            {animals.map((animal) =>(             
-               description = animal.description
+       </div>
+      );
+      }else if (output === "description")
+        {
+          let description;
+          {animals.map((animal) =>(             
+              description = animal.description
               .replaceAll("\\n", "\n")                        
-            ))}  
+          ))}  
             
-            return (
+          return (
               <div>
                 
                 {animals.map((animal) =>(             
                     <div key={animal.id}>
-                      <p style={{textAlign: 'left', whiteSpace: 'pre-wrap', width: '75%'}}>{description}</p>
+                      <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '100%'}}>
+                      {description}</p>
            
                     </div>                            
-              ))}  
+                ))}  
             
-            </div>
+              </div>
             )
-          }
+        }
         
       
  }   

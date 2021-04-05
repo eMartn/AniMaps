@@ -20,7 +20,7 @@ function TriviaDetails(animalName)
    
    function getTrivia()
    {
-     console.log("omg")
+    //  console.log("omg")
      setLoading(true);
      triviaRef.get().then(querySnapshot => {
        const trivias = [];
@@ -48,7 +48,7 @@ function TriviaDetails(animalName)
                 <p>{trivia.map((trivias) => ( 
                 
                 <div>
-                    <p style={{textAlign: 'left', width: '75%'}}>
+                    <p style={{textAlign: 'justified', width: '72%'}}>
                       {trivias.trivia1}
                     </p>                   
                 </div>
