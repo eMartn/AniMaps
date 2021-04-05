@@ -125,6 +125,7 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-color: rgb(16, 46, 53);
 }
+
 .active-content {
   display: block;
 }
