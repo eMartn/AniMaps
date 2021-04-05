@@ -38,7 +38,7 @@ animation-duration: 0.5s;
 const ModalContent = styled.div`
 width: 67vw;
 height: 90vh;
-background-color: rgba(110, 135, 104,0.76);
+background-color: rgba(110, 135, 104,0.9);
 color: black;
 z-index: 1;
 -ms-transform: translateX(5%);
@@ -167,7 +167,7 @@ const [toggleState, setToggleState] = useState(1);
             // rest work that way as well
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2>Description</h2> 
+          
           <p style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>
             {props.content1}
           </p>
@@ -177,7 +177,7 @@ const [toggleState, setToggleState] = useState(1);
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>Trivia</h2>
+          
 
           <p>
            {props.content2}
@@ -187,7 +187,7 @@ const [toggleState, setToggleState] = useState(1);
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
-          <h2>Gallery</h2>
+          
 
           <p>
             {props.content3}

@@ -42,7 +42,7 @@
   background-repeat: no-repeat;
   position: absolute;
   /* bottom:calc(100% - 300px); */
-  bottom: 20%;
+  bottom: 16%;
   width: 100%;
   height: 400px;
   transition: ease all 0.3s;

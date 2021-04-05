@@ -1,5 +1,7 @@
  import React, { useState, useEffect } from "react";
  import firebase from "./firebase";
+
+ 
  
  function AnimalProfileDeets(animalName, output)
  {
@@ -50,14 +52,23 @@
           <div>
             {animals.map((animal) =>(             
                  <div key={animal.id}>
-                   <img id="CrowImg" src={animal.url} alt=''/>
-                   <div>
-                    <p style = {{fontSize: '1.8vw', textAlign: 'center'}}>{animal.name}</p> 
-                    <p style={{textAlign: 'left'}}>Other Names: {animal.otherNames}</p>                       
-                    <p style={{textAlign: 'left'}}>Size: {animal.size}</p>                                  
-                    <p style={{textAlign: 'left'}}>Weight: {animal.weight}</p>
-                    <p style={{textAlign: 'left'}}>Life Expectancy: {animal.lifeExpectancy}</p>      
-                    <p style={{textAlign: 'left'}}>Conservation Status: {animal.status}</p>
+                   <img id="CrowImg" src={animal.url} alt=''/>  
+                   <div>                 
+                    <p className='animalName' style={{fontSize: '1.8vw', 
+                               textAlign: 'center', 
+                               color: 'rgb(255, 204, 38)' 
+                               }}>
+                      {animal.name}</p> 
+                    <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                      Other Names: {animal.otherNames}</p>                       
+                    <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                      Size: {animal.size}</p>                                  
+                    <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                      Weight: {animal.weight}</p>
+                    <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                      Life Expectancy: {animal.lifeExpectancy}</p>      
+                    <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                      Conservation Status: {animal.status}</p>
                    </div>
                  </div>                            
            ))}  

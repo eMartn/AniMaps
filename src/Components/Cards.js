@@ -42,14 +42,21 @@ function Cards(props) {
             <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
-              
               <img id="CrowImg" src={document.url} alt=''/>
               <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
-              <p>Other Names: {document.otherNames}</p>
-              <p>Size: {document.size}</p>
-              <p>Weight: {document.weight}</p>
-              <p>Life Span: {document.lifeExpectancy}</p>
-              <p>Conservation Status: {document.status}</p>
+              <div style={{width: '90%'}}>
+                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                  Other Names: {document.otherNames}</p>
+                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                  Size: {document.size}</p>
+                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                  Weight: {document.weight}</p>
+                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                  Life Span: {document.lifeExpectancy}</p>
+                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
+                  Conservation Status: {document.status}</p>
+              </div>
+              
             </LeftModal>  
             
             <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show}

@@ -50,7 +50,7 @@ function RandomFact()
                         return (
                             <div>
                               {doc.fact}
-                              {console.log(doc.fact)}        
+                              {/* {console.log(doc.fact)}         */}
                             </div>
                         )
                         

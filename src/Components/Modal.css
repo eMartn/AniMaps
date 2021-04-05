@@ -7,7 +7,7 @@
   right: 0;
   top: 1;
   bottom: 0;
-  background-color: rgba(104, 151, 158, 0.8);
+  background-color: rgba(104, 151, 158, 1);
   color: black;
   -ms-transform: translateX(5%);
   transform: translateX(-5%);
@@ -37,7 +37,7 @@
     right: 0;
     top: 1;
     bottom: 0;
-    background-color: rgba(104, 151, 158, 0.8);
+    background-color: rgba(104, 151, 158, 1);
     color: black;
     -ms-transform: translateX(5%);
     transform: translateX(-5%);
@@ -66,7 +66,7 @@
   padding: 15px;
   text-align: center;
   width: 50%;
-  background-color: rgba(110, 135, 104, 0.01);
+  background-color: rgba(110, 135, 104, 0.8);
   cursor: pointer;
   box-sizing: content-box;
   /* position: relative; */
@@ -74,14 +74,15 @@
   border-bottom-style: ridge;
   border-right-style: ridge;
   border-color: rgba(19, 49, 56, 0.561);
-  transition: all 280ms ease-in-out;
-  color: rgb(202, 152, 60);
-  -webkit-text-stroke: 0.4px rgb(99, 74, 30);
+  transition: all 290ms ease-in-out;
+  color: rgb(236, 186, 93);
+  font-size: xx-large;
+  -webkit-text-stroke: 0.9px rgb(0, 0, 0);
 }
 
 .tabs:hover {
-  color: rgb(212, 176, 57);
-  background-color: rgba(104, 141, 102, 0.472);
+  color: rgb(255, 204, 38);
+  background-color: rgba(104, 141, 102, 0.8);
   transition: all 0ms ease-in-out;
 }
 
@@ -90,8 +91,8 @@
 }
 
 .active-tabs {
-  background-color: rgba(104, 141, 102, 0.472);
-  color: rgb(212, 176, 57);
+  background-color: rgba(81, 119, 78, 0.8);
+  color: rgb(255, 204, 38);
 }
 
 button {
@@ -106,7 +107,7 @@ button {
   width: 100%;
   height: 100%;
   display: none;
-  background-color: rgba(104, 151, 158, 0.01);
+  /* background-color: rgba(104, 151, 158, 0.01); */
   text-align: left;
 }
 .content h2 {
@@ -120,12 +121,16 @@ button {
   width: 100%;
   height: 100%;
   text-align: left;
-  font-size: 1rem;
-
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-color: rgb(16, 46, 53);
 }
 .active-content {
   display: block;
+}
+
+.animalName {
+  -webkit-text-stroke: 0.9px rgb(0, 0, 0);
 }
 
 /* .MyContent{

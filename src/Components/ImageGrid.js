@@ -38,7 +38,7 @@ const ImageGrid = () => {
                 // sets the imag that will be shown on the card for the animal which iis a placeholder for now 
                 images = {docs[docsIndex].url}
                 // sets the description to the animal in the card which is a sample description for now 
-                description = "Sample text"
+                
                 modalTitle = {docs[docsIndex].name}
                 modalInfo = "SECOND DESRC"
                 doc = {docs[docsIndex]}
