@@ -94,6 +94,7 @@
                     <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
                        {animal.lifeExpectancy}</p>   
                           </div>
+                          
                           <div className = "outerBorder">
                        <h3 className = "profileBorderTitle">Conservation Status:</h3>
                     <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
