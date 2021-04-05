@@ -18,10 +18,10 @@
 }
 
 .navbar-logo-welcome {
-  /* color: rgb(223, 223, 223);
-  -webkit-text-stroke-width: 1.2px;
-  -webkit-text-stroke-color: gray; */
-  color: black;
+  color: rgb(226, 226, 226);
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
+  /* color: whitesmoke; */
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -52,10 +52,11 @@
 }
 
 .nav-links-welcome {
-  color: rgb(0, 0, 0);
-  /* color: rgb(223, 223, 223);
+  /*top right on home page*/
+  /* color: whitesmoke; */
+  color: rgb(226, 226, 226);
   -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: gray; */
+  -webkit-text-stroke-color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -64,12 +65,14 @@
 }
 
 .nav-links-welcome:hover {
-  border-bottom: 4px solid rgb(0, 0, 0);
+  border-bottom: 4px solid rgb(226, 226, 226);
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: whitesmoke;
+  color: rgb(226, 226, 226);
 }
 
 .fa-paw,
@@ -119,7 +122,7 @@
   }
 
   .nav-links:hover {
-    background-color: whitesmoke;
+    background-color: rgb(226, 226, 226);
     color: #242424;
     border-radius: 0;
   }
@@ -142,7 +145,7 @@
   }
 
   .fa-times {
-    color: whitesmoke;
+    color: rgb(226, 226, 226);
     font-size: 2rem;
   }
 
@@ -155,14 +158,14 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: whitesmoke;
+    color: rgb(226, 226, 226);
     padding: 14px 20px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(226, 226, 226);
     transition: all 0.3s ease-out;
   }
 
   .nav-links-mobile:hover {
-    background: whitesmoke;
+    background: rgb(226, 226, 226);
     color: #242424;
     transition: 250ms;
   }

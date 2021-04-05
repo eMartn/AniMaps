@@ -76,7 +76,7 @@
   border-color: rgba(19, 49, 56, 0.561);
   transition: all 290ms ease-in-out;
   color: rgb(236, 186, 93);
-  font-size: x-large;
+  font-size: xx-large;
   -webkit-text-stroke: 0.9px rgb(0, 0, 0);
 }
 
@@ -133,7 +133,7 @@ button {
   -webkit-text-stroke: 0.9px rgb(0, 0, 0);
 }
 
-.profileBorder{
+.profileBorder {
   /* border: solid; */
   padding-left: 10px;
   padding-right: 10px;
@@ -145,7 +145,7 @@ button {
   font-size: 0.8rem;
 }
 
-.profileBorder2{
+.profileBorder2 {
   /* border: solid; */
   padding-left: 10px;
   padding-right: 10px;
@@ -155,7 +155,7 @@ button {
   background-color: rgba(84, 117, 82, 0.8);
   padding-bottom: 0px;
   font-size: 0.8rem;
-  text-align: center; 
+  text-align: center;
 }
 
 /* .profileBorder h3{
@@ -163,40 +163,31 @@ button {
   font-size: 0.70rem;
 } */
 
-.profileBorder p:nth-child(1){
-
-border: rgba(84, 117, 82, 0.8);
-background-color: rgba(88, 119, 86, 0.8);
-padding-bottom: -5px;
-
-}
-
-.profileBorder2 p:nth-child(1){
-
+.profileBorder p:nth-child(1) {
   border: rgba(84, 117, 82, 0.8);
   background-color: rgba(88, 119, 86, 0.8);
   padding-bottom: -5px;
-  
-  }
-  
-
-.profileBorder p{
-
-border-radius: 5px;
-background-color: rgb(205, 219, 205);
-padding: 2px;
-
 }
 
-.profileBorder2 p{
+.profileBorder2 p:nth-child(1) {
+  border: rgba(84, 117, 82, 0.8);
+  background-color: rgba(88, 119, 86, 0.8);
+  padding-bottom: -5px;
+}
 
+.profileBorder p {
   border-radius: 5px;
   background-color: rgb(205, 219, 205);
   padding: 2px;
-  
-  }
+}
 
-.outerBorder{
+.profileBorder2 p {
+  border-radius: 5px;
+  background-color: rgb(205, 219, 205);
+  padding: 2px;
+}
+
+.outerBorder {
   border: rgba(88, 119, 86, 0.8);
   border-radius: 5px;
   background-color: rgba(117, 151, 113, 0.8);
@@ -205,7 +196,7 @@ padding: 2px;
   padding-right: 10px;
 }
 
-.outerBorder2{
+.outerBorder2 {
   border: rgba(88, 119, 86, 0.8);
   border-radius: 5px;
   background-color: rgba(117, 151, 113, 0.8);
