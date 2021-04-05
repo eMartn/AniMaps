@@ -46,20 +46,51 @@ function Cards(props) {
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
+
+              <div className = "profileBorder2" >
               <p className='animalName' style = {{fontSize: '1.8vw', color: 'rgb(255, 204, 38)'}}>
                 {document.name}
               </p>
-              <div style={{width: '90%'}}>
-                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                  Other Names: {document.otherNames}</p>
-                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                  Size: {document.size}</p>
-                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                  Weight: {document.weight}</p>
-                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                  Life Span: {document.lifeExpectancy}</p>
-                <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                  Conservation Status: {document.status}</p>
+             
+                   <div className = "outerBorder2">
+                     <h3 className = "profileBorderTitle2">Other Names:
+                     </h3> 
+
+                     <p className = "profileBorderIn" style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {document.otherNames}</p> 
+                     </div>
+
+
+                     <div className = "outerBorder2">
+                       <h3 className = "profileBorderTitle2">Size:
+                        </h3>               
+                    
+                        <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {document.size}</p>  
+                       </div>
+
+
+
+                       <div className = "outerBorder2">
+                       <h3 className = "profileBorderTitle2">Weight:  </h3>                              
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {document.weight}</p>
+                        </div>
+
+
+                        <div className = "outerBorder2">
+                       <h3 className = "profileBorderTitle2">Life Expectancy: </h3>
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {document.lifeExpectancy}</p>   
+                          </div>
+
+
+                          <div className = "outerBorder2">
+                       <h3 className = "profileBorderTitle2">Conservation Status:</h3>
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {document.status}</p>
+                       </div>
+
               </div>
               
             </LeftModal>  
@@ -74,7 +105,7 @@ function Cards(props) {
 
             
             >
-            <p style={{textAlign: 'left'}}>{document.description}</p>
+            <p >{document.description}</p>
             <p>{TriviaDetails(document.id)}</p>
             </Modal> 
 

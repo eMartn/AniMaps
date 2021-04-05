@@ -1,7 +1,14 @@
  import React, { useState, useEffect } from "react";
  import firebase from "./firebase";
 
- 
+ /*
+
+ LOGS: 4/4/21
+
+ Created styling in left modalinfo. Formatted it to look and display nicely. Added border and background colors to achieve this.
+ Added a ani
+ -Joshua Grimaldo
+ */
  
  function AnimalProfileDeets(animalName, output)
  {
@@ -87,6 +94,7 @@
                     <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
                        {animal.lifeExpectancy}</p>   
                           </div>
+                          
                           <div className = "outerBorder">
                        <h3 className = "profileBorderTitle">Conservation Status:</h3>
                     <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
