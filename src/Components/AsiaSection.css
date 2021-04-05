@@ -36,7 +36,7 @@
 }
 
 .asia-btns .btns {
-  color: #fff;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -47,7 +47,7 @@
 }
 
 .to-region {
-  color: #fff;
+  color: whitesmoke;
   display: inline-flexbox;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -71,9 +71,9 @@
 }
 
 .to-region:hover text {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid whitesmoke;
   transition: all 0.2s ease-out;
-  color: green;
+  color: rgb(48, 100, 35);
   visibility: visible;
 }
 
@@ -248,8 +248,7 @@
 }
 
 /* phones */
-@media  screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px) {
   #AsiaImg {
     height: 80vh;
     width: 100%;
@@ -337,7 +336,6 @@
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
-  
   #AsiaImg {
     height: 100%;
     width: 100%;
@@ -346,8 +344,7 @@
     align-items: center;
     object-fit: contain;
   }
-  
-  
+
   .Panda2 {
     display: flex;
     /* height: 145px; */
@@ -424,12 +421,7 @@
   }
 }
 
-
-@media screen and (min-width: 2560px) and (max-height: 1440px){
-  
-
-  
-  
+@media screen and (min-width: 2560px) and (max-height: 1440px) {
   .Panda2 {
     display: flex;
     /* height: 145px; */
@@ -504,6 +496,4 @@
     left: 58vw;
     animation: spawn 3s ease, violentShake 0.15s ease-in-out 2s 7;
   }
-
-
 }

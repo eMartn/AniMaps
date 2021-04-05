@@ -5,9 +5,9 @@ import Modal from './Modal';
 import TriviaDetails from '../RenderTrivia';
 
 function Cards(props) {
-    // Varibale created to take in images for the cards background 
+    // Variable created to take in images for the cards background 
     let bg_img = `url(${props.images})`
-    // Varibale created that assigns title & decription as props
+    // Variable created that assigns title & decription as props
     // alternate way of doing -> EX: prop.title or props.description
     // doing it like this makes it easier to manage
     let {title, description,modalInfo,modalTitle,weight, doc} = props
@@ -45,19 +45,19 @@ function Cards(props) {
         } onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </motion.button>              
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
+              
               <img id="CrowImg" src={document.url} alt=''/>
               <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
-              <p >{document.avgMatureHeight}</p>
-              <p>{document.avgMatureLength}</p>
-              <p>{document.avgMatureWeight}</p>
-              <p>{document.conservationStatus}</p>
-              <p>{document.lifeExpectancy}</p>
-              <p>{document.otherNames}</p>
+              <p>Other Names: {document.otherNames}</p>
+              <p>Size: {document.size}</p>
+              <p>Weight: {document.weight}</p>
+              <p>Life Span: {document.lifeExpectancy}</p>
+              <p>Conservation Status: {document.status}</p>
             </LeftModal>  
             
             <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show}
             
-            content1 =  {document.description}
+            content1 =  {document.description.replaceAll("\\n", "\n")}
 
             content2 = {TriviaDetails(document.id)}
 

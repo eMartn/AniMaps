@@ -24,7 +24,7 @@
 }
 
 .SA-btns .btns {
-  color: #fff;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -35,7 +35,7 @@
 }
 
 .to-region {
-  color: #fff;
+  color: whitesmoke;
   display: inline-flexbox;
   align-items: center;
 
@@ -46,9 +46,9 @@
 }
 
 .to-region:hover {
-  border-bottom: 4px solid #fff;
+  /* border-bottom: 4px solid #fff; */
   transition: all 0.2s ease-out;
-  color: rgb(128, 0, 0);
+  color: rgb(48, 100, 35);
 }
 
 .Toucan {
@@ -326,9 +326,7 @@
   }
 }
 
-
-@media screen and (min-width: 2560px) and (max-height: 1440px){
-  
+@media screen and (min-width: 2560px) and (max-height: 1440px) {
   .Red-eyed-tree-frog {
     display: flex;
 

@@ -38,7 +38,7 @@ animation-duration: 0.5s;
 const ModalContent = styled.div`
 width: 67vw;
 height: 90vh;
-background-color: rgba(104, 151, 158,0.8);
+background-color: rgba(110, 135, 104,0.76);
 color: black;
 z-index: 1;
 -ms-transform: translateX(5%);
@@ -139,7 +139,7 @@ const [toggleState, setToggleState] = useState(1);
          // pass 1 arguement 
           onClick={() => toggleTab(1)}
         >
-           Description
+           DESCRIPTION
         </button>
 
 
@@ -147,14 +147,14 @@ const [toggleState, setToggleState] = useState(1);
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          Trivia
+          TRIVIA
         </button>
 
         <button
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          Related species
+          GALLERY
         </button>
 
      </div>
@@ -168,7 +168,7 @@ const [toggleState, setToggleState] = useState(1);
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           <h2>Description</h2> 
-          <p>
+          <p style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>
             {props.content1}
           </p>
         </div>
@@ -187,7 +187,7 @@ const [toggleState, setToggleState] = useState(1);
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
-          <h2>Related Species</h2>
+          <h2>Gallery</h2>
 
           <p>
             {props.content3}
