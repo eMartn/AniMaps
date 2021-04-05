@@ -63,6 +63,8 @@
   top: 100vh;
   left: 1vw;
   z-index: 1px;
+  text-align: center;
+
 }
 
 .Greeting {
@@ -91,16 +93,21 @@ p {
   letter-spacing: 2px;
   line-height: 1.5;
   cursor: pointer;
-  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 7px;
   /* top: 100%; */
   top: 100vh;
   /* left: 0vw; */
   z-index: 1px;
-  -ms-transform: translateX(5%);
-  transform: translateX(55%);
+  /* -ms-transform: translateX(5%);
+  transform: translateX(55%); */
   /* transform: translateY(435%); */
   /* width: 100px;
     height: 60px; */
+  border: solid;
+  border-width: 1.4px;
+  border-color: #627e17;
+
 }
 
 .fa-bars {
