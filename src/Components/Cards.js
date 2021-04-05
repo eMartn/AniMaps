@@ -46,7 +46,9 @@ function Cards(props) {
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
-              <p style = {{fontSize: '1.8vw'}}>{document.name}</p>
+              <p className='animalName' style = {{fontSize: '1.8vw', color: 'rgb(255, 204, 38)'}}>
+                {document.name}
+              </p>
               <div style={{width: '90%'}}>
                 <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
                   Other Names: {document.otherNames}</p>

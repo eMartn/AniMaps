@@ -168,7 +168,7 @@ const [toggleState, setToggleState] = useState(1);
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           
-          <p style={{textAlign: 'left', whiteSpace: 'pre-wrap'}}>
+          <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '72%'}}>
             {props.content1}
           </p>
         </div>
@@ -179,7 +179,7 @@ const [toggleState, setToggleState] = useState(1);
         >
           
 
-          <p>
+          <p  style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '100%'}}>
            {props.content2}
           </p>
         </div>
