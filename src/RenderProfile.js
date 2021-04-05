@@ -46,30 +46,53 @@
       // remember if you want to get rid of animal name just comment it out here 
       //style = {{fontSize: '1.8vw'}}
       //console.log(animals.length);
-    if (output === "profile")
-      {
-        return (
-        <div>
-          {animals.map((animal) =>(             
-               <div key={animal.id}>
-                <img id="CrowImg" src={animal.url} alt=''/>  
-                <div>                 
-                  <p className='animalName' style={{fontSize: '1.8vw', 
-                             textAlign: 'center', 
-                             color: 'rgb(255, 204, 38)' 
-                  }}>
-                  {animal.name}</p> 
-                  <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                     Other Names: {animal.otherNames}</p>                       
-                  <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                     Size: {animal.size}</p>                                  
-                  <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                     Weight: {animal.weight}</p>
-                 <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                     Life Expectancy: {animal.lifeExpectancy}</p>      
-                 <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
-                     Conservation Status: {animal.status}</p>
-                </div>
+        if (output === "profile")
+        {
+          return (
+          <div>
+            {animals.map((animal) =>(             
+                 <div key={animal.id} >
+                   <img id="CrowImg" src={animal.url} alt=''/>  
+                   <div className = "profileBorder">                 
+                    <p className='animalName' style={{fontSize: '1.8vw', 
+                               textAlign: 'center', 
+                               color: 'rgb(255, 204, 38)' 
+                               }}>
+                      {animal.name}</p> 
+
+                      <div className = "outerBorder">
+                     <h3 className = "profileBorderTitle">Other Names:
+                     </h3> 
+
+                     <p className = "profileBorderIn" style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {animal.otherNames}</p> 
+                     </div>
+                    
+                     <div className = "outerBorder">
+                       <h3 className = "profileBorderTitle">Size:
+                        </h3>               
+                    
+                        <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {animal.size}</p>  
+                       </div>
+
+                       <div className = "outerBorder">
+                       <h3 className = "profileBorderTitle">Weight:  </h3>                              
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {animal.weight}</p>
+                        </div>
+
+                        <div className = "outerBorder">
+                       <h3 className = "profileBorderTitle">Life Expectancy: </h3>
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {animal.lifeExpectancy}</p>   
+                          </div>
+                          <div className = "outerBorder">
+                       <h3 className = "profileBorderTitle">Conservation Status:</h3>
+                    <p style={{textAlign: 'left', fontSize: '1vw', marginLeft: '1.5%'}}>
+                       {animal.status}</p>
+                       </div>
+                   </div>
               </div>                                           
           ))}  
            
