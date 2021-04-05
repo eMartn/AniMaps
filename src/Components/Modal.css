@@ -76,7 +76,7 @@
         border-bottom-style: ridge;
         border-right-style: ridge;
         border-color: rgba(19, 49, 56, 0.561);
-       transition: all 350ms ease-in-out;
+       transition: 350ms ease-in-out;
       }
 
       .tabs:nth-child(3){

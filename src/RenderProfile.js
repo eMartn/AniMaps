@@ -48,16 +48,21 @@
         {
           return (
           <div>
-            {animals.map((animal) =>(             
-                 <div key={animal.id}>
+            {/*  style = {{border: 'ridge'}} style = {{ borderLeft: '2px solid black', height: '30px', left: '40%'}}*/}
+            {animals.map((animal) =>(     
+                      // style = {{border: 'solid', borderColor: 'black',paddingBottom: '200px', paddingTop: '50px'}}
+                 <div key={animal.id}  >
+                    <div >
                    <img id="CrowImg" src={animal.url} alt=''/>
+                  
                    <p style = {{fontSize: '1.8vw'}}>{animal.name}</p>
-                   <p >Other Names: {animal.otherNames}</p>
+                   {/* style = {{border: 'solid', borderRadius: '20px'}} */}
+                   <p   >Other Names: {animal.otherNames}</p>
                    <p >Size: {animal.size}</p>                                  
                    <p >Weight: {animal.weight}</p>
                    <p >Life Expectancy: {animal.lifeExpectancy}</p>      
                    <p >Conservation Status: {animal.status}</p>
-         
+              </div>
                  </div>                            
            ))}  
            

@@ -48,7 +48,7 @@
 .to-region:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
-  color: green;
+  color: rgb(128, 0, 0);
 }
 
 .Toucan {
