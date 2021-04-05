@@ -70,7 +70,7 @@
                     <p style={{textAlign: 'left', fontSize: '1.1vw', marginLeft: '1.5%'}}>
                       Conservation Status: {animal.status}</p>
                    </div>
-                 </div>                            
+              </div>                                           
            ))}  
            
          </div>

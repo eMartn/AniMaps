@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {motion} from 'framer-motion';
 import LeftModal from './LeftModal';
 import Modal from './Modal';
 import TriviaDetails from '../RenderTrivia';
@@ -39,7 +39,10 @@ function Cards(props) {
                 <p>{description}</p>
                 {/* button that will promt the user info about the animal for the card ***NOT DONE** */}    
                  
-            <button className = "buttonCard" onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </button>              
+            <motion.button className = "buttonCard"  whileHover={{
+        scale: 1.1,
+    }
+        } onClick = {() => setShow(true)}> <i class="fas fa-bars"></i> Learn More </motion.button>              
             
             <LeftModal onClose = {() => setShow(false)} show = {show} >
               <img id="CrowImg" src={document.url} alt=''/>
