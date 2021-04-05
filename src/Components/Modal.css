@@ -172,15 +172,16 @@ padding: 2px;
   background-color: rgba(117, 151, 113, 0.8);
   margin-top: 2px;
   padding: 2px;
-
+  padding-right: 10px;
 }
 
 
-.profileBorderTitle p{
+/* .profileBorderTitle p{
 
   background-color: whitesmoke;
-
-}
+  padding: 2px;
+  padding-right: 20px;
+} */
 
 /* .MyContent{
 
