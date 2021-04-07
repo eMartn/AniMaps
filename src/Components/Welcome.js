@@ -27,7 +27,7 @@ display: flex;
 justify-content: center;
 //background-repeat: no-repeat;
 margin-top: -80px;
-opacity: 0.8;
+opacity: 0.9;
 background-filter: blur[5px];
 
 animation-name: animate;
@@ -105,6 +105,26 @@ color: white;
 margin-top: 30vh;
 margin-bottom: 2vh;
 width: 750px;
+}
+
+/* 48em;  768px
+64em;  1024px
+85.375em;  1366px
+120em;  1920px
+160em;  2560px */
+
+@media screen and (max-width: 120em) /*1920px wide or smaller*/ {
+    
+    button
+    {
+        font-size:clamp(1vw, 1.8vw, 2vw);
+        padding: 1rem 3rem;
+    }
+
+    p
+    {
+        font-size: clamp(1.3vw, 3vw, 1.55vw);
+    }
 }
 `;
 
