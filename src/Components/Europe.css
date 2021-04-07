@@ -95,8 +95,13 @@
 #MooseImg,
 #BearImg,
 #FrogImg {
-  width: 22vw;
-  height: 43vh;
+  display: block;
+  max-width:22vw;
+  max-height:45vh;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 5px;
   padding-right: 13px;
   margin-top: -20px;
@@ -332,8 +337,15 @@
   #MooseImg,
   #BearImg,
   #FrogImg {
+
+    display: block;
+    max-width:22vw;
+    max-height:55vh;
+    width: auto;
+    height: auto;
+/* 
     width: 24vw;
-    height: 16vh;
+    height: 16vh; */
     padding-left: 1px;
     padding-right: 5px;
   }
@@ -568,8 +580,15 @@
   #FrogImg {
     /* width: 22vw;
     height: 43vh; */
-    width: 22vw;
-    height: 25vh;
+
+    display: block;
+    max-width:22vw;
+    max-height:50vh;
+    width: auto;
+    height: auto;
+
+    /* width: 22vw;
+    height: 25vh; */
     padding-left: 5px;
     padding-right: 13px;
   }
