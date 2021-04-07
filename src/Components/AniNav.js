@@ -67,7 +67,7 @@ function NavBarAni() {
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/charities' className= 'nav-links'  >
                 <i class="fas fa-seedling"></i>
-                Charities 
+                <p>Charities</p>
                  </Link>
                 </li>
 
@@ -75,7 +75,7 @@ function NavBarAni() {
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/animal-list' className= 'nav-links'>
                 <i class="fas fa-paw"></i>
-                Animals 
+                <p>Animals</p>
                  </Link>
                 </li>
 
@@ -86,7 +86,7 @@ function NavBarAni() {
                 
                 <Link to='/Asia'className= 'nav-links'  >
                 <i class="fas fa-globe-americas"></i>
-                Maps 
+                <p>Maps</p> 
                  </Link>
 
                     {dropdown && <Dropdown />}

@@ -44,7 +44,7 @@ function NavBar() {
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/charities' className= 'nav-links-welcome'  >
                 <i class="fas fa-seedling"></i>
-                Charities 
+                <p>Charities</p>
                  </Link>
                 </li>
 
@@ -52,7 +52,7 @@ function NavBar() {
                     {/* Sets the link to learnmore which does not exist currently */}
                 <Link to='/animal-list' className= 'nav-links-welcome'>
                 <i class="fas fa-paw"></i>
-                Animals 
+                <p>Animals</p> 
                  </Link>
                 </li>
 
