@@ -92,7 +92,7 @@ text-align: left;
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
 cursor: pointer;
-position: absolute;
+position: fixed;
 top: 10vh;
 right: 3vw;
 color: white;
@@ -174,10 +174,13 @@ const [toggleState, setToggleState] = useState(1);
             // rest work that way as well
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          
+           
           <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '72%'}}>
+          {/* <div className = "descriptionContent"> */}
             {props.content1}
+            {/* </div> */}
           </p>
+          
         </div>
 
 

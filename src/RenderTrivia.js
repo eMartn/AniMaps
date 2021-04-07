@@ -46,11 +46,14 @@ function TriviaDetails(animalName)
        <div>
             
                 <p>{trivia.map((trivias) => ( 
+                  // <div  className = "profileBorderTrivFirst">
+                <div  className = "profileBorderTriv">
                 
-                <div>
-                    <p style={{textAlign: 'justified', width: '72%'}}>
+                    <p style={{textAlign: 'justified', width: '70%',whiteSpace: 'pre-wrap'}}>
                       {trivias.trivia1}
                     </p>                   
+              
+                {/* </div> */}
                 </div>
             ))} </p>           
       </div>                                        

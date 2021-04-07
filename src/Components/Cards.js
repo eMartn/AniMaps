@@ -97,11 +97,19 @@ function Cards(props) {
             
             <Modal title = {modalTitle} onClose = {() => setShow(false)} show = {show}
             
-            content1 =  {document.description.replaceAll("\\n", "\n")}
+            content1 =  {
+            <div className = "descriptionContent">
+             { document.description.replaceAll("\\n", "\n")}
+            </div>
+            }
 
-            content2 = {TriviaDetails(document.id)}
+            content2 = {
+              <div className = "profileBorderTrivCards">  
+             <p > {TriviaDetails(document.id)}</p>
+            </div>
+            }
 
-            content3 = "I am funner"
+            content3 = { <img id="CrowImg" src={document.url} alt=''/>}
 
             
             >

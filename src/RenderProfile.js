@@ -118,10 +118,15 @@
               <div>
                 
                 {animals.map((animal) =>(             
-                    <div key={animal.id}>
-                      <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '100%'}}>
-                      {description}</p>
-           
+                    <div key={animal.id} className = "profileBorder">
+
+                      <p style={{whiteSpace: 'pre-wrap'}}>
+                      <div className = "descriptionContent">
+                      {description}
+                      </div>   
+                      </p>
+                   
+                    
                     </div>                            
                 ))}  
             
