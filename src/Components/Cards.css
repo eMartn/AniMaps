@@ -57,7 +57,7 @@
   font-weight: bold;
   line-height: 1.3;
   margin-bottom: 2px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .card1Button button {
@@ -108,7 +108,7 @@ p {
   border: solid;
   border-width: 1.4px;
   border-color: #627e17;
-
+  padding: 2px;
 }
 
 .fa-bars {
