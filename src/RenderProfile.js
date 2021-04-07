@@ -102,34 +102,32 @@
                        </div>
                    </div>
               </div>                                           
-          ))}  
-           
-       </div>
-      );
-      }else if (output === "description")
-        {
-          let description;
-          {animals.map((animal) =>(             
-              description = animal.description
-              .replaceAll("\\n", "\n")                        
-          ))}  
+              ))}             
+          </div>
+          );
+        }else if (output === "description")
+          {
+            let description;
+            {animals.map((animal) =>(             
+                description = animal.description
+                .replaceAll("\\n", "\n")                        
+            ))}  
+              
+            return (
+                <div>
+                  
+                  {animals.map((animal) =>(             
+                      <div key={animal.id}>
+                        <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '100%'}}>
+                        {description}</p>
             
-          return (
-              <div>
-                
-                {animals.map((animal) =>(             
-                    <div key={animal.id}>
-                      <p style={{textAlign: 'justified', whiteSpace: 'pre-wrap', width: '100%'}}>
-                      {description}</p>
-           
-                    </div>                            
-                ))}  
-            
-              </div>
-            )
-        }
-        
-      
+                      </div>                            
+                  ))}  
+              
+                </div>
+              )
+          }
+             
  }   
  
  export default AnimalProfileDeets;
