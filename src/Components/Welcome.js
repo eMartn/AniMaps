@@ -106,6 +106,9 @@ margin-top: 30vh;
 margin-bottom: 2vh;
 width: 750px;
 }
+
+
+
 `;
 
 // const that holds the DISCOVER BUTTON 
