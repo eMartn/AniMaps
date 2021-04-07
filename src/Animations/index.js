@@ -10,16 +10,19 @@ https://www.framer.com/motion/
 */
 
 // Animations
-export const flashAnimation = {
-
-    in:{
-    opacity: 1
-
-    },
-    out:{
-        opacity: 0
-    }
-};
+// export const flashAnimation = {
+    
+//     in:{
+//     opacity: 1
+//     },
+//     middle:{
+//         opacity: 0.5
+        
+//     },
+//     out:{
+//         opacity: 0
+//     }
+// };
 
 // this determines how long the animation will last
 export const transition = {

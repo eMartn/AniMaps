@@ -9,7 +9,7 @@ import Image5 from '../Sprites/cheetah.gif';
 import Image6 from '../Sprites/frog.gif';
 
 import {motion} from 'framer-motion';
-import {flashAnimation} from '../Animations';
+// import {flashAnimation} from '../Animations';
 import { Button } from './Button';
 import {transition } from '../Animations';
 import {Link} from 'react-router-dom';
@@ -147,10 +147,10 @@ const WelcomeButton = ({children}) => {
         // Animation can be found in animations file
         <motion.div
         // defines animations
-            initial = "out"
-            animate = "in"
-            exit = "out"
-            variants = {flashAnimation}
+            // initial = "out"
+            // animate = "in"
+            // exit = "out"
+            // variants = {flashAnimation}
        >
            {/* this is the tranpartent navbar  */}
          <NavBar />
