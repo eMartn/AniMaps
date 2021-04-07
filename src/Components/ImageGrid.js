@@ -22,7 +22,7 @@ import Cards from './Cards';
 const ImageGrid = () => {
     // get docs in images collection with useFirestore component
     const { docs } = useFirestore('Animals');
-    console.log(docs);
+    //console.log(docs);
 
     
 

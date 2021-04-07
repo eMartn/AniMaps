@@ -64,6 +64,12 @@
   height: 100%;
 }
 
+.nav-links-welcome p {
+  /*Charities and Animals on homepage*/
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
 .nav-links-welcome:hover {
   border-bottom: 4px solid rgb(226, 226, 226);
   -webkit-text-stroke-width: 0.4px;

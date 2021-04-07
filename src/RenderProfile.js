@@ -120,7 +120,7 @@
                 {animals.map((animal) =>(             
                     <div key={animal.id} className = "profileBorder">
 
-                      <p style={{whiteSpace: 'pre-wrap'}}>
+                      <p style={{ textAlign: 'justified', whiteSpace: 'pre-wrap'}}>
                       <div className = "descriptionContent">
                       {description}
                       </div>   
@@ -129,12 +129,11 @@
                     
                     </div>                            
                 ))}  
-            
-              </div>
-            )
-        }
-        
-      
+                         
+                </div>
+              )
+          }
+             
  }   
  
  export default AnimalProfileDeets;

@@ -69,6 +69,11 @@
   height: 100%;
 }
 
+.nav-links p /*Charities, Animals, and Maps on main site*/ {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
 .nav-links:hover {
   border-bottom: 4px solid rgb(223, 223, 223);
   transition: all 0.2s ease-out;
