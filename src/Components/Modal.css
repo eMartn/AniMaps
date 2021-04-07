@@ -148,6 +148,7 @@ button {
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
+  
 }
 
 .profileBorder2 {
@@ -226,7 +227,7 @@ padding: 2px;
   padding: 15px;
  margin-bottom: 0px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  
 }
 
 

@@ -119,8 +119,8 @@
   background: url("../Sprites/tiger.svg") center;
   background-repeat: no-repeat;
   position: relative;
-  top: -110vh;
-  left: 5vw;
+  top: -98vh;
+  left: 2vw;
   animation: spawn 3s ease, wiggle2 2s ease-in-out 15s 7;
 }
 

@@ -92,7 +92,7 @@ text-align: left;
 // This is styling done for the X you see on the modal
 const ModalCloserStyle = styled.div`
 cursor: pointer;
-position: absolute;
+position: fixed;
 top: 10vh;
 right: 3vw;
 color: white;
