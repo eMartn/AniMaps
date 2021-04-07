@@ -41,6 +41,10 @@ height: 90vh;
 background-color: rgba(110, 135, 104,0.9);
 color: black;
 z-index: 1;
+overflow-y: scroll;
+-ms-overflow-style: none;
+  scrollbar-width: none;
+
 -ms-transform: translateX(5%);
 transform: translateX(19%);
 border-radius: 0px 20px 20px 0px;
@@ -59,6 +63,9 @@ border-width: 5px;
   overflow: scroll;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  }
 `
 
 // This is responsible for the header style

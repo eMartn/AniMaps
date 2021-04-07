@@ -83,7 +83,7 @@ button {
     font-size: clamp(2rem, 4vw, 2.15rem);
    padding: 2rem 5rem;
    border-radius: 12px;
-   color: white;
+   color: whitesmoke;
    background: #2a2e12;
     // margin-left: 45px;
     margin-left: auto;
