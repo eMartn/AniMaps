@@ -49,7 +49,7 @@ function Animal(props){
 
     content2 = {TriviaDetails(modalTitle)}
 
-    content3 = "Filler text"
+    content3 = "[PHOTO]"
 
     
     >
