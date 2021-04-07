@@ -119,6 +119,34 @@ p {
 120em;  1920px
 160em;  2560px */
 
+@media screen and (max-width: 160em) {
+  .nav-links-welcome p {
+    /*Charities and Animals on homepage*/
+    margin-top: 20px;
+    font-size: 1.2vw;
+  }
+
+  .fa-paw,
+  .fa-seedling,
+  .fa-globe-americas {
+    margin-top: 15px;
+  }
+
+  .nav-links p /*Charities, Animals, and Maps on main site*/ {
+    margin-top: 20px;
+    font-size: 1.2vw;
+  }
+
+  .navbar-logo {
+    font-size: 2.2vw;
+  }
+
+  .navbar-logo-welcome {
+    font-size: 2.2vw;
+    margin-left: 11.7px;
+  }
+}
+
 @media screen and (max-width: 120em) /*1920px wide or smaller*/ {
   /*(max-height: 1080px) and (max-width: 1920px) { */
   #CrowImg {
@@ -182,50 +210,22 @@ p {
 
   .nav-links p /*Charities, Animals, and Maps on main site*/ {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.2vw;
   }
 
   .nav-links-welcome p {
     /*Charities and Animals on homepage*/
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.2vw;
   }
 
   .navbar-logo {
-    font-size: 1.8rem;
+    font-size: 2.2vw;
   }
 
   .navbar-logo-welcome {
-    font-size: 1.8rem;
+    font-size: 2.2vw;
     margin-right: 8px;
     margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 160em) {
-  .nav-links-welcome p {
-    /*Charities and Animals on homepage*/
-    margin-top: 20px;
-    font-size: 1.4rem;
-  }
-
-  .fa-paw,
-  .fa-seedling,
-  .fa-globe-americas {
-    margin-top: 15px;
-  }
-
-  .nav-links p /*Charities, Animals, and Maps on main site*/ {
-    margin-top: 20px;
-    font-size: 1.4rem;
-  }
-
-  .navbar-logo {
-    font-size: 2.8rem;
-  }
-
-  .navbar-logo-welcome {
-    font-size: 2.8rem;
-    margin-left: 11.7px;
   }
 }
