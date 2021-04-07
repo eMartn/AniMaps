@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .row {
@@ -65,7 +64,6 @@
   left: 1vw;
   z-index: 1px;
   text-align: center;
-
 }
 
 .Greeting {
@@ -113,4 +111,121 @@ p {
 
 .fa-bars {
   color: black;
+}
+
+/* 48em;  768px
+64em;  1024px
+85.375em;  1366px
+120em;  1920px
+160em;  2560px */
+
+@media screen and (max-width: 120em) /*1920px wide or smaller*/ {
+  /*(max-height: 1080px) and (max-width: 1920px) { */
+  #CrowImg {
+    max-width: 22vw;
+    max-height: 35.8vh;
+  }
+
+  .tabs {
+    font-size: x-large;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .card_img /*image used in cards on the animals page*/ {
+    height: 335px;
+  }
+
+  .cardTitle h1 {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .CardContainer {
+    height: 420px;
+  }
+
+  .card {
+    width: 270px;
+  }
+
+  .wrapper {
+    margin: 40px 10px 10px;
+    padding-top: 300px;
+    box-shadow: 0 0 7px 7px rgba(25, 25, 25, 0.1);
+  }
+
+  .buttonCard /*Learn More*/ {
+    margin-left: 63px;
+    padding: 1px;
+  }
+
+  .navbarClass {
+    height: 10vh;
+  }
+
+  .dropdown-menu {
+    top: 64px;
+  }
+
+  .nav-links {
+    height: 90.5%;
+  }
+
+  .fa-paw,
+  .fa-seedling,
+  .fa-globe-americas {
+    margin-top: 15px;
+  }
+
+  .nav-links p /*Charities, Animals, and Maps on main site*/ {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .nav-links-welcome p {
+    /*Charities and Animals on homepage*/
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+
+  .navbar-logo-welcome {
+    font-size: 1.8rem;
+    margin-right: 8px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 160em) {
+  .nav-links-welcome p {
+    /*Charities and Animals on homepage*/
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+
+  .fa-paw,
+  .fa-seedling,
+  .fa-globe-americas {
+    margin-top: 15px;
+  }
+
+  .nav-links p /*Charities, Animals, and Maps on main site*/ {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+
+  .navbar-logo {
+    font-size: 2.8rem;
+  }
+
+  .navbar-logo-welcome {
+    font-size: 2.8rem;
+    margin-left: 11.7px;
+  }
 }
