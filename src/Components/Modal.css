@@ -202,6 +202,7 @@ button {
 border-radius: 5px;
 background-color: rgb(205, 219, 205);
 padding: 2px;
+
 }
 
 .profileBorderTriv p{
@@ -224,6 +225,8 @@ padding: 2px;
   background-color: rgb(205, 219, 205);
   padding: 15px;
  margin-bottom: 0px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 
