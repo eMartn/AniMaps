@@ -5,13 +5,15 @@ import {Link} from 'react-router-dom';
 import './Australia.js';
 import {motion} from 'framer-motion';
 import styled from 'styled-components';
-import {upAnimation} from '../Animations';
+//import {upAnimation} from '../Animations';
 import AniNav from '../Components/AniNav';
 import Image from '../Sprites/pandaNew.svg';
 import Modal from './Modal';
 import AnimalProfileDeets from '../RenderProfile.js';
 import LeftModal from './LeftModal';
 import Animal from './Animal';
+import {flashAnimation} from '../Animations';
+
 
 function AsiaSection() {
     return (
@@ -21,10 +23,15 @@ function AsiaSection() {
         To see that go to index.js in Animations folder
       */
         <motion.div
-            initial = "out"
-            animate = "end"
-            exit = "out"
-            variants = {upAnimation}
+            // initial = "out"
+            // animate = "end"
+            // exit = "out"
+            // variants = {upAnimation}
+            // initial = "out"
+            // animate = "in"
+            // exit = "out"
+            // transition={{ duration: 1.1 }}
+            // variants = {flashAnimation}
        >
            <AniNav />
            {/* Creates a class for a container for styling in AsiaSection.css */}
@@ -33,13 +40,14 @@ function AsiaSection() {
 
             {/* <div className = "asia-btns">  */}
             
-            <motion.h1 initial={{ scale: 0 }}
+             <motion.h1 initial={{ scale: 0 }}
             animate={{ rotate: 0, scale: 1 }}
             transition={{
             type: "spring",
             stiffness: 260,
             damping: 20
-            }} > 
+            }}
+             >  
             
             <Link to='/Europe' className= 'to-region' >  
             <i class="fas fa-chevron-left"></i>
