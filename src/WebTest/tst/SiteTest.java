@@ -244,4 +244,34 @@ public class SiteTest {
         driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
     }
 
+    @Test
+    public void testSouthAmerica() throws InterruptedException {
+        driver.get("http://localhost:3000/SouthAmerica");
+        Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:3000/SouthAmerica");
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Red-eyed-tree-frog")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Toucan")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Andean-flamingo")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Southern-three-banded-armadillo")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+    }
+
 }
