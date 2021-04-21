@@ -208,4 +208,40 @@ public class SiteTest {
         driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
     }
 
+    @Test
+    public void testNorthAmerica() throws InterruptedException {
+        driver.get("http://localhost:3000/America");
+        Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:3000/America");
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("AltBear")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Boar")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Deer")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Bee")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Flamingo")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+    }
+
 }
