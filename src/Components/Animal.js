@@ -5,6 +5,7 @@ import Modal from './Modal';
 import LeftModal from './LeftModal';
 import AnimalProfileDeets from '../RenderProfile';
 import TriviaDetails from '../RenderTrivia';
+import RenderImages from '../RenderImages';
 
 /*
 Logs: 3/29/21
@@ -49,7 +50,7 @@ function Animal(props){
 
     content2 = {TriviaDetails(modalTitle)}
 
-    content3 = "[PHOTO]"
+    content3 = {RenderImages(modalTitle)}
 
     
     >
