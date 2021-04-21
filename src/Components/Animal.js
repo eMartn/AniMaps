@@ -5,6 +5,7 @@ import Modal from './Modal';
 import LeftModal from './LeftModal';
 import AnimalProfileDeets from '../RenderProfile';
 import TriviaDetails from '../RenderTrivia';
+import RenderImages from '../RenderImages';
 
 /*
 Logs: 3/29/21
@@ -50,8 +51,7 @@ function Animal(props){
 
     content2 = {TriviaDetails(modalTitle)}
 
-    // Getting images to show up in Gallery for animals in regions 
-    content3 = {AnimalProfileDeets(modalTitle, "image")}
+    content3 = {RenderImages(modalTitle)}
 
     
     >
