@@ -304,6 +304,34 @@ public class SiteTest {
         driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
     }
 
+    @Test
+    public void testEurope() throws InterruptedException {
+        driver.get("http://localhost:3000/Europe");
+        Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:3000/Europe");
 
+        Thread.sleep(1000);
+        driver.findElement(By.className("Crow")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Frog")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Moose")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("Bear")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//i[@class='fas fa-times']")).click();
+    }
 
 }
