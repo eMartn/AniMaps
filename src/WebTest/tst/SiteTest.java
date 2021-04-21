@@ -17,6 +17,12 @@ public class SiteTest {
         driver = new ChromeDriver();
     }
 
+    @AfterClass
+    public static void tearDown()
+    {
+        driver.quit();
+    }
+
     //    @Ignore
     @Test
     public void testMainSiteNavBar() throws InterruptedException {
@@ -127,7 +133,6 @@ public class SiteTest {
     @Test
     public void testCharities() throws InterruptedException {
         // TODO test all charity elements when those get added
-
     }
 
     @Ignore
@@ -140,10 +145,7 @@ public class SiteTest {
         Thread.sleep(1000);
         driver.findElement(By.className("buttonCard")).click();
         Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
-
-
-
-
+        Thread.sleep(1000);
     }
 
     @Test
