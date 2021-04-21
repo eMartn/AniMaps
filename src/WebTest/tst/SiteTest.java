@@ -134,6 +134,16 @@ public class SiteTest {
     @Test
     public void testAnimalsPage() throws InterruptedException {
         // TODO test Animals page when env file is working
+        driver.get("http://localhost:3000/animal-list");
+        Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:3000/animal-list");
+
+        Thread.sleep(1000);
+        driver.findElement(By.className("buttonCard")).click();
+        Assert.assertTrue(driver.findElements(By.className("tabs")).size() > 0);
+
+
+
+
     }
 
     @Test
