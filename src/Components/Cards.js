@@ -3,6 +3,7 @@ import {motion} from 'framer-motion';
 import LeftModal from './LeftModal';
 import Modal from './Modal';
 import TriviaDetails from '../RenderTrivia';
+import RenderImages from '../RenderImages';
 
 function Cards(props) {
     // Variable created to take in images for the cards background 
@@ -109,7 +110,7 @@ function Cards(props) {
             </div>
             }
 
-            content3 = { <img id="CrowImg" src={document.url} alt=''/>}
+            content3 = {RenderImages(document.id)}
 
             
             >
