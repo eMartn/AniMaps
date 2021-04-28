@@ -42,10 +42,10 @@ function NavBar() {
                 */}
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/charities' className= 'nav-links-welcome'  >
+                {/* <Link to='/charities' className= 'nav-links-welcome'  >
                 <i class="fas fa-seedling"></i>
                 <p>Charities</p>
-                 </Link>
+                 </Link> */}
                 </li>
 
                 <li className = 'nav-item'>

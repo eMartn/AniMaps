@@ -14,6 +14,7 @@ import {AnimatePresence} from 'framer-motion';
 import Animals from './Components/Animals.js';
 import doesNotExist from './Components/Pages/404';
 import Dbtestpage from './RenderProfile';
+import Charities from './Components/Pages/Charities';
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
         <Route path= '/Europe' exact component = {Europe}/>
         <Route path= '/Animal-list' exact component = {Animals}/>
         <Route path= '/Dbtestpage' exact component = {Dbtestpage}/>
+        <Route path= '/Charities' exact component = {Charities}/>
         <Route path= '*' exact component = {doesNotExist}/>
       </Switch>
       {/* Footer will go here */}

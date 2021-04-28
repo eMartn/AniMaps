@@ -1,0 +1,14 @@
+
+.comingsoon{
+
+    text-align: center;
+     background: url('../../Sprites/contruct.png');
+     background-repeat: no-repeat; 
+      background-size: cover;
+
+        height: auto;
+        width: 100%;
+        padding: 20%;
+        color: white;
+
+}
