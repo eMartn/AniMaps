@@ -121,8 +121,8 @@
   background: url("../Sprites/altbear.svg") center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 40vh;
-  left: 5vw;
+  top: 45vh;
+  left:33vw;
   animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
 }
 
@@ -291,8 +291,8 @@
     background: url("../Sprites/altbear.svg") center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 70vh;
-    left: 5vw;
+    top: 75vh;
+    left:30vw;
     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
 }
@@ -367,8 +367,8 @@
     background: url("../Sprites/altbear.svg") center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50vh;
-    left: 5vw;
+    top: 60vh;
+    left:31vw;
     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
 }
@@ -443,8 +443,8 @@
     background: url("../Sprites/altbear.svg") center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 38vh;
-    left: 12vw;
+    top: 35vh;
+    left: 32vw;
     animation: spawn 3s ease, shake 4s ease-in-out 45s 6;
   }
 }
