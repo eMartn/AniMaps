@@ -47,7 +47,7 @@ function RenderImages(animalName)
                   // <div  className = "profileBorderTrivFirst">
                 <div  className = "">
                 
-                    <img id="CrowImg" src= {images.url} alt=''/>  
+                    <img id="AnimalImg" src= {images.url} alt=''/>  
                                       
               
                 {/* </div> */}

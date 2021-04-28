@@ -65,10 +65,10 @@ function NavBarAni() {
                 */}
                 <li className = 'nav-item'>
                     {/* Sets the link to learnmore which does not exist currently */}
-                <Link to='/charities' className= 'nav-links'  >
+                {/* <Link to='/charities' className= 'nav-links'  >
                 <i class="fas fa-seedling"></i>
                 <p>Charities</p>
-                 </Link>
+                 </Link> */}
                 </li>
 
                 <li className = 'nav-item'>

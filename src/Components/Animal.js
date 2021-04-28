@@ -31,8 +31,9 @@ function Animal(props){
     // Variable created that assigns title & decription as props
     // alternate way of doing -> EX: prop.title or props.description
     // doing it like this makes it easier to manage
-    let {className, modalInfo, modalTitle, weight,id, Images,unrelated} = props
+    let {className, modalInfo, modalTitle, weight,id, Images,unrelated,doc} = props
     const [show,setShow] = useState(false);
+    //const [document, setDocument] = useState(doc);
   return (
   <div>
      <div className = {className} onClick = {() => setShow(true)}  ></div>
