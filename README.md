@@ -1,9 +1,12 @@
 # AniMaps - a user-friendly animal learning app.
 
-### [Project Repo](https://github.com/eMartn/AniMaps)
+### Click the link below to visit the site!
+### [AniMaps](https://animaps.netlify.app/)
 
 ### We are currently using [Discord](https://tinyurl.com/v42ww54) to communicate. 
 ![Discord Icon](https://img.icons8.com/plasticine/2x/discord-logo.png)
+
+### [Project Repo](https://github.com/eMartn/AniMaps)
 
 ## Tools: ##
 1. ## Javascript ##
